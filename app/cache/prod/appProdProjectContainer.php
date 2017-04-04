@@ -671,7 +671,7 @@ class appProdProjectContainer extends Container
         $a = new \Symfony\Bridge\Doctrine\ContainerAwareEventManager($this);
         $a->addEventListener(array(0 => 'loadClassMetadata'), $this->get('doctrine.orm.default_listeners.attach_entity_listeners'));
 
-        return $this->services['doctrine.dbal.default_connection'] = $this->get('doctrine.dbal.connection_factory')->createConnection(array('driver' => 'pdo_mysql', 'host' => '127.0.0.1', 'port' => '', 'dbname' => 'db_taorai_dev', 'user' => 'taorai_admin', 'password' => 'Szc2W2aVFDuHUCsX', 'charset' => 'UTF8', 'driverOptions' => array(), 'serverVersion' => 5.0999999999999996447286321199499070644378662109375), new \Doctrine\DBAL\Configuration(), $a, array('enum' => 'string'));
+        return $this->services['doctrine.dbal.default_connection'] = $this->get('doctrine.dbal.connection_factory')->createConnection(array('driver' => 'pdo_mysql', 'host' => '127.0.0.1', 'port' => '', 'dbname' => 'db_taorai_dev', 'user' => 'taorai_admin', 'password' => 'Z3cmpLLFxgw4ybNv', 'charset' => 'UTF8', 'driverOptions' => array(), 'serverVersion' => 5.0999999999999996447286321199499070644378662109375), new \Doctrine\DBAL\Configuration(), $a, array('enum' => 'string'));
     }
 
     /*
@@ -3695,7 +3695,7 @@ class appProdProjectContainer extends Container
 
         $e = new \Symfony\Component\Security\Http\AccessMap();
 
-        return $this->services['security.firewall.map.context.main'] = new \Symfony\Bundle\SecurityBundle\Security\FirewallContext(array(0 => new \Symfony\Component\Security\Http\Firewall\ChannelListener($e, new \Symfony\Component\Security\Http\EntryPoint\RetryAuthenticationEntryPoint(80, 443), $a), 1 => new \Symfony\Component\Security\Http\Firewall\ContextListener($b, array(0 => new \Symfony\Component\Security\Core\User\InMemoryUserProvider(), 1 => $this->get('prestashop.security.admin.provider')), 'main', $a, $this->get('event_dispatcher', ContainerInterface::NULL_ON_INVALID_REFERENCE)), 2 => new \Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener($b, '58e279665526b5.28536404', $a, $c), 3 => new \Symfony\Component\Security\Http\Firewall\AccessListener($b, $this->get('security.access.decision_manager'), $e, $c)), new \Symfony\Component\Security\Http\Firewall\ExceptionListener($b, $this->get('security.authentication.trust_resolver'), new \Symfony\Component\Security\Http\HttpUtils($d, $d), 'main', NULL, NULL, NULL, $a, false));
+        return $this->services['security.firewall.map.context.main'] = new \Symfony\Bundle\SecurityBundle\Security\FirewallContext(array(0 => new \Symfony\Component\Security\Http\Firewall\ChannelListener($e, new \Symfony\Component\Security\Http\EntryPoint\RetryAuthenticationEntryPoint(80, 443), $a), 1 => new \Symfony\Component\Security\Http\Firewall\ContextListener($b, array(0 => new \Symfony\Component\Security\Core\User\InMemoryUserProvider(), 1 => $this->get('prestashop.security.admin.provider')), 'main', $a, $this->get('event_dispatcher', ContainerInterface::NULL_ON_INVALID_REFERENCE)), 2 => new \Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener($b, '58e42d50accb58.96536887', $a, $c), 3 => new \Symfony\Component\Security\Http\Firewall\AccessListener($b, $this->get('security.access.decision_manager'), $e, $c)), new \Symfony\Component\Security\Http\Firewall\ExceptionListener($b, $this->get('security.authentication.trust_resolver'), new \Symfony\Component\Security\Http\HttpUtils($d, $d), 'main', NULL, NULL, NULL, $a, false));
     }
 
     /*
@@ -4748,7 +4748,7 @@ class appProdProjectContainer extends Container
      */
     protected function getUriSignerService()
     {
-        return $this->services['uri_signer'] = new \Symfony\Component\HttpKernel\UriSigner('Wa9NTVneWFPgkX8H9QdjBnaEIn8KwAGFEGYBU2FZRbaNQsEPhu9gvzVJ');
+        return $this->services['uri_signer'] = new \Symfony\Component\HttpKernel\UriSigner('y3rrgNUkmFyhHz3jf4oiwSDft394CIDuhPLK4o38UeW9QZLyvdj4kX5j');
     }
 
     /*
@@ -4914,7 +4914,7 @@ class appProdProjectContainer extends Container
      */
     protected function getSecurity_Authentication_ManagerService()
     {
-        $this->services['security.authentication.manager'] = $instance = new \Symfony\Component\Security\Core\Authentication\AuthenticationProviderManager(array(0 => new \Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider('58e279665526b5.28536404')), true);
+        $this->services['security.authentication.manager'] = $instance = new \Symfony\Component\Security\Core\Authentication\AuthenticationProviderManager(array(0 => new \Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider('58e42d50accb58.96536887')), true);
 
         $instance->setEventDispatcher($this->get('event_dispatcher'));
 
@@ -5152,21 +5152,21 @@ class appProdProjectContainer extends Container
             'database_port' => '',
             'database_name' => 'db_taorai_dev',
             'database_user' => 'taorai_admin',
-            'database_password' => 'Szc2W2aVFDuHUCsX',
+            'database_password' => 'Z3cmpLLFxgw4ybNv',
             'database_prefix' => 'taorai_',
             'database_engine' => 'InnoDB',
             'mailer_transport' => 'smtp',
             'mailer_host' => '127.0.0.1',
             'mailer_user' => NULL,
             'mailer_password' => NULL,
-            'secret' => 'Wa9NTVneWFPgkX8H9QdjBnaEIn8KwAGFEGYBU2FZRbaNQsEPhu9gvzVJ',
+            'secret' => 'y3rrgNUkmFyhHz3jf4oiwSDft394CIDuhPLK4o38UeW9QZLyvdj4kX5j',
             'ps_caching' => 'CacheMemcache',
             'ps_cache_enable' => false,
-            'ps_creation_date' => '2017-04-03',
+            'ps_creation_date' => '2017-04-05',
             'locale' => 'en-US',
-            'cookie_key' => 'yn828ag9G6KLDThr8t9Gh2wt0US5tYgzfiFrNFwx6VmiuVo8n9C83aEf',
-            'cookie_iv' => 'ABKL0v4O',
-            'new_cookie_key' => 'def00000d95bf632c2e20aca225a226ca80eb7edd304a79f00f40ea08cae78c7fc6eaacd6b7110c45ca7acf320b982c6e522450519dec9f60bb1b1e7598be81714cac2f5',
+            'cookie_key' => 'hkgp7nLFDXq3hPXzYghiEqA05csDtXv52n57z09dwL2gB0wSQGgAPOoy',
+            'cookie_iv' => 'BXk3Q9Xx',
+            'new_cookie_key' => 'def000002ca42ec73c9374be54d88e5b87c0cdc2e131819e83489b1ba59aff0e9b2ef54f3dd0cb81c94d90bc3c157b0999aa9f8f3ef2fb024d7dde2491f3e50837c38cc4',
             'adaptersecurityadminclass' => 'PrestaShop\\PrestaShop\\Adapter\\Security\\Admin',
             'translator.class' => 'PrestaShopBundle\\Translation\\Translator',
             'controller_resolver.class' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\ControllerResolver',
@@ -5216,7 +5216,7 @@ class appProdProjectContainer extends Container
             'translation.extractor.class' => 'Symfony\\Component\\Translation\\Extractor\\ChainExtractor',
             'translation.writer.class' => 'Symfony\\Component\\Translation\\Writer\\TranslationWriter',
             'property_accessor.class' => 'Symfony\\Component\\PropertyAccess\\PropertyAccessor',
-            'kernel.secret' => 'Wa9NTVneWFPgkX8H9QdjBnaEIn8KwAGFEGYBU2FZRbaNQsEPhu9gvzVJ',
+            'kernel.secret' => 'y3rrgNUkmFyhHz3jf4oiwSDft394CIDuhPLK4o38UeW9QZLyvdj4kX5j',
             'kernel.http_method_override' => true,
             'kernel.trusted_hosts' => array(
 
