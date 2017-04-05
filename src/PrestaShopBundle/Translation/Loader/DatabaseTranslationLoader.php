@@ -73,11 +73,11 @@ class DatabaseTranslationLoader implements LoaderInterface
             $queryBuilder->andWhere('t.theme IS NULL');
         }
 
-        if ($domain !== '*') {
-            $queryBuilder->andWhere('REGEXP(t.domain, :domain) = true')
-                ->setParameter('domain', $domain)
-            ;
-        }
+        // if ($domain !== '*') {
+        //     $queryBuilder->andWhere('REGEXP(t.domain, :domain) = true')
+        //         ->setParameter('domain', $domain)
+        //     ;
+        // }
 
         $translations = $queryBuilder->getQuery()
             ->getResult()
