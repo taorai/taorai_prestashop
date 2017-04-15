@@ -34,7 +34,7 @@
         <div class="row">
           <div class="hidden-sm-down">
             <div class="col-md-4 col-xs-12">
-              {hook h='displayNav1'}
+<!--               {hook h='displayNav1'} -->
             </div>
             <div class="col-md-8 right-nav">
                 {hook h='displayNav2'}
@@ -63,7 +63,7 @@
             <img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}">
           </a>
         </div>
-        <div class="col-md-10 col-sm-12 position-static">
+        <div class="col-md-12 col-sm-12 position-static">
           <div class="row">
             {hook h='displayTop'}
             <div class="clearfix"></div>
