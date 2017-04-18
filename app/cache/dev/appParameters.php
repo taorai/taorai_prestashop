@@ -5,7 +5,7 @@
     'database_port' => '',
     'database_name' => 'db_taorai_dev',
     'database_user' => 'taorai_admin',
-    'database_password' => 'Z3cmpLLFxgw4ybNv',
+    'database_password' => 'EriZk6QFter4APsA',
     'database_prefix' => 'taorai_',
     'database_engine' => 'InnoDB',
     'mailer_transport' => 'smtp',

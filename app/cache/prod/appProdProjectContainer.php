@@ -671,7 +671,7 @@ class appProdProjectContainer extends Container
         $a = new \Symfony\Bridge\Doctrine\ContainerAwareEventManager($this);
         $a->addEventListener(array(0 => 'loadClassMetadata'), $this->get('doctrine.orm.default_listeners.attach_entity_listeners'));
 
-        return $this->services['doctrine.dbal.default_connection'] = $this->get('doctrine.dbal.connection_factory')->createConnection(array('driver' => 'pdo_mysql', 'host' => '127.0.0.1', 'port' => '', 'dbname' => 'db_taorai_dev', 'user' => 'taorai_admin', 'password' => 'Z3cmpLLFxgw4ybNv', 'charset' => 'UTF8', 'driverOptions' => array(), 'serverVersion' => 5.0999999999999996447286321199499070644378662109375), new \Doctrine\DBAL\Configuration(), $a, array('enum' => 'string'));
+        return $this->services['doctrine.dbal.default_connection'] = $this->get('doctrine.dbal.connection_factory')->createConnection(array('driver' => 'pdo_mysql', 'host' => '127.0.0.1', 'port' => '', 'dbname' => 'db_taorai_dev', 'user' => 'taorai_admin', 'password' => 'EriZk6QFter4APsA', 'charset' => 'UTF8', 'driverOptions' => array(), 'serverVersion' => 5.0999999999999996447286321199499070644378662109375), new \Doctrine\DBAL\Configuration(), $a, array('enum' => 'string'));
     }
 
     /*
@@ -5152,7 +5152,7 @@ class appProdProjectContainer extends Container
             'database_port' => '',
             'database_name' => 'db_taorai_dev',
             'database_user' => 'taorai_admin',
-            'database_password' => 'Z3cmpLLFxgw4ybNv',
+            'database_password' => 'EriZk6QFter4APsA',
             'database_prefix' => 'taorai_',
             'database_engine' => 'InnoDB',
             'mailer_transport' => 'smtp',

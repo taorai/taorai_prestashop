@@ -1,2 +1,4 @@
 32860e,127.0.0.1,GET,https://localhost/taorai/admin_portal/index.php/_fragment?_path=_format%3Dhtml%26_locale%3Den-US%26_controller%3DPrestaShopBundle%255CController%255CAdmin%255CProductController%253A%253AlistAction,1491488848,704ac1,200
 704ac1,127.0.0.1,GET,https://localhost/taorai/admin_portal/index.php/product/catalog?_token=YogtaIDH1rWmytJLoEuMJqDvdBZSr71g28IbB84LXaQ,1491488848,,200
+8c8cf2,127.0.0.1,GET,https://localhost/taorai/admin_portal/index.php/_fragment?_path=_format%3Dhtml%26_locale%3Den-US%26_controller%3DPrestaShopBundle%255CController%255CAdmin%255CProductController%253A%253AlistAction,1492476004,f85288,200
+f85288,127.0.0.1,GET,https://localhost/taorai/admin_portal/index.php/product/catalog?_token=zKoHv36yPqYN2jQBybZDgpduHVnxutYhzFxTfLrWWEE,1492476004,,200
