@@ -314,7 +314,8 @@ class AdminAddressesControllerCore extends AdminController
                     'type' => 'text',
                     'label' => $this->trans('Home phone', array(), 'Admin.Global'),
                     'name' => 'phone',
-                    'required' => in_array('phone', $required_fields),
+                    // 'required' => in_array('phone', $required_fields),
+                    'required' => true,
                     'col' => '4',
                 );
             } elseif ($addr_field_item == 'phone_mobile') {
@@ -384,6 +385,13 @@ class AdminAddressesControllerCore extends AdminController
             $this->errors[] = $this->trans('A Zip/postal code is required.', array(), 'Admin.Notifications.Error');
         } elseif ($postcode && !Validate::isPostCode($postcode)) {
             $this->errors[] = $this->trans('The Zip/postal code is invalid.', array(), 'Admin.Notifications.Error');
+        }
+
+        /* Check phone number format */
+        if (empty(Tools::getValue('phone'))) {
+            $this->errors[] = $this->trans('Please fill in phone number.', array(), 'Admin.Orderscustomers.Notification');
+        } elseif (!Validate::isPhoneNumber(Tools::getValue('phone'))) {
+            $this->errors[] = $this->trans('This phone number is not valid. Please verify and input again.', array(), 'Admin.Orderscustomers.Notification');
         }
 
         /* If this address come from order's edition and is the same as the other one (invoice or delivery one)
