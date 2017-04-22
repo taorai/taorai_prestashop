@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-18 07:39:30
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-22 12:44:20
          compiled from "module:ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:6655722758f56042128947-51845832%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:88160812158faedb4ae5a18-49191377%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '307dc6bd4724d29d1572cc301dd7148e962604ef' => 
     array (
       0 => 'module:ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl',
-      1 => 1492474529,
+      1 => 1492697577,
       2 => 'module',
     ),
   ),
-  'nocache_hash' => '6655722758f56042128947-51845832',
+  'nocache_hash' => '88160812158faedb4ae5a18-49191377',
   'function' => 
   array (
   ),
@@ -25,14 +25,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_58f560421419d1_31992592',
+  'unifunc' => 'content_58faedb4afdca8_52270014',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58f560421419d1_31992592')) {function content_58f560421419d1_31992592($_smarty_tpl) {?><!-- begin /home/steven/GitRepository/taorai/themes/classic/modules/ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl -->
+<?php if ($_valid && !is_callable('content_58faedb4afdca8_52270014')) {function content_58faedb4afdca8_52270014($_smarty_tpl) {?><!-- begin /home/steven/GitRepository/taorai/themes/classic/modules/ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl -->
 
-<div class="block_newsletter col-lg-8 col-md-12 col-sm-12">
+<div class="block_newsletter col-lg-8 col-md-12 col-sm-12" style="float: right;">
   <div class="row">
-    <p class="col-md-5 col-xs-12"><?php echo smartyTranslate(array('s'=>'Get our latest news and special sales','d'=>'Shop.Theme'),$_smarty_tpl);?>
-</p>
+    <!-- <p class="col-md-5 col-xs-12"><?php echo smartyTranslate(array('s'=>'Get our latest news and special sales','d'=>'Shop.Theme'),$_smarty_tpl);?>
+</p> -->
     <div class="col-md-7 col-xs-12">
       <form action="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['pages']['index'], ENT_QUOTES, 'UTF-8');?>
 #footer" method="post">

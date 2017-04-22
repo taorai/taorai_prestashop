@@ -148,10 +148,10 @@
     </div>
 
   </div>
-  <div class="row">
-    <div class="col-md-12">
+  <div class="row" style="overflow: hidden;margin-bottom: 2rem;">
+    <div class="col-md-12" style="padding: 0 2rem 0 2rem;">
       {block name='product_tabs'}
-      <div class="tabs">
+      <div class="tabs" style="margin: 0;">
         <ul class="nav nav-tabs">
           {if $product.description}
           <li class="nav-item">

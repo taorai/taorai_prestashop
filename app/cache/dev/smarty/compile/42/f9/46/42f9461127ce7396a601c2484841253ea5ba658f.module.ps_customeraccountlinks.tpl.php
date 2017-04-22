@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-18 07:39:30
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-22 12:44:20
          compiled from "module:ps_customeraccountlinks/ps_customeraccountlinks.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:34693980058f56042192543-67083453%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:46469140258faedb4b5e616-61587094%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'module',
     ),
   ),
-  'nocache_hash' => '34693980058f56042192543-67083453',
+  'nocache_hash' => '46469140258faedb4b5e616-61587094',
   'function' => 
   array (
   ),
@@ -23,9 +23,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_58f560421aac63_04015160',
+  'unifunc' => 'content_58faedb4b6fb18_44150888',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58f560421aac63_04015160')) {function content_58f560421aac63_04015160($_smarty_tpl) {?><!-- begin /home/steven/GitRepository/taorai/themes/classic/modules/ps_customeraccountlinks/ps_customeraccountlinks.tpl -->
+<?php if ($_valid && !is_callable('content_58faedb4b6fb18_44150888')) {function content_58faedb4b6fb18_44150888($_smarty_tpl) {?><!-- begin /home/steven/GitRepository/taorai/themes/classic/modules/ps_customeraccountlinks/ps_customeraccountlinks.tpl -->
 
 <div id="block_myaccount_infos" class="col-md-2 links wrapper">
   <h3 class="myaccount-title hidden-sm-down">
