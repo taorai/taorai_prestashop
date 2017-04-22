@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 <?php /* Smarty version Smarty-3.1.19, created on 2017-04-22 22:15:23
          compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/default/template/controllers/preferences/helpers/options/options.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:116641871358fb738b761a69-86865612%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+=======
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-22 10:43:45
+         compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/default/template/controllers/preferences/helpers/options/options.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:31381378858fad171e442f8-05235462%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+>>>>>>> dev
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,7 +23,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
+<<<<<<< HEAD
   'nocache_hash' => '116641871358fb738b761a69-86865612',
+=======
+  'nocache_hash' => '31381378858fad171e442f8-05235462',
+>>>>>>> dev
   'function' => 
   array (
   ),
@@ -55,9 +65,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
+<<<<<<< HEAD
   'unifunc' => 'content_58fb738bb93c40_25531048',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_58fb738bb93c40_25531048')) {function content_58fb738bb93c40_25531048($_smarty_tpl) {?><?php if (!is_callable('smarty_function_counter')) include '/home/steven/GitRepository/taorai/vendor/prestashop/smarty/plugins/function.counter.php';
+=======
+  'unifunc' => 'content_58fad17232f6d7_60822465',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_58fad17232f6d7_60822465')) {function content_58fad17232f6d7_60822465($_smarty_tpl) {?><?php if (!is_callable('smarty_function_counter')) include '/home/steven/GitRepository/taorai/vendor/prestashop/smarty/plugins/function.counter.php';
+>>>>>>> dev
 if (!is_callable('smarty_modifier_replace')) include '/home/steven/GitRepository/taorai/vendor/prestashop/smarty/plugins/modifier.replace.php';
 ?>
 
