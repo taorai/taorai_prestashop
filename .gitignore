@@ -1,6 +1,2 @@
 
 *.data
-
-app/cache/
-
-app/logs/
