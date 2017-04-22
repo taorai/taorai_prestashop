@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-22 22:09:36
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-22 23:04:08
          compiled from "/home/steven/GitRepository/taorai/themes/classic/templates/catalog/_partials/miniatures/product.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:108952775658fb7230a94d61-94145769%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'd993ecd492d0ec985b823dd517a37348a6412d70' => 
     array (
       0 => '/home/steven/GitRepository/taorai/themes/classic/templates/catalog/_partials/miniatures/product.tpl',
-      1 => 1492731929,
+      1 => 1492875491,
       2 => 'file',
     ),
     '3a803eb13d2dc85658a4f154e3da7af846003c35' => 
@@ -21,14 +21,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_58fb7230b0c689_91268562',
   'variables' => 
   array (
     'product' => 0,
     'flag' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_58fb7230b0c689_91268562',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_58fb7230b0c689_91268562')) {function content_58fb7230b0c689_91268562($_smarty_tpl) {?>
 
@@ -120,7 +120,7 @@ $_smarty_tpl->tpl_vars['flag']->_loop = true;
           <?php /*  Call merged included template "catalog/_partials/variant-links.tpl" */
 $_tpl_stack[] = $_smarty_tpl;
  $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('catalog/_partials/variant-links.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('variants'=>$_smarty_tpl->tpl_vars['product']->value['main_variants']), 0, '108952775658fb7230a94d61-94145769');
-content_58fb7230aec5a1_33383298($_smarty_tpl);
+content_58fb7ef84d7437_52449658($_smarty_tpl);
 $_smarty_tpl = array_pop($_tpl_stack); 
 /*  End of included template "catalog/_partials/variant-links.tpl" */?>
         <?php }?>
@@ -130,9 +130,9 @@ $_smarty_tpl = array_pop($_tpl_stack);
   </article>
 
 <?php }} ?>
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-22 22:09:36
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-22 23:04:08
          compiled from "/home/steven/GitRepository/taorai/themes/classic/templates/catalog/_partials/variant-links.tpl" */ ?>
-<?php if ($_valid && !is_callable('content_58fb7230aec5a1_33383298')) {function content_58fb7230aec5a1_33383298($_smarty_tpl) {?><div class="variant-links">
+<?php if ($_valid && !is_callable('content_58fb7ef84d7437_52449658')) {function content_58fb7ef84d7437_52449658($_smarty_tpl) {?><div class="variant-links">
   <?php  $_smarty_tpl->tpl_vars['variant'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['variant']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['variants']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['variant']->key => $_smarty_tpl->tpl_vars['variant']->value) {
