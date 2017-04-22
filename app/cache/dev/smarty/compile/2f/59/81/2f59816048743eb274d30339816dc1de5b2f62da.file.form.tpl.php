@@ -1,12 +1,12 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-22 22:15:27
-         compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/default/template/controllers/performance/helpers/form/form.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:140962709158fb738fba1a34-12904166%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-22 12:34:37
+         compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/default/template/controllers/slip/helpers/form/form.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:43874898158faeb6d3b1ba3-98838340%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    'ca0e7874769cf40193477583e650bf0562db6e24' => 
+    '2f59816048743eb274d30339816dc1de5b2f62da' => 
     array (
-      0 => '/home/steven/GitRepository/taorai/admin_portal/themes/default/template/controllers/performance/helpers/form/form.tpl',
+      0 => '/home/steven/GitRepository/taorai/admin_portal/themes/default/template/controllers/slip/helpers/form/form.tpl',
       1 => 1492474529,
       2 => 'file',
     ),
@@ -23,7 +23,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '140962709158fb738fba1a34-12904166',
+  'nocache_hash' => '43874898158faeb6d3b1ba3-98838340',
   'function' => 
   array (
   ),
@@ -80,9 +80,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_58fb73907e60b7_38342768',
+  'unifunc' => 'content_58faeb6dde0878_25379708',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58fb73907e60b7_38342768')) {function content_58fb73907e60b7_38342768($_smarty_tpl) {?><?php if (!is_callable('smarty_function_counter')) include '/home/steven/GitRepository/taorai/vendor/prestashop/smarty/plugins/function.counter.php';
+<?php if ($_valid && !is_callable('content_58faeb6dde0878_25379708')) {function content_58faeb6dde0878_25379708($_smarty_tpl) {?><?php if (!is_callable('smarty_function_counter')) include '/home/steven/GitRepository/taorai/vendor/prestashop/smarty/plugins/function.counter.php';
 ?>
 <?php if (isset($_smarty_tpl->tpl_vars['fields']->value['title'])) {?><h3><?php echo $_smarty_tpl->tpl_vars['fields']->value['title'];?>
 </h3><?php }?>
@@ -190,11 +190,6 @@ foreach ($_from as $_smarty_tpl->tpl_vars['input']->key => $_smarty_tpl->tpl_var
 $_smarty_tpl->tpl_vars['input']->_loop = true;
 ?>
 						
-	<?php if ($_smarty_tpl->tpl_vars['input']->value['name']=='caching_system') {?><div id="<?php echo $_smarty_tpl->tpl_vars['input']->value['name'];?>
-_wrapper"<?php if (isset($_smarty_tpl->tpl_vars['_PS_CACHE_ENABLED_']->value)&&!$_smarty_tpl->tpl_vars['_PS_CACHE_ENABLED_']->value) {?> style="display:none"<?php }?>><?php }?>
-	<?php if ($_smarty_tpl->tpl_vars['input']->value['name']=='smarty_caching_type'||$_smarty_tpl->tpl_vars['input']->value['name']=='smarty_clear_cache'||$_smarty_tpl->tpl_vars['input']->value['name']=='smarty_local') {?><div id="<?php echo $_smarty_tpl->tpl_vars['input']->value['name'];?>
-_wrapper"<?php if (isset($_smarty_tpl->tpl_vars['fields_value']->value['smarty_cache'])&&!$_smarty_tpl->tpl_vars['fields_value']->value['smarty_cache']) {?> style="display:none"<?php }?>><?php }?>
-	
 						<div class="form-group<?php if (isset($_smarty_tpl->tpl_vars['input']->value['form_group_class'])) {?> <?php echo $_smarty_tpl->tpl_vars['input']->value['form_group_class'];?>
 <?php }?><?php if ($_smarty_tpl->tpl_vars['input']->value['type']=='hidden') {?> hide<?php }?>"<?php if ($_smarty_tpl->tpl_vars['input']->value['name']=='id_state') {?> id="contains_states"<?php if (!$_smarty_tpl->tpl_vars['contains_states']->value) {?> style="display:none;"<?php }?><?php }?><?php if (isset($_smarty_tpl->tpl_vars['tabs']->value)&&isset($_smarty_tpl->tpl_vars['input']->value['tab'])) {?> data-tab-id="<?php echo $_smarty_tpl->tpl_vars['input']->value['tab'];?>
 "<?php }?>>
@@ -240,13 +235,6 @@ $_smarty_tpl->tpl_vars['hint']->_loop = true;
 								<div class="col-lg-<?php if (isset($_smarty_tpl->tpl_vars['input']->value['col'])) {?><?php echo intval($_smarty_tpl->tpl_vars['input']->value['col']);?>
 <?php } else { ?>9<?php }?><?php if (!isset($_smarty_tpl->tpl_vars['input']->value['label'])) {?> col-lg-offset-3<?php }?>">
 								
-	<?php if ($_smarty_tpl->tpl_vars['input']->value['type']=='radio'&&$_smarty_tpl->tpl_vars['input']->value['name']=='combination'&&$_smarty_tpl->tpl_vars['input']->value['disabled']) {?>
-		<div class="alert alert-warning">
-			<?php echo smartyTranslate(array('s'=>'This feature cannot be disabled because it is currently in use.'),$_smarty_tpl);?>
-
-		</div>
-	<?php }?>
-	
 								<?php if ($_smarty_tpl->tpl_vars['input']->value['type']=='text'||$_smarty_tpl->tpl_vars['input']->value['type']=='tags') {?>
 									<?php if (isset($_smarty_tpl->tpl_vars['input']->value['lang'])&&$_smarty_tpl->tpl_vars['input']->value['lang']) {?>
 									<?php if (count($_smarty_tpl->tpl_vars['languages']->value)>1) {?>
@@ -1167,8 +1155,8 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
 									<?php $_smarty_tpl->tpl_vars['groups'] = new Smarty_variable($_smarty_tpl->tpl_vars['input']->value['values'], null, 0);?>
 									<?php /*  Call merged included template "helpers/form/form_group.tpl" */
 $_tpl_stack[] = $_smarty_tpl;
- $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('helpers/form/form_group.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '140962709158fb738fba1a34-12904166');
-content_58fb73904cf6b7_80749395($_smarty_tpl);
+ $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('helpers/form/form_group.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '43874898158faeb6d3b1ba3-98838340');
+content_58faeb6db8b059_80539608($_smarty_tpl);
 $_smarty_tpl = array_pop($_tpl_stack); 
 /*  End of included template "helpers/form/form_group.tpl" */?>
 								<?php } elseif ($_smarty_tpl->tpl_vars['input']->value['type']=='shop') {?>
@@ -1259,9 +1247,7 @@ $_smarty_tpl = array_pop($_tpl_stack);
 									<?php }?>
 								<?php }?>
 								
-
 								
-	
 									<?php if (isset($_smarty_tpl->tpl_vars['input']->value['desc'])&&!empty($_smarty_tpl->tpl_vars['input']->value['desc'])) {?>
 										<p class="help-block">
 											<?php if (is_array($_smarty_tpl->tpl_vars['input']->value['desc'])) {?>
@@ -1286,33 +1272,11 @@ $_smarty_tpl->tpl_vars['p']->_loop = true;
 										</p>
 									<?php }?>
 								
-	<?php if ($_smarty_tpl->tpl_vars['input']->value['type']=='radio'&&$_smarty_tpl->tpl_vars['input']->value['name']=='combination') {?>
-		<ul>
-			<li><?php echo smartyTranslate(array('s'=>'Combinations tab on product page'),$_smarty_tpl);?>
-</li>
-			<li><?php echo smartyTranslate(array('s'=>'Value'),$_smarty_tpl);?>
-</li>
-			<li><?php echo smartyTranslate(array('s'=>'Attribute'),$_smarty_tpl);?>
-</li>
-		</ul>
-	<?php } elseif ($_smarty_tpl->tpl_vars['input']->value['type']=='radio'&&$_smarty_tpl->tpl_vars['input']->value['name']=='feature') {?>
-		<ul>
-			<li><?php echo smartyTranslate(array('s'=>'Features tab on product page'),$_smarty_tpl);?>
-</li>
-			<li><?php echo smartyTranslate(array('s'=>'Feature'),$_smarty_tpl);?>
-</li>
-			<li><?php echo smartyTranslate(array('s'=>'Feature value'),$_smarty_tpl);?>
-</li>
-		</ul>
-	<?php }?>
-
 								</div>
 							
 						<?php }?>
 						</div>
 						
-	<?php if ($_smarty_tpl->tpl_vars['input']->value['name']=='caching_system'||$_smarty_tpl->tpl_vars['input']->value['name']=='smarty_caching_type'||$_smarty_tpl->tpl_vars['input']->value['name']=='smarty_clear_cache'||$_smarty_tpl->tpl_vars['input']->value['name']=='smarty_local') {?></div><?php }?>
-
 					<?php } ?>
 					<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0][0]->smartyHook(array('h'=>'displayAdminForm','fieldset'=>$_smarty_tpl->tpl_vars['f']->value),$_smarty_tpl);?>
 
@@ -1365,95 +1329,6 @@ $_smarty_tpl->tpl_vars['p']->_loop = true;
 					</div>
 				<?php }?>
 				
-	<?php if ($_smarty_tpl->tpl_vars['key']->value=='memcachedServers') {?>
-		<div id="memcachedServers">
-			<div class="form-group">
-				<div class="col-lg-9 col-lg-push-3">
-					<button id="addMemcachedServer" class="btn btn-default" type="button" >
-						<i class="icon-plus-sign-alt"></i>&nbsp;<?php echo smartyTranslate(array('s'=>'Add server'),$_smarty_tpl);?>
-
-					</button>
-				</div>
-			</div>
-			<div id="formMemcachedServer" style="display:none;">
-					<div class="form-group">
-						<label class="control-label col-lg-3"><?php echo smartyTranslate(array('s'=>'IP Address'),$_smarty_tpl);?>
- </label>
-						<div class="col-lg-9">
-							<input class="form-control" type="text" name="memcachedIp" />
-						</div>
-					</div>
-					<div class="form-group">
-						<label class="control-label col-lg-3"><?php echo smartyTranslate(array('s'=>'Port'),$_smarty_tpl);?>
- </label>
-						<div class="col-lg-9">
-							<input class="form-control" type="text" name="memcachedPort" value="11211" />
-						</div>
-					</div>
-					<div class="form-group">
-						<label class="control-label col-lg-3"><?php echo smartyTranslate(array('s'=>'Weight'),$_smarty_tpl);?>
- </label>
-						<div class="col-lg-9">
-							<input class="form-control" type="text" name="memcachedWeight" value="1" />
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="col-lg-9 col-lg-push-3">
-							<input type="submit" value="<?php echo smartyTranslate(array('s'=>'Add Server'),$_smarty_tpl);?>
-" name="submitAddServer" class="btn btn-default" />
-							<input type="button" value="<?php echo smartyTranslate(array('s'=>'Test Server'),$_smarty_tpl);?>
-" id="testMemcachedServer" class="btn btn-default" />
-	                	</div>
-					</div>
-			</div>
-			<?php if ($_smarty_tpl->tpl_vars['servers']->value) {?>
-			<div class="form-group">
-				<table class="table">
-					<thead>
-						<tr>
-							<th class="fixed-width-xs"><span class="title_box"><?php echo smartyTranslate(array('s'=>'ID','d'=>'Admin.Global'),$_smarty_tpl);?>
-</span></th>
-							<th><span class="title_box"><?php echo smartyTranslate(array('s'=>'IP address'),$_smarty_tpl);?>
-</span></th>
-							<th class="fixed-width-xs"><span class="title_box"><?php echo smartyTranslate(array('s'=>'Port'),$_smarty_tpl);?>
-</span></th>
-							<th class="fixed-width-xs"><span class="title_box"><?php echo smartyTranslate(array('s'=>'Weight'),$_smarty_tpl);?>
-</span></th>
-							<th>&nbsp;</th>
-						</tr>
-					</thead>
-					<tbody>
-				<?php  $_smarty_tpl->tpl_vars['server'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['server']->_loop = false;
- $_from = $_smarty_tpl->tpl_vars['servers']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
-foreach ($_from as $_smarty_tpl->tpl_vars['server']->key => $_smarty_tpl->tpl_vars['server']->value) {
-$_smarty_tpl->tpl_vars['server']->_loop = true;
-?>
-					<tr>
-						<td><?php echo $_smarty_tpl->tpl_vars['server']->value['id_memcached_server'];?>
-</td>
-						<td><?php echo $_smarty_tpl->tpl_vars['server']->value['ip'];?>
-</td>
-						<td><?php echo $_smarty_tpl->tpl_vars['server']->value['port'];?>
-</td>
-						<td><?php echo $_smarty_tpl->tpl_vars['server']->value['weight'];?>
-</td>
-						<td>
-							<a class="btn btn-default" href="<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_MODIFIER]['escape'][0][0]->smartyEscape($_smarty_tpl->tpl_vars['currentIndex']->value,'html','UTF-8');?>
-&amp;token=<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_MODIFIER]['escape'][0][0]->smartyEscape($_smarty_tpl->tpl_vars['token']->value,'html','UTF-8');?>
-&amp;deleteMemcachedServer=<?php echo $_smarty_tpl->tpl_vars['server']->value['id_memcached_server'];?>
-" onclick="if (!confirm('<?php echo smartyTranslate(array('s'=>'Do you really want to remove the server %s:%s','sprintf'=>array($_smarty_tpl->tpl_vars['server']->value['ip'],$_smarty_tpl->tpl_vars['server']->value['port']),'js'=>1),$_smarty_tpl);?>
-')) return false;"><i class="icon-minus-sign-alt"></i> <?php echo smartyTranslate(array('s'=>'Remove'),$_smarty_tpl);?>
-</a>
-						</td>
-					</tr>
-				<?php } ?>
-					</tbody>
-				</table>
-			</div>
-			<?php }?>
-		</div>
-	<?php }?>
-
 			<?php } ?>
 			
 			<?php $_smarty_tpl->_capture_stack[0][] = array('form_submit_btn', null, null); ob_start(); ?><?php echo smarty_function_counter(array('name'=>'form_submit_btn'),$_smarty_tpl);?>
@@ -1660,104 +1535,31 @@ $_smarty_tpl->tpl_vars['language']->_loop = true;
 	state_token = '<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['getAdminToken'][0][0]->getAdminTokenLiteSmarty(array('tab'=>'AdminStates'),$_smarty_tpl);?>
 ';
 	
-	function showMemcached() {
-		if (
-      $('input[name="caching_system"]:radio:checked').val() == 'CacheMemcache'
-      || $('input[name="caching_system"]:radio:checked').val() == 'CacheMemcached'
-    ) {
-			$('#memcachedServers').css('display', $('#cache_active_on').is(':checked') ? 'block' : 'none');
-		} else {
-			$('#memcachedServers').hide();
-		}
-	}
 
 	$(document).ready(function() {
+		var btn_save_date = $('span[class~="process-icon-save-date"]').parent();
+		var btn_submit_date = $('#submitPrint');
 
-		showMemcached();
+		if (btn_save_date.length > 0 && btn_submit_date.length > 0)
+		{
+			btn_submit_date.hide();
+			btn_save_date.find('span').removeClass('process-icon-save-date');
+			btn_save_date.find('span').addClass('process-icon-save-calendar');
+			btn_save_date.click(function() {
+				btn_submit_date.before('<input type="hidden" name="'+btn_submit_date.attr("name")+'" value="1" />');
 
-		$('input[name="cache_active"]').change(function() {
-			$('#caching_system_wrapper').css('display', ($(this).val() == 1) ? 'block' : 'none');
-			showMemcached();
-		});
-
-		$('input[name="caching_system"]').change(function() {
-			$('#cache_up').val(1);
-			showMemcached();
-		});
-
-		$('input[name="smarty_cache"]').change(function() {
-			$('#smarty_caching_type_wrapper').css('display', ($(this).val() == 1) ? 'block' : 'none');
-			$('#smarty_clear_cache_wrapper').css('display', ($(this).val() == 1) ? 'block' : 'none');
-			$('#smarty_local_wrapper').css('display', ($(this).val() == 1) ? 'block' : 'none');
-		});
-
-		$('#addMemcachedServer').click(function() {
-			$('#formMemcachedServer').show();
-			return false;
-		});
-
-		$('#testMemcachedServer').click(function() {
-			var host = $('input:text[name=memcachedIp]').val();
-			var port = $('input:text[name=memcachedPort]').val();
-			var type = $('input[name="caching_system"]:radio:checked').val() == 'CacheMemcached' ? 'memcached' : 'memcache';
-			if (host && port)
-			{
-				$.ajax({
-					url: 'index.php',
-					data:
-					{
-						controller: 'adminperformance',
-						token: '<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_MODIFIER]['escape'][0][0]->smartyEscape($_smarty_tpl->tpl_vars['token']->value,'html','UTF-8');?>
-',
-						action: 'test_server',
-						sHost: host,
-						sPort: port,
-						type: type,
-						ajax: true
-					},
-					context: document.body,
-					dataType: 'json',
-					context: this,
-					async: false,
-					success: function(data)
-					{
-						if (data && $.isArray(data))
-						{
-							var color = data[0] != 0 ? 'green' : 'red';
-							$('#formMemcachedServerStatus').show();
-							$('input:text[name=memcachedIp]').css('background', color);
-							$('input:text[name=memcachedPort]').css('background', color);
-						}
-					}
-				});
-			}
-			return false;
-		});
-
-		$('input[name="smarty_force_compile"], input[name="smarty_cache"], input[name="smarty_local"], input[name="smarty_clear_cache"], input[name="smarty_caching_type"], input[name="smarty_console"], input[name="smarty_console_key"]').change(function(){
-			$('#smarty_up').val(1);
-		});
-
-		$('input[name="combination"], input[name="feature"], input[name="customer_group"]').change(function(){
-			$('#features_detachables_up').val(1);
-		});
-
-    $('input[name="_MEDIA_SERVER_1_"], input[name="_MEDIA_SERVER_2_"], input[name="_MEDIA_SERVER_3_"]').change(function(){
-			$('#media_server_up').val(1);
-		});
-
-		$('input[name="cache_active"]').change(function(){
-			$('#cache_up').val(1);
-		});
+				$('#order_slip_form').submit();
+			});
+		}
 	});
 
 
 	</script>
 <?php }?>
 <?php }} ?>
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-22 22:15:28
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-22 12:34:37
          compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/default/template/helpers/form/form_group.tpl" */ ?>
-<?php if ($_valid && !is_callable('content_58fb73904cf6b7_80749395')) {function content_58fb73904cf6b7_80749395($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_58faeb6db8b059_80539608')) {function content_58faeb6db8b059_80539608($_smarty_tpl) {?>
 
 <?php if (count($_smarty_tpl->tpl_vars['groups']->value)&&isset($_smarty_tpl->tpl_vars['groups']->value)) {?>
 <div class="row">

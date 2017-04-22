@@ -1,6 +1,12 @@
+<<<<<<< HEAD:app/cache/dev/smarty/compile/42/f9/46/42f9461127ce7396a601c2484841253ea5ba658f.module.ps_customeraccountlinks.tpl.cache.php
 <?php /* Smarty version Smarty-3.1.19, created on 2017-04-22 22:09:36
          compiled from "module:ps_customeraccountlinks/ps_customeraccountlinks.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:111302925558fb7230e66fa2-75837107%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+=======
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-22 12:44:20
+         compiled from "module:ps_customeraccountlinks/ps_customeraccountlinks.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:46469140258faedb4b5e616-61587094%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+>>>>>>> dev:app/cache/dev/smarty/compile/42/f9/46/42f9461127ce7396a601c2484841253ea5ba658f.module.ps_customeraccountlinks.tpl.php
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +17,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'module',
     ),
   ),
+<<<<<<< HEAD:app/cache/dev/smarty/compile/42/f9/46/42f9461127ce7396a601c2484841253ea5ba658f.module.ps_customeraccountlinks.tpl.cache.php
   'nocache_hash' => '111302925558fb7230e66fa2-75837107',
+=======
+  'nocache_hash' => '46469140258faedb4b5e616-61587094',
+>>>>>>> dev:app/cache/dev/smarty/compile/42/f9/46/42f9461127ce7396a601c2484841253ea5ba658f.module.ps_customeraccountlinks.tpl.php
   'function' => 
   array (
   ),
@@ -23,9 +33,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
+<<<<<<< HEAD:app/cache/dev/smarty/compile/42/f9/46/42f9461127ce7396a601c2484841253ea5ba658f.module.ps_customeraccountlinks.tpl.cache.php
   'unifunc' => 'content_58fb7230e7bc78_79574216',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_58fb7230e7bc78_79574216')) {function content_58fb7230e7bc78_79574216($_smarty_tpl) {?><!-- begin /home/steven/GitRepository/taorai/themes/classic/modules/ps_customeraccountlinks/ps_customeraccountlinks.tpl -->
+=======
+  'unifunc' => 'content_58faedb4b6fb18_44150888',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_58faedb4b6fb18_44150888')) {function content_58faedb4b6fb18_44150888($_smarty_tpl) {?><!-- begin /home/steven/GitRepository/taorai/themes/classic/modules/ps_customeraccountlinks/ps_customeraccountlinks.tpl -->
+>>>>>>> dev:app/cache/dev/smarty/compile/42/f9/46/42f9461127ce7396a601c2484841253ea5ba658f.module.ps_customeraccountlinks.tpl.php
 
 <div id="block_myaccount_infos" class="col-md-2 links wrapper">
   <h3 class="myaccount-title hidden-sm-down">
