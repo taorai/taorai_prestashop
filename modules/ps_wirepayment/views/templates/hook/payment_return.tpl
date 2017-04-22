@@ -36,10 +36,10 @@
     </p>
     <strong>{l s='Your order will be sent as soon as we receive payment.' d='Modules.Wirepayment.Shop'}</strong>
     <p>
-      {l s='If you have questions, comments or concerns, please contact our [1]expert customer support team[/1].' d='Modules.Wirepayment.Shop' sprintf=['[1]' => "<a href='{$contact_url}'>", '[/1]' => '</a>']}
+      {l s='If you have questions, comments or concerns, please [1]contact us[/1].' d='Modules.Wirepayment.Shop' sprintf=['[1]' => "<a href='mailto:taorai.asia@gmail.com'>", '[/1]' => '</a>']}
     </p>
 {else}
     <p class="warning">
-      {l s='We noticed a problem with your order. If you think this is an error, feel free to contact our [1]expert customer support team[/1].' d='Modules.Wirepayment.Shop' sprintf=['[1]' => "<a href='{$contact_url}'>", '[/1]' => '</a>']}
+      {l s='We noticed a problem with your order. If you think this is an error, feel free to [1]contact us[/1].' d='Modules.Wirepayment.Shop' sprintf=['[1]' => "<a href='mailto:taorai.asia@gmail.com'>", '[/1]' => '</a>']}
     </p>
 {/if}

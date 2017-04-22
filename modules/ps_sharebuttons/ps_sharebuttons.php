@@ -178,7 +178,7 @@ class Ps_Sharebuttons extends Module implements WidgetInterface
             $social_share_links['facebook'] = array(
                 'label' => $this->trans('Share', array(), 'Modules.Sharebuttons.Shop'),
                 'class' => 'facebook',
-                'url' => 'http://www.facebook.com/sharer.php?u='.$sharing_url,
+                'url' => 'https://www.facebook.com/sharer.php?u='.$sharing_url,
             );
         }
 

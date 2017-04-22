@@ -24,7 +24,7 @@
  *}
 {block name='footer'}
 <div class="text-xs-center">
-  <i class="material-icons">&#xE90C;</i> 2016 - <strong>CLASSIC</strong> - {l s='Ecommerce software by' d='Shop.Theme'}
-  <strong>PrestaShop<sup>TM</sup></strong>
+  <i class="material-icons">&#xE90C;</i> 2017 - {l s='Powered by' d='Shop.Theme'}
+  <strong>taorai.asia</strong>
 </div>
 {/block}

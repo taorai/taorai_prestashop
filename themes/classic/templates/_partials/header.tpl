@@ -34,7 +34,6 @@
         <div class="row">
           <div class="hidden-sm-down">
             <div class="col-md-4 col-xs-12">
-<!--               {hook h='displayNav1'} -->
             </div>
             <div class="col-md-8 right-nav">
                 {hook h='displayNav2'}

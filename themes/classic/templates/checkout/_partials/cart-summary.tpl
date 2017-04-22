@@ -29,18 +29,18 @@
     {/block}
 
     {block name='cart_summary_products'}
-      <div class="cart-summary-products">
+      <div class="cart-summary-products" aria-expanded="true">
 
         <p>{$cart.summary_string}</p>
 
-        <p>
-          <a href="#" data-toggle="collapse" data-target="#cart-summary-product-list">
+<!--         <p>
+          <a href="#" data-toggle="collapse" data-target="#cart-summary-product-list" aria-expanded="true">
             {l s='show details' d='Shop.Theme.Actions'}
           </a>
-        </p>
+        </p> -->
 
         {block name='cart_summary_product_list'}
-          <div class="collapse" id="cart-summary-product-list">
+          <div class="collapse in" id="cart-summary-product-list">
             <ul class="media-list">
               {foreach from=$cart.products item=product}
                 <li class="media">{include file='checkout/_partials/cart-summary-product-line.tpl' product=$product}</li>
