@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-22 08:36:09
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-24 21:12:47
          compiled from "/home/steven/GitRepository/taorai/themes/classic/templates/catalog/_partials/product-images-modal.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:207328629658fab3893a9c64-99019859%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:111507580658fe07dfd53d44-48772710%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '207328629658fab3893a9c64-99019859',
+  'nocache_hash' => '111507580658fe07dfd53d44-48772710',
   'function' => 
   array (
   ),
@@ -23,9 +23,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_58fab3893d3315_23171642',
+  'unifunc' => 'content_58fe07dfd7f860_52706572',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58fab3893d3315_23171642')) {function content_58fab3893d3315_23171642($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_58fe07dfd7f860_52706572')) {function content_58fe07dfd7f860_52706572($_smarty_tpl) {?>
 <div class="modal fade js-product-images-modal" id="product-modal">
   <div class="modal-dialog" role="document">
     <div class="modal-content">

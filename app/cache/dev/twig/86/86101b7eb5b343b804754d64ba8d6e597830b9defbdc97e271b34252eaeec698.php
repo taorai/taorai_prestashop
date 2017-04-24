@@ -15,8 +15,8 @@ class __TwigTemplate_8452f74e66bc5f922f65b87d3a1c7b469c5d733c660acf4c15041d1d04e
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_f9baec8a410fa0d0d85353067d2129a6ab75d0572e4c16d2d6ff62e269e501e3 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_f9baec8a410fa0d0d85353067d2129a6ab75d0572e4c16d2d6ff62e269e501e3->enter($__internal_f9baec8a410fa0d0d85353067d2129a6ab75d0572e4c16d2d6ff62e269e501e3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PrestaShopBundle:Admin/Common/_partials:_header_tab.html.twig"));
+        $__internal_84758b2c02c01c04ca05902efb4568bd3414f4c70e813932c1513cd4c5a768a9 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_84758b2c02c01c04ca05902efb4568bd3414f4c70e813932c1513cd4c5a768a9->enter($__internal_84758b2c02c01c04ca05902efb4568bd3414f4c70e813932c1513cd4c5a768a9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PrestaShopBundle:Admin/Common/_partials:_header_tab.html.twig"));
 
         // line 25
         echo "<a class=\"tab";
@@ -45,7 +45,7 @@ class __TwigTemplate_8452f74e66bc5f922f65b87d3a1c7b469c5d733c660acf4c15041d1d04e
         echo "</a>
 ";
         
-        $__internal_f9baec8a410fa0d0d85353067d2129a6ab75d0572e4c16d2d6ff62e269e501e3->leave($__internal_f9baec8a410fa0d0d85353067d2129a6ab75d0572e4c16d2d6ff62e269e501e3_prof);
+        $__internal_84758b2c02c01c04ca05902efb4568bd3414f4c70e813932c1513cd4c5a768a9->leave($__internal_84758b2c02c01c04ca05902efb4568bd3414f4c70e813932c1513cd4c5a768a9_prof);
 
     }
 

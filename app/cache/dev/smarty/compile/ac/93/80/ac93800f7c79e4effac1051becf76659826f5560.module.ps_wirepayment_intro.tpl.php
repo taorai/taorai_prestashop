@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-22 11:12:55
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-24 20:30:45
          compiled from "module:ps_wirepayment/views/templates/hook/ps_wirepayment_intro.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:33711298158fad8478e6e97-86351517%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:15634943458fdfe05383b81-51693976%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'module',
     ),
   ),
-  'nocache_hash' => '33711298158fad8478e6e97-86351517',
+  'nocache_hash' => '15634943458fdfe05383b81-51693976',
   'function' => 
   array (
   ),
@@ -22,9 +22,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_58fad8478f8e29_29345752',
+  'unifunc' => 'content_58fdfe05396020_14099427',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58fad8478f8e29_29345752')) {function content_58fad8478f8e29_29345752($_smarty_tpl) {?><!-- begin /home/steven/GitRepository/taorai/modules/ps_wirepayment/views/templates/hook/ps_wirepayment_intro.tpl -->
+<?php if ($_valid && !is_callable('content_58fdfe05396020_14099427')) {function content_58fdfe05396020_14099427($_smarty_tpl) {?><!-- begin /home/steven/GitRepository/taorai/modules/ps_wirepayment/views/templates/hook/ps_wirepayment_intro.tpl -->
 
 <section>
   <p>

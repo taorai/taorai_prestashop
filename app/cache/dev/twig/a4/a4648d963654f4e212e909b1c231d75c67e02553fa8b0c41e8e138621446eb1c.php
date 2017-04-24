@@ -15,8 +15,8 @@ class __TwigTemplate_b79b56869f5f685e9fc0a8ba276ebaadcbab7d29884871ddd74cf5e6557
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_ffd03001459c0cf89c1c65b15e6a0ab7b92a4b797a7e7c8c2281d6b72e0875f4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_ffd03001459c0cf89c1c65b15e6a0ab7b92a4b797a7e7c8c2281d6b72e0875f4->enter($__internal_ffd03001459c0cf89c1c65b15e6a0ab7b92a4b797a7e7c8c2281d6b72e0875f4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PrestaShopBundle:Admin/Product/Include:form_combination.html.twig"));
+        $__internal_3d9b1056fc9c2b03b7ede2b5223ace2ce09f5fb75ac21918e2b2f84a1d0789d6 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_3d9b1056fc9c2b03b7ede2b5223ace2ce09f5fb75ac21918e2b2f84a1d0789d6->enter($__internal_3d9b1056fc9c2b03b7ede2b5223ace2ce09f5fb75ac21918e2b2f84a1d0789d6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PrestaShopBundle:Admin/Product/Include:form_combination.html.twig"));
 
         // line 25
         echo "<tr class=\"combination loaded\" id=\"attribute_";
@@ -468,7 +468,7 @@ class __TwigTemplate_b79b56869f5f685e9fc0a8ba276ebaadcbab7d29884871ddd74cf5e6557
 </tr>
 ";
         
-        $__internal_ffd03001459c0cf89c1c65b15e6a0ab7b92a4b797a7e7c8c2281d6b72e0875f4->leave($__internal_ffd03001459c0cf89c1c65b15e6a0ab7b92a4b797a7e7c8c2281d6b72e0875f4_prof);
+        $__internal_3d9b1056fc9c2b03b7ede2b5223ace2ce09f5fb75ac21918e2b2f84a1d0789d6->leave($__internal_3d9b1056fc9c2b03b7ede2b5223ace2ce09f5fb75ac21918e2b2f84a1d0789d6_prof);
 
     }
 

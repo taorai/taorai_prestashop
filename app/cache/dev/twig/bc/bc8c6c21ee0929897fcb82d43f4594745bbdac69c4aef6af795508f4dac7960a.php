@@ -15,8 +15,8 @@ class __TwigTemplate_127a12e19e7ffdab13a51bdcd4c6184411f1444fac2322e3f1532dd6db4
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_4e9f0f0fc9cfa4005fcb7232f38c12e9372d276c0f3a85d1f3a63f4794edf9f2 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_4e9f0f0fc9cfa4005fcb7232f38c12e9372d276c0f3a85d1f3a63f4794edf9f2->enter($__internal_4e9f0f0fc9cfa4005fcb7232f38c12e9372d276c0f3a85d1f3a63f4794edf9f2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PrestaShopBundle:Admin:Product/Include/form-supplier-choice.html.twig"));
+        $__internal_641733d945c7e792a2c0d0da21c73f44f1b842c0d81928423986ccb4bf26c5d7 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_641733d945c7e792a2c0d0da21c73f44f1b842c0d81928423986ccb4bf26c5d7->enter($__internal_641733d945c7e792a2c0d0da21c73f44f1b842c0d81928423986ccb4bf26c5d7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PrestaShopBundle:Admin:Product/Include/form-supplier-choice.html.twig"));
 
         // line 25
         if ((twig_length_filter($this->env, $this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "suppliers", array())) > 0)) {
@@ -109,7 +109,7 @@ class __TwigTemplate_127a12e19e7ffdab13a51bdcd4c6184411f1444fac2322e3f1532dd6db4
 ";
         }
         
-        $__internal_4e9f0f0fc9cfa4005fcb7232f38c12e9372d276c0f3a85d1f3a63f4794edf9f2->leave($__internal_4e9f0f0fc9cfa4005fcb7232f38c12e9372d276c0f3a85d1f3a63f4794edf9f2_prof);
+        $__internal_641733d945c7e792a2c0d0da21c73f44f1b842c0d81928423986ccb4bf26c5d7->leave($__internal_641733d945c7e792a2c0d0da21c73f44f1b842c0d81928423986ccb4bf26c5d7_prof);
 
     }
 

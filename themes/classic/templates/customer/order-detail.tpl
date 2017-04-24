@@ -82,7 +82,7 @@
   {block name='order_history'}
     <section id="order-history" class="box">
       <h3>{l s='Follow your order\'s status step-by-step' d='Shop.Theme.Customeraccount'}</h3>
-      <table class="table table-striped table-bordered table-labeled hidden-xs-down">
+      <table class="table table-bordered table-labeled hidden-xs-down">
         <thead class="thead-default">
           <tr>
             <th>{l s='Date' d='Shop.Theme'}</th>
@@ -106,7 +106,7 @@
         {foreach from=$order.history item=state}
           <div class="history-line">
             <div class="date">{$state.history_date}</div>
-            <div class="state">
+            <div class="state" style="text-align: -webkit-right;">
               <span class="label label-pill {$state.contrast}" style="background-color:{$state.color}">
                 {$state.ostate_name}
               </span>
@@ -158,7 +158,7 @@
   {block name='order_carriers'}
     {if $order.shipping}
       <div class="box">
-        <table class="table table-striped table-bordered hidden-sm-down">
+        <table class="table table-bordered hidden-sm-down">
           <thead class="thead-default">
             <tr>
               <th>{l s='Date' d='Shop.Theme'}</th>
