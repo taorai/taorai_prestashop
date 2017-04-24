@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-22 11:20:25
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-24 21:35:04
          compiled from "/home/steven/GitRepository/taorai/themes/classic/templates/customer/_partials/login-form.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:166406033458fada099fe082-94640844%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:110789939958fe0d18ce05b2-85145194%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,7 +17,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '166406033458fada099fe082-94640844',
+  'nocache_hash' => '110789939958fe0d18ce05b2-85145194',
   'function' => 
   array (
   ),
@@ -31,16 +31,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_58fada09a28ff2_73907247',
+  'unifunc' => 'content_58fe0d18d09595_03468761',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58fada09a28ff2_73907247')) {function content_58fada09a28ff2_73907247($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_58fe0d18d09595_03468761')) {function content_58fe0d18d09595_03468761($_smarty_tpl) {?>
 
 
   
     <?php /*  Call merged included template "_partials/form-errors.tpl" */
 $_tpl_stack[] = $_smarty_tpl;
- $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('_partials/form-errors.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('errors'=>$_smarty_tpl->tpl_vars['errors']->value['']), 0, '166406033458fada099fe082-94640844');
-content_58fada09a03fa8_76935216($_smarty_tpl);
+ $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('_partials/form-errors.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('errors'=>$_smarty_tpl->tpl_vars['errors']->value['']), 0, '110789939958fe0d18ce05b2-85145194');
+content_58fe0d18ce5ea8_26742451($_smarty_tpl);
 $_smarty_tpl = array_pop($_tpl_stack); 
 /*  End of included template "_partials/form-errors.tpl" */?>
   
@@ -85,9 +85,9 @@ $_smarty_tpl->tpl_vars["field"]->_loop = true;
   </form>
 
 <?php }} ?>
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-22 11:20:25
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-24 21:35:04
          compiled from "/home/steven/GitRepository/taorai/themes/classic/templates/_partials/form-errors.tpl" */ ?>
-<?php if ($_valid && !is_callable('content_58fada09a03fa8_76935216')) {function content_58fada09a03fa8_76935216($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_58fe0d18ce5ea8_26742451')) {function content_58fe0d18ce5ea8_26742451($_smarty_tpl) {?>
 <?php if (count($_smarty_tpl->tpl_vars['errors']->value)) {?>
   <div class="help-block">
     

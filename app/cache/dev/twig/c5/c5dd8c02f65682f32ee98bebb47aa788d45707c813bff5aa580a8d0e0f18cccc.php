@@ -15,8 +15,8 @@ class __TwigTemplate_ec5f5c9ec573f6703f7f8ef4700d006429229ce286c7444f0f1b55d27a0
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_5b265abdd0adf5081208c9fc893f4e8073a62aa261d1f85833e9ac00189453f6 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_5b265abdd0adf5081208c9fc893f4e8073a62aa261d1f85833e9ac00189453f6->enter($__internal_5b265abdd0adf5081208c9fc893f4e8073a62aa261d1f85833e9ac00189453f6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PrestaShopBundle:Admin/Module/Includes:dropdown_categories.html.twig"));
+        $__internal_eb7681ea2f44fe230e0e2038c1554e81bd76352c237a59b80f907eeba96b4cdc = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_eb7681ea2f44fe230e0e2038c1554e81bd76352c237a59b80f907eeba96b4cdc->enter($__internal_eb7681ea2f44fe230e0e2038c1554e81bd76352c237a59b80f907eeba96b4cdc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PrestaShopBundle:Admin/Module/Includes:dropdown_categories.html.twig"));
 
         // line 25
         echo "<div class=\"ps-dropdown dropdown btn-group\">
@@ -90,7 +90,7 @@ class __TwigTemplate_ec5f5c9ec573f6703f7f8ef4700d006429229ce286c7444f0f1b55d27a0
         echo "</div>
 ";
         
-        $__internal_5b265abdd0adf5081208c9fc893f4e8073a62aa261d1f85833e9ac00189453f6->leave($__internal_5b265abdd0adf5081208c9fc893f4e8073a62aa261d1f85833e9ac00189453f6_prof);
+        $__internal_eb7681ea2f44fe230e0e2038c1554e81bd76352c237a59b80f907eeba96b4cdc->leave($__internal_eb7681ea2f44fe230e0e2038c1554e81bd76352c237a59b80f907eeba96b4cdc_prof);
 
     }
 

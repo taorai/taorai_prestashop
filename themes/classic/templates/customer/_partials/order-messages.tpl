@@ -28,12 +28,12 @@
       <h3>{l s='Messages' d='Shop.Theme.Customeraccount'}</h3>
       {foreach from=$order.messages item=message}
         <div class="message row">
-          <div class="col-sm-4">
-            {$message.name}<br/>
-            {$message.message_date}
-          </div>
           <div class="col-sm-8">
             {$message.message nofilter}
+          </div>
+          <div class="col-sm-4" style="float: right;font-style: italic;">
+            <!-- {$message.name}<br/> -->
+            {$message.message_date}
           </div>
         </div>
       {/foreach}

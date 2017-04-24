@@ -17,8 +17,8 @@ class __TwigTemplate_cd881cb9a3107fd549c42f8678b32ef086fe341ed5fa6ccbf30141cedc4
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_d01645712676fe4950d75cb68c763145286c0426e9ea4b75998227cf18764eb5 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_d01645712676fe4950d75cb68c763145286c0426e9ea4b75998227cf18764eb5->enter($__internal_d01645712676fe4950d75cb68c763145286c0426e9ea4b75998227cf18764eb5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PrestaShopBundle:Admin/Module/Includes:card_grid.html.twig"));
+        $__internal_bac73e63ca517d29df69aa0a7b3c793b912b9d7bbee4e107c52ca5be6b8851a0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_bac73e63ca517d29df69aa0a7b3c793b912b9d7bbee4e107c52ca5be6b8851a0->enter($__internal_bac73e63ca517d29df69aa0a7b3c793b912b9d7bbee4e107c52ca5be6b8851a0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PrestaShopBundle:Admin/Module/Includes:card_grid.html.twig"));
 
         // line 25
         $context["isModuleActive"] = (($this->getAttribute($this->getAttribute(($context["module"] ?? null), "database", array(), "any", false, true), "active", array(), "any", true, true)) ? (_twig_default_filter($this->getAttribute($this->getAttribute(($context["module"] ?? null), "database", array(), "any", false, true), "active", array()), "0")) : ("0"));
@@ -179,15 +179,15 @@ class __TwigTemplate_cd881cb9a3107fd549c42f8678b32ef086fe341ed5fa6ccbf30141cedc4
 </div>
 ";
         
-        $__internal_d01645712676fe4950d75cb68c763145286c0426e9ea4b75998227cf18764eb5->leave($__internal_d01645712676fe4950d75cb68c763145286c0426e9ea4b75998227cf18764eb5_prof);
+        $__internal_bac73e63ca517d29df69aa0a7b3c793b912b9d7bbee4e107c52ca5be6b8851a0->leave($__internal_bac73e63ca517d29df69aa0a7b3c793b912b9d7bbee4e107c52ca5be6b8851a0_prof);
 
     }
 
     // line 61
     public function block_addon_version($context, array $blocks = array())
     {
-        $__internal_81dd964fe63c71473450be7bf5c3edbcbff342626a90a3695b93a3f9a4b4328f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_81dd964fe63c71473450be7bf5c3edbcbff342626a90a3695b93a3f9a4b4328f->enter($__internal_81dd964fe63c71473450be7bf5c3edbcbff342626a90a3695b93a3f9a4b4328f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "addon_version"));
+        $__internal_659f59a4f98ee449cb8a12a939edf6457926c774e418fd211935503d17cc18de = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_659f59a4f98ee449cb8a12a939edf6457926c774e418fd211935503d17cc18de->enter($__internal_659f59a4f98ee449cb8a12a939edf6457926c774e418fd211935503d17cc18de_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "addon_version"));
 
         // line 62
         echo "          ";
@@ -207,15 +207,15 @@ class __TwigTemplate_cd881cb9a3107fd549c42f8678b32ef086fe341ed5fa6ccbf30141cedc4
         // line 67
         echo "        ";
         
-        $__internal_81dd964fe63c71473450be7bf5c3edbcbff342626a90a3695b93a3f9a4b4328f->leave($__internal_81dd964fe63c71473450be7bf5c3edbcbff342626a90a3695b93a3f9a4b4328f_prof);
+        $__internal_659f59a4f98ee449cb8a12a939edf6457926c774e418fd211935503d17cc18de->leave($__internal_659f59a4f98ee449cb8a12a939edf6457926c774e418fd211935503d17cc18de_prof);
 
     }
 
     // line 71
     public function block_addon_description($context, array $blocks = array())
     {
-        $__internal_303c802920823c5fa800aa780a10dbb342efcc49fedf65512df286ed639dc97b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_303c802920823c5fa800aa780a10dbb342efcc49fedf65512df286ed639dc97b->enter($__internal_303c802920823c5fa800aa780a10dbb342efcc49fedf65512df286ed639dc97b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "addon_description"));
+        $__internal_fa3d9ff2fd9b7efb16ee3d255d63096ad00de3018f3882039f36af4b3f7d86b7 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_fa3d9ff2fd9b7efb16ee3d255d63096ad00de3018f3882039f36af4b3f7d86b7->enter($__internal_fa3d9ff2fd9b7efb16ee3d255d63096ad00de3018f3882039f36af4b3f7d86b7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "addon_description"));
 
         // line 72
         echo "        <div class=\"module-quick-description-text\">
@@ -251,7 +251,7 @@ class __TwigTemplate_cd881cb9a3107fd549c42f8678b32ef086fe341ed5fa6ccbf30141cedc4
         echo "        </div>
       ";
         
-        $__internal_303c802920823c5fa800aa780a10dbb342efcc49fedf65512df286ed639dc97b->leave($__internal_303c802920823c5fa800aa780a10dbb342efcc49fedf65512df286ed639dc97b_prof);
+        $__internal_fa3d9ff2fd9b7efb16ee3d255d63096ad00de3018f3882039f36af4b3f7d86b7->leave($__internal_fa3d9ff2fd9b7efb16ee3d255d63096ad00de3018f3882039f36af4b3f7d86b7_prof);
 
     }
 

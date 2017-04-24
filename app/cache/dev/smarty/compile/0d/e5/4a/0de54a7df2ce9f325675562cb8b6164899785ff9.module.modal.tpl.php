@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-22 11:12:46
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-24 13:04:12
          compiled from "module:ps_shoppingcart/modal.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:187876578758fad83ebaf041-28021285%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:28943875758fd955c335b05-57678511%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'module',
     ),
   ),
-  'nocache_hash' => '187876578758fad83ebaf041-28021285',
+  'nocache_hash' => '28943875758fd955c335b05-57678511',
   'function' => 
   array (
   ),
@@ -25,9 +25,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_58fad83ec175a4_93578030',
+  'unifunc' => 'content_58fd955c3a3ad9_01445895',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58fad83ec175a4_93578030')) {function content_58fad83ec175a4_93578030($_smarty_tpl) {?><!-- begin /home/steven/GitRepository/taorai/themes/classic/modules/ps_shoppingcart/modal.tpl --><div id="blockcart-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<?php if ($_valid && !is_callable('content_58fd955c3a3ad9_01445895')) {function content_58fd955c3a3ad9_01445895($_smarty_tpl) {?><!-- begin /home/steven/GitRepository/taorai/themes/classic/modules/ps_shoppingcart/modal.tpl --><div id="blockcart-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">

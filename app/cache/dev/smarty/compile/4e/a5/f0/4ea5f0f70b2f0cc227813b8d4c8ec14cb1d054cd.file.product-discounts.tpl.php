@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-22 08:36:09
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-24 21:12:47
          compiled from "/home/steven/GitRepository/taorai/themes/classic/templates/catalog/_partials/product-discounts.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:22338557758fab38933eeb1-88547229%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:208741653558fe07dfce00f5-81189214%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '22338557758fab38933eeb1-88547229',
+  'nocache_hash' => '208741653558fe07dfce00f5-81189214',
   'function' => 
   array (
   ),
@@ -23,9 +23,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_58fab38935c2c2_26114893',
+  'unifunc' => 'content_58fe07dfd00068_38213634',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58fab38935c2c2_26114893')) {function content_58fab38935c2c2_26114893($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_58fe07dfd00068_38213634')) {function content_58fe07dfd00068_38213634($_smarty_tpl) {?>
 <section class="product-discounts">
   <?php if ($_smarty_tpl->tpl_vars['product']->value['quantity_discounts']) {?>
     <h3 class="h6 product-discounts-title"><?php echo smartyTranslate(array('s'=>'Volume discounts','d'=>'Shop.Theme.Catalog'),$_smarty_tpl);?>

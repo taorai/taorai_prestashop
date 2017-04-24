@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-22 23:04:11
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-24 22:26:22
          compiled from "module:ps_contactinfo/ps_contactinfo.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:132027053658fb7efbb57451-86613789%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:106735002658fe191e6c42e5-47049538%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '9992f3fe04dd41bcec1a2029cf07bead637caf4d' => 
     array (
       0 => 'module:ps_contactinfo/ps_contactinfo.tpl',
-      1 => 1492474529,
+      1 => 1493043824,
       2 => 'module',
     ),
   ),
-  'nocache_hash' => '132027053658fb7efbb57451-86613789',
+  'nocache_hash' => '106735002658fe191e6c42e5-47049538',
   'function' => 
   array (
   ),
@@ -22,9 +22,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_58fb7efbb84a92_95648546',
+  'unifunc' => 'content_58fe191e6f7867_37230313',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58fb7efbb84a92_95648546')) {function content_58fb7efbb84a92_95648546($_smarty_tpl) {?><!-- begin /home/steven/GitRepository/taorai/themes/classic/modules/ps_contactinfo/ps_contactinfo.tpl -->
+<?php if ($_valid && !is_callable('content_58fe191e6f7867_37230313')) {function content_58fe191e6f7867_37230313($_smarty_tpl) {?><!-- begin /home/steven/GitRepository/taorai/themes/classic/modules/ps_contactinfo/ps_contactinfo.tpl -->
 
 <div class="block-contact col-md-4 links wrapper">
   <div class="hidden-sm-down">
@@ -51,12 +51,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
       <?php }?>
   </div>
-  <div class="hidden-md-up">
+<!--   <div class="hidden-md-up">
     <div class="title">
       <a class="h3" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['pages']['stores'], ENT_QUOTES, 'UTF-8');?>
 "><?php echo smartyTranslate(array('s'=>'Store information','d'=>'Shop.Theme'),$_smarty_tpl);?>
 </a>
     </div>
-  </div>
+  </div> -->
 </div>
 <!-- end /home/steven/GitRepository/taorai/themes/classic/modules/ps_contactinfo/ps_contactinfo.tpl --><?php }} ?>
