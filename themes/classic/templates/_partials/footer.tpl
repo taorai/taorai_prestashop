@@ -45,9 +45,7 @@
       <div class="col-md-12">
         <p>
           {block name='copyright_link'}
-            <a class="_blank" href="http://www.prestashop.com" target="_blank">
-              {l s='%copyright% %year% - Ecommerce software by %prestashop%' sprintf=['%prestashop%' => 'PrestaShop™', '%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme'}
-            </a>
+              {l s='%copyright% %year% - Powered by %taorai.asia%' sprintf=['%taorai.asia%' => 'taorai.asia', '%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme'}
           {/block}
         </p>
       </div>

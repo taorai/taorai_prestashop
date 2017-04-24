@@ -165,8 +165,8 @@ File: home/mickaelandrieu/Projects/PrestaShop-17/themes/classic/templates/catalo
   <file original="home/mickaelandrieu/Projects/PrestaShop-17/themes/classic/templates/checkout/_partials/footer.tpl" source-language="fr-FR" target-language="en-US" datatype="plaintext">
     <body>
       <trans-unit id="9fcba387b581ec9abcbff15e62317da5">
-        <source>Ecommerce software by</source>
-        <target>Ecommerce software by</target>
+        <source>Powered by</source>
+        <target>Powered by</target>
         <note>Context:
 File: home/mickaelandrieu/Projects/PrestaShop-17/themes/classic/templates/checkout/_partials/footer.tpl:1</note>
       </trans-unit>

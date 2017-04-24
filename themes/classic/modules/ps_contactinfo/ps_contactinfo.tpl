@@ -66,9 +66,9 @@
         }
       {/if}
   </div>
-  <div class="hidden-md-up">
+<!--   <div class="hidden-md-up">
     <div class="title">
       <a class="h3" href="{$urls.pages.stores}">{l s='Store information' d='Shop.Theme'}</a>
     </div>
-  </div>
+  </div> -->
 </div>

@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-03 23:36:22
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-22 10:06:22
          compiled from "module:ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:132405654158e27a06997cd3-93553447%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:170317615758fac8ae1af668-00223973%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '307dc6bd4724d29d1572cc301dd7148e962604ef' => 
     array (
       0 => 'module:ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl',
-      1 => 1491236446,
+      1 => 1492697577,
       2 => 'module',
     ),
   ),
-  'nocache_hash' => '132405654158e27a06997cd3-93553447',
+  'nocache_hash' => '170317615758fac8ae1af668-00223973',
   'function' => 
   array (
   ),
@@ -25,14 +25,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_58e27a069a0257_34652070',
+  'unifunc' => 'content_58fac8ae1c8442_07567002',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58e27a069a0257_34652070')) {function content_58e27a069a0257_34652070($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_58fac8ae1c8442_07567002')) {function content_58fac8ae1c8442_07567002($_smarty_tpl) {?>
 
-<div class="block_newsletter col-lg-8 col-md-12 col-sm-12">
+<div class="block_newsletter col-lg-8 col-md-12 col-sm-12" style="float: right;">
   <div class="row">
-    <p class="col-md-5 col-xs-12"><?php echo smartyTranslate(array('s'=>'Get our latest news and special sales','d'=>'Shop.Theme'),$_smarty_tpl);?>
-</p>
+    <!-- <p class="col-md-5 col-xs-12"><?php echo smartyTranslate(array('s'=>'Get our latest news and special sales','d'=>'Shop.Theme'),$_smarty_tpl);?>
+</p> -->
     <div class="col-md-7 col-xs-12">
       <form action="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['pages']['index'], ENT_QUOTES, 'UTF-8');?>
 #footer" method="post">

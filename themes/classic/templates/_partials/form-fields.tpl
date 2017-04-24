@@ -55,7 +55,7 @@
           <select
           class="form-control form-control-select js-country"
           name="{$field.name}"
-          {if $field.required}required{/if}
+          {if $field.required}required{/if} disabled="disabled"
           >
             <option value disabled selected>{l s='-- please choose --' d='Shop.Forms.Labels'}</option>
             {foreach from=$field.availableValues item="label" key="value"}
