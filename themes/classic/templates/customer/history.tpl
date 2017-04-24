@@ -32,7 +32,7 @@
   <h6>{l s='Here are the orders you\'ve placed since your account was created.' d='Shop.Theme.Customeraccount'}</h6>
 
   {if $orders}
-    <table class="table table-striped table-bordered table-labeled hidden-sm-down">
+    <table class="table table-bordered table-labeled hidden-sm-down">
       <thead class="thead-default">
         <tr>
           <th>{l s='Order reference' d='Shop.Theme.Checkout'}</th>
@@ -41,12 +41,12 @@
           <th class="hidden-md-down">{l s='Payment' d='Shop.Theme.Checkout'}</th>
           <th class="hidden-md-down">{l s='Status' d='Shop.Theme.Checkout'}</th>
           <th>{l s='Invoice' d='Shop.Theme.Checkout'}</th>
-          <th>&nbsp;</th>
+<!--           <th>&nbsp;</th> -->
         </tr>
       </thead>
       <tbody>
         {foreach from=$orders item=order}
-          <tr>
+          <tr onmouseover="this.className='tr_over'" onmouseout="this.className='tr_out'" onclick="window.parent.location='{$order.details.details_url}'">
             <th scope="row">{$order.details.reference}</th>
             <td>{$order.details.order_date}</td>
             <td class="text-xs-right">{$order.totals.total.value}</td>
@@ -66,14 +66,14 @@
                 -
               {/if}
             </td>
-            <td class="text-xs-center order-actions">
+<!--             <td class="text-xs-center order-actions">
               <a href="{$order.details.details_url}" data-link-action="view-order-details">
                 {l s='Details' d='Shop.Theme.Customeraccount'}
               </a>
               {if $order.details.reorder_url}
                 <a href="{$order.details.reorder_url}">{l s='Reorder' d='Shop.Theme.Actions'}</a>
               {/if}
-            </td>
+            </td> -->
           </tr>
         {/foreach}
       </tbody>
@@ -82,12 +82,13 @@
     <div class="orders hidden-md-up">
       {foreach from=$orders item=order}
         <div class="order">
+        <a href="{$order.details.details_url}">
           <div class="row">
-            <div class="col-xs-10">
-              <a href="{$order.details.details_url}"><h3>{$order.details.reference}</h3></a>
+            <div class="col-xs-12">
+              <h3>{$order.details.reference}</h3>
               <div class="date">{$order.details.order_date}</div>
               <div class="total">{$order.totals.total.value}</div>
-              <div class="status">
+              <div class="status" style="float: right;">
                 <span
                   class="label label-pill {$order.history.current.contrast}"
                   style="background-color:{$order.history.current.color}"
@@ -96,7 +97,7 @@
                 </span>
               </div>
             </div>
-            <div class="col-xs-2 text-xs-right">
+            <!-- <div class="col-xs-2 text-xs-right">
                 <div>
                   <a href="{$order.details.details_url}" data-link-action="view-order-details" title="{l s='Details' d='Shop.Theme.Customeraccount'}">
                     <i class="material-icons">&#xE8B6;</i>
@@ -109,8 +110,9 @@
                     </a>
                   </div>
                 {/if}
-            </div>
+            </div> -->
           </div>
+          </a>
         </div>
       {/foreach}
     </div>

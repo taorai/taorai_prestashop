@@ -15,8 +15,8 @@ class __TwigTemplate_5d8fc0280772c9aa74da285f4152df41dd998f65e606f136fd88414d495
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_ddc74bfedc029f2da6439bac009bd20fa866e68835b6eebdaa055af4baa42afb = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_ddc74bfedc029f2da6439bac009bd20fa866e68835b6eebdaa055af4baa42afb->enter($__internal_ddc74bfedc029f2da6439bac009bd20fa866e68835b6eebdaa055af4baa42afb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PrestaShopBundle:Admin/Module/Includes:menu_top.html.twig"));
+        $__internal_0ff4d5d179e939b36092f7af1bb477f6b7ce72456a5806af0080a7f98b200912 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_0ff4d5d179e939b36092f7af1bb477f6b7ce72456a5806af0080a7f98b200912->enter($__internal_0ff4d5d179e939b36092f7af1bb477f6b7ce72456a5806af0080a7f98b200912_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PrestaShopBundle:Admin/Module/Includes:menu_top.html.twig"));
 
         // line 25
         echo "<div class=\"module-top-menu\">
@@ -62,7 +62,7 @@ class __TwigTemplate_5d8fc0280772c9aa74da285f4152df41dd998f65e606f136fd88414d495
         $context["js_translatable"] = twig_array_merge(array("Search - placeholder" => $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("Search modules: keyword, name, author...", array(), "Admin.Modules.Help")),         // line 52
 ($context["js_translatable"] ?? $this->getContext($context, "js_translatable")));
         
-        $__internal_ddc74bfedc029f2da6439bac009bd20fa866e68835b6eebdaa055af4baa42afb->leave($__internal_ddc74bfedc029f2da6439bac009bd20fa866e68835b6eebdaa055af4baa42afb_prof);
+        $__internal_0ff4d5d179e939b36092f7af1bb477f6b7ce72456a5806af0080a7f98b200912->leave($__internal_0ff4d5d179e939b36092f7af1bb477f6b7ce72456a5806af0080a7f98b200912_prof);
 
     }
 

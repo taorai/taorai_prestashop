@@ -15,8 +15,8 @@ class __TwigTemplate_e1a22d18307b1727a0a550184aa42e8694eafb08880214a50ebd4d13cf7
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_0bc35676ca89fadc6dd091497f66791fab7bf8f6d3019469f09e791d2595a9e4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_0bc35676ca89fadc6dd091497f66791fab7bf8f6d3019469f09e791d2595a9e4->enter($__internal_0bc35676ca89fadc6dd091497f66791fab7bf8f6d3019469f09e791d2595a9e4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PrestaShopBundle:Admin:Category/categories.html.twig"));
+        $__internal_bb56f28dffcac647c79de25660c90ac60181577c23ba6188fdf1e932339d602d = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_bb56f28dffcac647c79de25660c90ac60181577c23ba6188fdf1e932339d602d->enter($__internal_bb56f28dffcac647c79de25660c90ac60181577c23ba6188fdf1e932339d602d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PrestaShopBundle:Admin:Category/categories.html.twig"));
 
         // line 25
         echo "<div id=\"ps_categoryTags\" class=\"pstaggerTagsWrapper\" style=\"display: block;\">
@@ -31,7 +31,7 @@ class __TwigTemplate_e1a22d18307b1727a0a550184aa42e8694eafb08880214a50ebd4d13cf7
 </div>
 ";
         
-        $__internal_0bc35676ca89fadc6dd091497f66791fab7bf8f6d3019469f09e791d2595a9e4->leave($__internal_0bc35676ca89fadc6dd091497f66791fab7bf8f6d3019469f09e791d2595a9e4_prof);
+        $__internal_bb56f28dffcac647c79de25660c90ac60181577c23ba6188fdf1e932339d602d->leave($__internal_bb56f28dffcac647c79de25660c90ac60181577c23ba6188fdf1e932339d602d_prof);
 
     }
 

@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-22 11:12:59
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-24 13:04:49
          compiled from "module:ps_wirepayment/views/templates/hook/payment_return.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:126449238658fad84b26eaa6-36327534%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:156935442958fd95817fae42-75636880%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '75bdf601ec9e01aea0e9e66eb6225ba1b66af2dd' => 
     array (
       0 => 'module:ps_wirepayment/views/templates/hook/payment_return.tpl',
-      1 => 1492831626,
+      1 => 1492875491,
       2 => 'module',
     ),
   ),
-  'nocache_hash' => '126449238658fad84b26eaa6-36327534',
+  'nocache_hash' => '156935442958fd95817fae42-75636880',
   'function' => 
   array (
   ),
@@ -23,9 +23,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_58fad84b2a6a77_94991065',
+  'unifunc' => 'content_58fd9581840124_08538064',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58fad84b2a6a77_94991065')) {function content_58fad84b2a6a77_94991065($_smarty_tpl) {?><!-- begin /home/steven/GitRepository/taorai/modules/ps_wirepayment/views/templates/hook/payment_return.tpl -->
+<?php if ($_valid && !is_callable('content_58fd9581840124_08538064')) {function content_58fd9581840124_08538064($_smarty_tpl) {?><!-- begin /home/steven/GitRepository/taorai/modules/ps_wirepayment/views/templates/hook/payment_return.tpl -->
 
 <?php if ($_smarty_tpl->tpl_vars['status']->value=='ok') {?>
     <p>
@@ -46,12 +46,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <strong><?php echo smartyTranslate(array('s'=>'Your order will be sent as soon as we receive payment.','d'=>'Modules.Wirepayment.Shop'),$_smarty_tpl);?>
 </strong>
     <p>
-      <?php echo smartyTranslate(array('s'=>'If you have questions, comments or concerns, please [1]contact us[/1].','d'=>'Modules.Wirepayment.Shop','sprintf'=>array('[1]'=>"<a href='email:taorai.asia@gmail.com'>",'[/1]'=>'</a>')),$_smarty_tpl);?>
+      <?php echo smartyTranslate(array('s'=>'If you have questions, comments or concerns, please [1]contact us[/1].','d'=>'Modules.Wirepayment.Shop','sprintf'=>array('[1]'=>"<a href='mailto:taorai.asia@gmail.com'>",'[/1]'=>'</a>')),$_smarty_tpl);?>
 
     </p>
 <?php } else { ?>
     <p class="warning">
-      <?php echo smartyTranslate(array('s'=>'We noticed a problem with your order. If you think this is an error, feel free to [1]contact us[/1].','d'=>'Modules.Wirepayment.Shop','sprintf'=>array('[1]'=>"<a href='email:taorai.asia@gmail.com'>",'[/1]'=>'</a>')),$_smarty_tpl);?>
+      <?php echo smartyTranslate(array('s'=>'We noticed a problem with your order. If you think this is an error, feel free to [1]contact us[/1].','d'=>'Modules.Wirepayment.Shop','sprintf'=>array('[1]'=>"<a href='mailto:taorai.asia@gmail.com'>",'[/1]'=>'</a>')),$_smarty_tpl);?>
 
     </p>
 <?php }?>

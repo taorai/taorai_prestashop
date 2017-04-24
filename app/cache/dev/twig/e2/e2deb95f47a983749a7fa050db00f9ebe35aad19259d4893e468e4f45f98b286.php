@@ -15,8 +15,8 @@ class __TwigTemplate_639ff141add9637aa82d96d25d374d045c801e070ba8cd77138b2f2a8da
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_810f76b7644f2fee71bd6b46d1f2d748d6ff10896cc499b9502e9223d4487235 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_810f76b7644f2fee71bd6b46d1f2d748d6ff10896cc499b9502e9223d4487235->enter($__internal_810f76b7644f2fee71bd6b46d1f2d748d6ff10896cc499b9502e9223d4487235_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PrestaShopBundle:Admin/Product/Include:form_seo.html.twig"));
+        $__internal_d0642d7e7f7f29fb1359dfa960e3f77cc13bee5645ab2e89c783bd452ecbdeb4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_d0642d7e7f7f29fb1359dfa960e3f77cc13bee5645ab2e89c783bd452ecbdeb4->enter($__internal_d0642d7e7f7f29fb1359dfa960e3f77cc13bee5645ab2e89c783bd452ecbdeb4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PrestaShopBundle:Admin/Product/Include:form_seo.html.twig"));
 
         // line 25
         echo "<div class=\"col-md-12\">
@@ -237,7 +237,7 @@ class __TwigTemplate_639ff141add9637aa82d96d25d374d045c801e070ba8cd77138b2f2a8da
 </div>
 ";
         
-        $__internal_810f76b7644f2fee71bd6b46d1f2d748d6ff10896cc499b9502e9223d4487235->leave($__internal_810f76b7644f2fee71bd6b46d1f2d748d6ff10896cc499b9502e9223d4487235_prof);
+        $__internal_d0642d7e7f7f29fb1359dfa960e3f77cc13bee5645ab2e89c783bd452ecbdeb4->leave($__internal_d0642d7e7f7f29fb1359dfa960e3f77cc13bee5645ab2e89c783bd452ecbdeb4_prof);
 
     }
 
