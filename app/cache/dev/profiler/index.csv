@@ -34,6 +34,7 @@ b50ebf,192.168.1.2,GET,https://192.168.1.2/taorai/admin_portal/index.php/module/
 27d649,192.168.1.2,GET,https://192.168.1.2/taorai/admin_portal/index.php/module/manage?_token=u7qQmEnUWiMSXER6KdxCYpciMnOYu6AxGFpXUzE7VG8,1493047417,,200
 e37750,192.168.1.2,GET,https://192.168.1.2/taorai/admin_portal/index.php/module/cart/22315?_token=u7qQmEnUWiMSXER6KdxCYpciMnOYu6AxGFpXUzE7VG8,1493047475,,200
 bac9b4,192.168.1.2,POST,https://192.168.1.2/taorai/admin_portal/index.php/module/manage/action/install/ps_contactinfo?_token=u7qQmEnUWiMSXER6KdxCYpciMnOYu6AxGFpXUzE7VG8,1493047495,,200
+<<<<<<< HEAD
 7d6e39,127.0.0.1,GET,https://192.168.1.2/taorai/admin_portal/index.php/_fragment?_path=_format%3Dhtml%26_locale%3Den-US%26_controller%3DPrestaShopBundle%255CController%255CAdmin%255CProductController%253A%253AlistAction,1493051985,38bb7d,200
 38bb7d,192.168.1.2,GET,https://192.168.1.2/taorai/admin_portal/index.php/product/catalog?_token=u7qQmEnUWiMSXER6KdxCYpciMnOYu6AxGFpXUzE7VG8,1493051985,,200
 9e8f12,127.0.0.1,GET,https://192.168.1.2/taorai/admin_portal/index.php/_fragment?_path=_format%3Dhtml%26_locale%3Den-US%26_controller%3DPrestaShopBundle%255CController%255CAdmin%255CProductController%253A%253AlistAction,1493054451,2a8fdd,200
@@ -42,3 +43,5 @@ bac9b4,192.168.1.2,POST,https://192.168.1.2/taorai/admin_portal/index.php/module
 c36e2f,192.168.1.2,GET,https://192.168.1.2/taorai/admin_portal/index.php/module/catalog/refresh?_token=1liY16p0SPZo_ciUVqyHDx9vOiGte0AR94tJzCOVgRo,1493132943,,200
 3fa2f5,192.168.1.2,GET,https://192.168.1.2/taorai/admin_portal/index.php/module/manage?_token=1liY16p0SPZo_ciUVqyHDx9vOiGte0AR94tJzCOVgRo,1493132947,,200
 d6d8db,192.168.1.2,POST,https://192.168.1.2/taorai/admin_portal/index.php/module/manage/action/configure/ps_customtext?_token=1liY16p0SPZo_ciUVqyHDx9vOiGte0AR94tJzCOVgRo,1493132953,,302
+=======
+>>>>>>> dev
