@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 <?php /* Smarty version Smarty-3.1.19, created on 2017-04-25 22:11:52
          compiled from "module:ps_mainmenu/ps_mainmenu.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:41580294858ff6738f05f28-67614365%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+=======
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-24 22:26:22
+         compiled from "module:ps_mainmenu/ps_mainmenu.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:213592598558fe191e5ae8b8-25459350%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+>>>>>>> dev
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +17,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'module',
     ),
   ),
+<<<<<<< HEAD
   'nocache_hash' => '41580294858ff6738f05f28-67614365',
+=======
+  'nocache_hash' => '213592598558fe191e5ae8b8-25459350',
+>>>>>>> dev
   'function' => 
   array (
     'menu' => 
@@ -38,9 +48,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => 0,
   'version' => 'Smarty-3.1.19',
+<<<<<<< HEAD
   'unifunc' => 'content_58ff6739007027_28873961',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_58ff6739007027_28873961')) {function content_58ff6739007027_28873961($_smarty_tpl) {?><!-- begin /home/steven/GitRepository/taorai/themes/classic/modules/ps_mainmenu/ps_mainmenu.tpl --><?php $_smarty_tpl->tpl_vars['_counter'] = new Smarty_variable(0, null, 0);?>
+=======
+  'unifunc' => 'content_58fe191e614746_67431594',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_58fe191e614746_67431594')) {function content_58fe191e614746_67431594($_smarty_tpl) {?><!-- begin /home/steven/GitRepository/taorai/themes/classic/modules/ps_mainmenu/ps_mainmenu.tpl --><?php $_smarty_tpl->tpl_vars['_counter'] = new Smarty_variable(0, null, 0);?>
+>>>>>>> dev
 <?php if (!function_exists('smarty_template_function_menu')) {
     function smarty_template_function_menu($_smarty_tpl,$params) {
     $saved_tpl_vars = $_smarty_tpl->tpl_vars;

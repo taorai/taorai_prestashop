@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 <?php /* Smarty version Smarty-3.1.19, created on 2017-04-25 19:04:37
          compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/default/template/helpers/list/list_content.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:57169699158ff3b5514b3a1-79393189%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+=======
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-24 22:25:07
+         compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/default/template/helpers/list/list_content.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:93392236358fe18d30cebf0-26646869%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+>>>>>>> dev
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +17,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
+<<<<<<< HEAD
   'nocache_hash' => '57169699158ff3b5514b3a1-79393189',
+=======
+  'nocache_hash' => '93392236358fe18d30cebf0-26646869',
+>>>>>>> dev
   'function' => 
   array (
   ),
@@ -49,9 +59,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
+<<<<<<< HEAD
   'unifunc' => 'content_58ff3b553cbe78_79992086',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_58ff3b553cbe78_79992086')) {function content_58ff3b553cbe78_79992086($_smarty_tpl) {?><?php if (!is_callable('smarty_function_counter')) include '/home/steven/GitRepository/taorai/vendor/prestashop/smarty/plugins/function.counter.php';
+=======
+  'unifunc' => 'content_58fe18d3350339_79810100',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_58fe18d3350339_79810100')) {function content_58fe18d3350339_79810100($_smarty_tpl) {?><?php if (!is_callable('smarty_function_counter')) include '/home/steven/GitRepository/taorai/vendor/prestashop/smarty/plugins/function.counter.php';
+>>>>>>> dev
 ?>
 <?php $_smarty_tpl->_capture_stack[0][] = array('tr_count', null, null); ob_start(); ?><?php echo smarty_function_counter(array('name'=>'tr_count'),$_smarty_tpl);?>
 <?php list($_capture_buffer, $_capture_assign, $_capture_append) = array_pop($_smarty_tpl->_capture_stack[0]);

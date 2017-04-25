@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 <?php /* Smarty version Smarty-3.1.19, created on 2017-04-25 22:09:07
          compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/new-theme/template/components/layout/shop_list.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:3325549358ff6693042f49-47014869%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+=======
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-24 22:23:37
+         compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/new-theme/template/components/layout/shop_list.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:135962541058fe187933d856-70872878%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+>>>>>>> dev
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +17,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
+<<<<<<< HEAD
   'nocache_hash' => '3325549358ff6693042f49-47014869',
+=======
+  'nocache_hash' => '135962541058fe187933d856-70872878',
+>>>>>>> dev
   'function' => 
   array (
   ),
@@ -26,9 +36,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
+<<<<<<< HEAD
   'unifunc' => 'content_58ff669306b4f4_17525055',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_58ff669306b4f4_17525055')) {function content_58ff669306b4f4_17525055($_smarty_tpl) {?>
+=======
+  'unifunc' => 'content_58fe1879363754_49212072',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_58fe1879363754_49212072')) {function content_58fe1879363754_49212072($_smarty_tpl) {?>
+>>>>>>> dev
 <?php if (isset($_smarty_tpl->tpl_vars['is_multishop']->value)&&$_smarty_tpl->tpl_vars['is_multishop']->value&&$_smarty_tpl->tpl_vars['shop_list']->value&&(isset($_smarty_tpl->tpl_vars['multishop_context']->value)&&$_smarty_tpl->tpl_vars['multishop_context']->value&Shop::CONTEXT_GROUP||$_smarty_tpl->tpl_vars['multishop_context']->value&Shop::CONTEXT_SHOP||$_smarty_tpl->tpl_vars['multishop_context']->value&Shop::CONTEXT_ALL)) {?>
   <div id="shop-list" class="shop-list dropdown ps-dropdown stores">
     <span class="link" data-toggle="dropdown">
