@@ -3,7 +3,7 @@
   array (
     'database_host' => '127.0.0.1',
     'database_port' => '',
-    'database_name' => 'db_taorai_dev',
+    'database_name' => 'db_taorai_live',
     'database_user' => 'taorai_admin',
     'database_password' => '-USu^qy_sah+5@bn',
     'database_prefix' => 'taorai_',

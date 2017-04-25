@@ -158,7 +158,7 @@
   {block name='order_carriers'}
     {if $order.shipping}
       <div class="box">
-        <table class="table table-striped table-bordered hidden-sm-down">
+        <table class="table table-bordered hidden-sm-down">
           <thead class="thead-default">
             <tr>
               <th>{l s='Date' d='Shop.Theme'}</th>

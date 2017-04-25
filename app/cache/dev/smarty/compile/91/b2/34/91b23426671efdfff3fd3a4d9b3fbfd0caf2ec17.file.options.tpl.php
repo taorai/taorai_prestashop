@@ -1,6 +1,12 @@
+<<<<<<< HEAD
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-25 19:04:37
+         compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/default/template/helpers/options/options.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:85750180158ff3b55512c46-99434044%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+=======
 <?php /* Smarty version Smarty-3.1.19, created on 2017-04-24 21:16:15
          compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/default/template/helpers/options/options.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:29316799258fe08af584618-61637488%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+>>>>>>> dev
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +17,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
+<<<<<<< HEAD
+  'nocache_hash' => '85750180158ff3b55512c46-99434044',
+=======
   'nocache_hash' => '29316799258fe08af584618-61637488',
+>>>>>>> dev
   'function' => 
   array (
   ),
@@ -49,9 +59,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
+<<<<<<< HEAD
+  'unifunc' => 'content_58ff3b559328e8_60351218',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_58ff3b559328e8_60351218')) {function content_58ff3b559328e8_60351218($_smarty_tpl) {?><?php if (!is_callable('smarty_function_counter')) include '/home/steven/GitRepository/taorai/vendor/prestashop/smarty/plugins/function.counter.php';
+=======
   'unifunc' => 'content_58fe08af9c43b2_72917921',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_58fe08af9c43b2_72917921')) {function content_58fe08af9c43b2_72917921($_smarty_tpl) {?><?php if (!is_callable('smarty_function_counter')) include '/home/steven/GitRepository/taorai/vendor/prestashop/smarty/plugins/function.counter.php';
+>>>>>>> dev
 if (!is_callable('smarty_modifier_replace')) include '/home/steven/GitRepository/taorai/vendor/prestashop/smarty/plugins/modifier.replace.php';
 ?>
 
