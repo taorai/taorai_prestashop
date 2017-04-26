@@ -37,7 +37,7 @@
           </li>
         {/foreach}
       </ul>
-      <select class="link hidden-md-up" style="background: #ebebeb url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAAPklEQ…Q8IEmSMOsiuEfg3gL3oXC7wK0bd1G4o8X9F4yIkyQfSrIByQBjp7QuND8AAAAASUVORK5CYII=) no-repeat scroll right .5rem center/1.25rem 1.25rem;padding: .5rem 1rem;border-radius: 20px;">
+      <select class="link hidden-md-up" style="background: #ebebeb .5rem center/1.25rem 1.25rem;padding: .5rem 1rem;border-radius: 20px;">
         {foreach from=$languages item=language}
           <option value="{url entity='language' id=$language.id_lang}"{if $language.id_lang == $current_language.id_lang} selected="selected"{/if}>{$language.name_simple}</option>
         {/foreach}
