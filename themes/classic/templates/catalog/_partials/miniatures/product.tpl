@@ -48,7 +48,7 @@
 
                 <span class="regular-price">{$product.regular_price}</span>
                 {if $product.discount_type === 'percentage'}
-                  <span class="discount-percentage">{$product.discount_percentage}</span>
+                  <span class="discount-percentage" style="top: 10px;">{$product.discount_percentage}</span>
                 {/if}
               {/if}
 
