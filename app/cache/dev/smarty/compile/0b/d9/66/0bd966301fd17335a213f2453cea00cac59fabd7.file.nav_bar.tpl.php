@@ -1,27 +1,17 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-25 22:09:07
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-28 08:18:31
          compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/new-theme/template/components/layout/nav_bar.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:123801043758ff669306dd16-68244806%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-=======
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-24 22:23:37
-         compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/new-theme/template/components/layout/nav_bar.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:138733328558fe1879366237-54141124%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> dev
+<?php /*%%SmartyHeaderCode:141572906159029867c2bf24-26167663%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '0bd966301fd17335a213f2453cea00cac59fabd7' => 
     array (
       0 => '/home/steven/GitRepository/taorai/admin_portal/themes/new-theme/template/components/layout/nav_bar.tpl',
-      1 => 1492474529,
+      1 => 1493255640,
       2 => 'file',
     ),
   ),
-<<<<<<< HEAD
-  'nocache_hash' => '123801043758ff669306dd16-68244806',
-=======
-  'nocache_hash' => '138733328558fe1879366237-54141124',
->>>>>>> dev
+  'nocache_hash' => '141572906159029867c2bf24-26167663',
   'function' => 
   array (
   ),
@@ -40,15 +30,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-<<<<<<< HEAD
-  'unifunc' => 'content_58ff66930fddf3_78818510',
+  'unifunc' => 'content_59029867cb53e6_63517914',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58ff66930fddf3_78818510')) {function content_58ff66930fddf3_78818510($_smarty_tpl) {?>
-=======
-  'unifunc' => 'content_58fe18793f5472_54897238',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58fe18793f5472_54897238')) {function content_58fe18793f5472_54897238($_smarty_tpl) {?>
->>>>>>> dev
+<?php if ($_valid && !is_callable('content_59029867cb53e6_63517914')) {function content_59029867cb53e6_63517914($_smarty_tpl) {?>
 <nav class="nav-bar">
   <ul class="main-menu">
 

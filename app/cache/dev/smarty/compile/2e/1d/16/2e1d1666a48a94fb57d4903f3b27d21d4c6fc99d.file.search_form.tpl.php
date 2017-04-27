@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-25 22:09:06
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-28 08:18:31
          compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/new-theme/template/components/layout/search_form.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:87323256558ff6692ebe507-82563548%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-=======
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-24 22:23:37
-         compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/new-theme/template/components/layout/search_form.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:208499726958fe18792853a8-68275069%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> dev
+<?php /*%%SmartyHeaderCode:84840236959029867b4bae4-79399596%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,11 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-<<<<<<< HEAD
-  'nocache_hash' => '87323256558ff6692ebe507-82563548',
-=======
-  'nocache_hash' => '208499726958fe18792853a8-68275069',
->>>>>>> dev
+  'nocache_hash' => '84840236959029867b4bae4-79399596',
   'function' => 
   array (
   ),
@@ -34,15 +24,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-<<<<<<< HEAD
-  'unifunc' => 'content_58ff6692f06c11_12267336',
+  'unifunc' => 'content_59029867b88cb0_57297394',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58ff6692f06c11_12267336')) {function content_58ff6692f06c11_12267336($_smarty_tpl) {?>
-=======
-  'unifunc' => 'content_58fe18792bf776_61378183',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58fe18792bf776_61378183')) {function content_58fe18792bf776_61378183($_smarty_tpl) {?>
->>>>>>> dev
+<?php if ($_valid && !is_callable('content_59029867b88cb0_57297394')) {function content_59029867b88cb0_57297394($_smarty_tpl) {?>
 
 
 <form id="header_search"

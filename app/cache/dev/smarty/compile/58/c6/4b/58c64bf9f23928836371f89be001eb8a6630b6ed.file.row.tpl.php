@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-25 00:20:50
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-27 07:37:05
          compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/new-theme/template/helpers/kpi/row.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:23642371858fe33f2ea1b80-94958884%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-=======
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-24 21:19:23
-         compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/new-theme/template/helpers/kpi/row.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:165582144858fe096b5cce06-15257220%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> dev
+<?php /*%%SmartyHeaderCode:132541689559013d318950a7-34825007%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,11 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-<<<<<<< HEAD
-  'nocache_hash' => '23642371858fe33f2ea1b80-94958884',
-=======
-  'nocache_hash' => '165582144858fe096b5cce06-15257220',
->>>>>>> dev
+  'nocache_hash' => '132541689559013d318950a7-34825007',
   'function' => 
   array (
   ),
@@ -33,15 +23,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-<<<<<<< HEAD
-  'unifunc' => 'content_58fe33f2eb5078_15015478',
+  'unifunc' => 'content_59013d318ae034_85104173',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58fe33f2eb5078_15015478')) {function content_58fe33f2eb5078_15015478($_smarty_tpl) {?>
-=======
-  'unifunc' => 'content_58fe096b5df125_25216105',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58fe096b5df125_25216105')) {function content_58fe096b5df125_25216105($_smarty_tpl) {?>
->>>>>>> dev
+<?php if ($_valid && !is_callable('content_59013d318ae034_85104173')) {function content_59013d318ae034_85104173($_smarty_tpl) {?>
 <div class="content container-fluid">
   <div class="row">
     <div class="col-md-12">

@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-25 22:09:06
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-28 08:18:31
          compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/new-theme/template/layout.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:186700590358ff6692dc7049-04599373%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-=======
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-24 22:23:37
-         compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/new-theme/template/layout.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:23374209558fe18791a9a33-59590491%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> dev
+<?php /*%%SmartyHeaderCode:2761719359029867a882b5-58176258%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,11 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-<<<<<<< HEAD
-  'nocache_hash' => '186700590358ff6692dc7049-04599373',
-=======
-  'nocache_hash' => '23374209558fe18791a9a33-59590491',
->>>>>>> dev
+  'nocache_hash' => '2761719359029867a882b5-58176258',
   'function' => 
   array (
   ),
@@ -48,15 +38,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-<<<<<<< HEAD
-  'unifunc' => 'content_58ff6692e61887_12919636',
+  'unifunc' => 'content_59029867af9934_27819678',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58ff6692e61887_12919636')) {function content_58ff6692e61887_12919636($_smarty_tpl) {?><!DOCTYPE html>
-=======
-  'unifunc' => 'content_58fe1879221030_42672206',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58fe1879221030_42672206')) {function content_58fe1879221030_42672206($_smarty_tpl) {?><!DOCTYPE html>
->>>>>>> dev
+<?php if ($_valid && !is_callable('content_59029867af9934_27819678')) {function content_59029867af9934_27819678($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="<?php echo $_smarty_tpl->tpl_vars['iso']->value;?>
 ">
 <head>

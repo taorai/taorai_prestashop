@@ -45,3 +45,7 @@ c36e2f,192.168.1.2,GET,https://192.168.1.2/taorai/admin_portal/index.php/module/
 d6d8db,192.168.1.2,POST,https://192.168.1.2/taorai/admin_portal/index.php/module/manage/action/configure/ps_customtext?_token=1liY16p0SPZo_ciUVqyHDx9vOiGte0AR94tJzCOVgRo,1493132953,,302
 =======
 >>>>>>> dev
+7fea42,127.0.0.1,GET,https://127.0.0.1/taorai/admin_portal/index.php/_fragment?_path=_format%3Dhtml%26_locale%3Den-US%26_controller%3DPrestaShopBundle%255CController%255CAdmin%255CProductController%253A%253AlistAction,1493253425,d67842,200
+d67842,127.0.0.1,GET,https://127.0.0.1/taorai/admin_portal/index.php/product/catalog?_token=xJ3ElIfPlQUD08BX1N2rGgr2yt0W2qpncw1slSFiwcs,1493253425,,200
+765c93,127.0.0.1,GET,https://127.0.0.1/taorai/admin_portal/index.php/module/catalog?_token=N6T2ey6TVUFDRs8f0BFRkv2ooRnN63VvJOPVpxh9C4k,1493342311,,200
+259d2a,127.0.0.1,GET,https://127.0.0.1/taorai/admin_portal/index.php/module/catalog/refresh?_token=N6T2ey6TVUFDRs8f0BFRkv2ooRnN63VvJOPVpxh9C4k,1493342312,,200

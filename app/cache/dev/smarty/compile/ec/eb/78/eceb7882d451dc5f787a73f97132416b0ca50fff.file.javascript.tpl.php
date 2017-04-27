@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-25 22:10:00
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-28 08:18:31
          compiled from "/home/steven/GitRepository/taorai/themes/javascript.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:35837307258ff66c842e6c2-33305953%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-=======
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-24 22:25:07
-         compiled from "/home/steven/GitRepository/taorai/themes/javascript.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:131754260458fe18d3c6c2c1-05667028%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> dev
+<?php /*%%SmartyHeaderCode:27815062059029867a1ffc2-53541844%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,11 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-<<<<<<< HEAD
-  'nocache_hash' => '35837307258ff66c842e6c2-33305953',
-=======
-  'nocache_hash' => '131754260458fe18d3c6c2c1-05667028',
->>>>>>> dev
+  'nocache_hash' => '27815062059029867a1ffc2-53541844',
   'function' => 
   array (
   ),
@@ -37,15 +27,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-<<<<<<< HEAD
-  'unifunc' => 'content_58ff66c8461743_12901698',
+  'unifunc' => 'content_59029867a46845_05535601',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58ff66c8461743_12901698')) {function content_58ff66c8461743_12901698($_smarty_tpl) {?>
-=======
-  'unifunc' => 'content_58fe18d3c9c7e5_50654547',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58fe18d3c9c7e5_50654547')) {function content_58fe18d3c9c7e5_50654547($_smarty_tpl) {?>
->>>>>>> dev
+<?php if ($_valid && !is_callable('content_59029867a46845_05535601')) {function content_59029867a46845_05535601($_smarty_tpl) {?>
 <?php if (isset($_smarty_tpl->tpl_vars['js_def']->value)&&is_array($_smarty_tpl->tpl_vars['js_def']->value)&&count($_smarty_tpl->tpl_vars['js_def']->value)) {?>
 <script type="text/javascript">
 <?php  $_smarty_tpl->tpl_vars['def'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['def']->_loop = false;
