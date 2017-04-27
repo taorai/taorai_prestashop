@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-25 22:09:06
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-28 07:11:40
          compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/new-theme/template/footer.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:52571617858ff6692d75ab2-53276380%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-=======
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-24 22:23:37
-         compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/new-theme/template/footer.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:139080172058fe187916a105-34491298%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> dev
+<?php /*%%SmartyHeaderCode:1772973697590288bc8cfe26-05581231%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,11 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-<<<<<<< HEAD
-  'nocache_hash' => '52571617858ff6692d75ab2-53276380',
-=======
-  'nocache_hash' => '139080172058fe187916a105-34491298',
->>>>>>> dev
+  'nocache_hash' => '1772973697590288bc8cfe26-05581231',
   'function' => 
   array (
   ),
@@ -34,15 +24,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-<<<<<<< HEAD
-  'unifunc' => 'content_58ff6692dbf5a6_02985943',
+  'unifunc' => 'content_590288bc90cca3_57589952',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58ff6692dbf5a6_02985943')) {function content_58ff6692dbf5a6_02985943($_smarty_tpl) {?>
-=======
-  'unifunc' => 'content_58fe18791a6838_44966199',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58fe18791a6838_44966199')) {function content_58fe18791a6838_44966199($_smarty_tpl) {?>
->>>>>>> dev
+<?php if ($_valid && !is_callable('content_590288bc90cca3_57589952')) {function content_590288bc90cca3_57589952($_smarty_tpl) {?>
 <div id="footer" class="bootstrap hide">
 <!--
   <div class="col-sm-2 hidden-xs">

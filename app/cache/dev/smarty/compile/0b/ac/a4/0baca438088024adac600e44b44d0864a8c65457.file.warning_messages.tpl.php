@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-25 22:09:07
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-28 07:11:40
          compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/new-theme/template/components/layout/warning_messages.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:138328140058ff669314e368-34827259%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-=======
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-24 22:23:37
-         compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/new-theme/template/components/layout/warning_messages.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:192074644058fe1879447338-88331000%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> dev
+<?php /*%%SmartyHeaderCode:14740352590288bcbb23c7-81910668%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,11 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-<<<<<<< HEAD
-  'nocache_hash' => '138328140058ff669314e368-34827259',
-=======
-  'nocache_hash' => '192074644058fe1879447338-88331000',
->>>>>>> dev
+  'nocache_hash' => '14740352590288bcbb23c7-81910668',
   'function' => 
   array (
   ),
@@ -32,15 +22,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-<<<<<<< HEAD
-  'unifunc' => 'content_58ff6693166089_44253394',
+  'unifunc' => 'content_590288bcbc8869_59036369',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58ff6693166089_44253394')) {function content_58ff6693166089_44253394($_smarty_tpl) {?>
-=======
-  'unifunc' => 'content_58fe187945e254_44136558',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58fe187945e254_44136558')) {function content_58fe187945e254_44136558($_smarty_tpl) {?>
->>>>>>> dev
+<?php if ($_valid && !is_callable('content_590288bcbc8869_59036369')) {function content_590288bcbc8869_59036369($_smarty_tpl) {?>
 <?php if (count($_smarty_tpl->tpl_vars['warnings']->value)) {?>
   <div class="bootstrap">
     <div class="alert alert-warning">

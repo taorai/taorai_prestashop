@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-25 22:09:58
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-28 07:13:17
          compiled from "/home/steven/GitRepository/taorai/modules/welcome/views/contents/welcome.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:83948229958ff66c6ebfc83-90322866%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-=======
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-24 22:25:08
-         compiled from "/home/steven/GitRepository/taorai/modules/welcome/views/contents/welcome.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:208574373758fe18d45d39b8-55903178%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> dev
+<?php /*%%SmartyHeaderCode:13072836645902891dbf7c60-87507677%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,25 +11,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-<<<<<<< HEAD
-  'nocache_hash' => '83948229958ff66c6ebfc83-90322866',
-=======
-  'nocache_hash' => '208574373758fe18d45d39b8-55903178',
->>>>>>> dev
+  'nocache_hash' => '13072836645902891dbf7c60-87507677',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-<<<<<<< HEAD
-  'unifunc' => 'content_58ff66c6ee5388_10724944',
+  'unifunc' => 'content_5902891dc21a73_99288792',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58ff66c6ee5388_10724944')) {function content_58ff66c6ee5388_10724944($_smarty_tpl) {?>
-=======
-  'unifunc' => 'content_58fe18d4618962_99661990',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58fe18d4618962_99661990')) {function content_58fe18d4618962_99661990($_smarty_tpl) {?>
->>>>>>> dev
+<?php if ($_valid && !is_callable('content_5902891dc21a73_99288792')) {function content_5902891dc21a73_99288792($_smarty_tpl) {?>
 
 <div class="onboarding-welcome">
   <i class="material-icons onboarding-button-shut-down">close</i>

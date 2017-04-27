@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-25 22:10:00
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-28 07:13:18
          compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/default/template/helpers/modules_list/modal.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:99766343158ff66c820d039-10243882%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-=======
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-24 22:25:07
-         compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/default/template/helpers/modules_list/modal.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:150475745358fe18d3a78d88-14803372%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> dev
+<?php /*%%SmartyHeaderCode:4731597995902891ebda0f5-95219900%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,25 +11,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-<<<<<<< HEAD
-  'nocache_hash' => '99766343158ff66c820d039-10243882',
-=======
-  'nocache_hash' => '150475745358fe18d3a78d88-14803372',
->>>>>>> dev
+  'nocache_hash' => '4731597995902891ebda0f5-95219900',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-<<<<<<< HEAD
-  'unifunc' => 'content_58ff66c82113c9_98584217',
+  'unifunc' => 'content_5902891ebde3b4_51947751',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58ff66c82113c9_98584217')) {function content_58ff66c82113c9_98584217($_smarty_tpl) {?>
-=======
-  'unifunc' => 'content_58fe18d3a812a9_46864353',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58fe18d3a812a9_46864353')) {function content_58fe18d3a812a9_46864353($_smarty_tpl) {?>
->>>>>>> dev
+<?php if ($_valid && !is_callable('content_5902891ebde3b4_51947751')) {function content_5902891ebde3b4_51947751($_smarty_tpl) {?>
 <div class="modal fade" id="modules_list_container">
 	<div class="modal-dialog">
 		<div class="modal-content">
