@@ -14,3 +14,4 @@ f9fa37,127.0.0.1,GET,https://127.0.0.1/taorai/admin_portal/index.php/module/cata
 380ba5,127.0.0.1,GET,https://127.0.0.1/taorai/admin_portal/index.php/module/catalog/refresh?_token=4U09uNUEdBCsHUhMG-WJjBKWE0L1NcOWr7Wg3EUlXM4,1493314399,,200
 d6a03b,127.0.0.1,GET,https://127.0.0.1/taorai/admin_portal/index.php/_fragment?_path=_format%3Dhtml%26_locale%3Den-US%26_controller%3DPrestaShopBundle%255CController%255CAdmin%255CProductController%253A%253AlistAction,1493338301,3bfacb,200
 3bfacb,127.0.0.1,GET,https://127.0.0.1/taorai/admin_portal/index.php/product/catalog?_token=N6T2ey6TVUFDRs8f0BFRkv2ooRnN63VvJOPVpxh9C4k,1493338301,,200
+e6813c,127.0.0.1,GET,https://127.0.0.1/taorai/admin_portal/index.php/module/manage?_token=N6T2ey6TVUFDRs8f0BFRkv2ooRnN63VvJOPVpxh9C4k,1493341822,,200

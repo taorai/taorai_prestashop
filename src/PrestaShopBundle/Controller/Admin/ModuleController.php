@@ -236,7 +236,8 @@ class ModuleController extends FrameworkBundleAdminController
             $modules->{$moduleLabel} = $this->getPresentedProducts($modulesPart);
         }
 
-        $categoriesMenu = $this->get('prestashop.categories_provider')->getCategoriesMenu($installedProducts);
+        // change to can work locally
+        // $categoriesMenu = $this->get('prestashop.categories_provider')->getCategoriesMenu($installedProducts);
 
         $errorMessage = $translator->trans(
             'You do not have permission to add this.',
@@ -248,7 +249,7 @@ class ModuleController extends FrameworkBundleAdminController
                 'layoutHeaderToolbarBtn' => $this->getToolbarButtons(),
                 'layoutTitle' => $translator->trans('Manage installed modules', array(), 'Admin.Modules.Feature'),
                 'modules' => $modules,
-                'topMenuData' => $this->getTopMenuData($categoriesMenu),
+                // 'topMenuData' => $this->getTopMenuData($categoriesMenu),
                 'requireAddonsSearch' => false,
                 'requireBulkActions' => true,
                 'enableSidebar' => true,
