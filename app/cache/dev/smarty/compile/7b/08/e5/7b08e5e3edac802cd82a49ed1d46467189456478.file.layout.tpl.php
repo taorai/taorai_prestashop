@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-25 22:10:00
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-28 08:23:01
          compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/default/template/layout.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:32934193758ff66c85b58b2-90377666%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-=======
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-24 22:25:07
-         compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/default/template/layout.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:3645942858fe18d3de1718-36635216%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> dev
+<?php /*%%SmartyHeaderCode:31968936559029975446f83-74978759%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,11 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-<<<<<<< HEAD
-  'nocache_hash' => '32934193758ff66c85b58b2-90377666',
-=======
-  'nocache_hash' => '3645942858fe18d3de1718-36635216',
->>>>>>> dev
+  'nocache_hash' => '31968936559029975446f83-74978759',
   'function' => 
   array (
   ),
@@ -42,15 +32,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-<<<<<<< HEAD
-  'unifunc' => 'content_58ff66c8622540_38600596',
+  'unifunc' => 'content_590299754aa6b7_71867495',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58ff66c8622540_38600596')) {function content_58ff66c8622540_38600596($_smarty_tpl) {?>
-=======
-  'unifunc' => 'content_58fe18d3e42c48_84990523',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58fe18d3e42c48_84990523')) {function content_58fe18d3e42c48_84990523($_smarty_tpl) {?>
->>>>>>> dev
+<?php if ($_valid && !is_callable('content_590299754aa6b7_71867495')) {function content_590299754aa6b7_71867495($_smarty_tpl) {?>
 <?php echo $_smarty_tpl->tpl_vars['header']->value;?>
 
 <?php if (isset($_smarty_tpl->tpl_vars['conf']->value)) {?>

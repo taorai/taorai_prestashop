@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-25 22:09:06
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-28 08:22:53
          compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/new-theme/template/components/layout/notifications_center.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:183040791358ff6692f2cec2-06811836%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-=======
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-24 22:23:37
-         compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/new-theme/template/components/layout/notifications_center.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:43092844458fe18792ddf56-66778501%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> dev
+<?php /*%%SmartyHeaderCode:9684543005902996d425845-31701021%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,11 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-<<<<<<< HEAD
-  'nocache_hash' => '183040791358ff6692f2cec2-06811836',
-=======
-  'nocache_hash' => '43092844458fe18792ddf56-66778501',
->>>>>>> dev
+  'nocache_hash' => '9684543005902996d425845-31701021',
   'function' => 
   array (
   ),
@@ -38,15 +28,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-<<<<<<< HEAD
-  'unifunc' => 'content_58ff669303fe05_16409491',
+  'unifunc' => 'content_5902996d47c952_94912552',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58ff669303fe05_16409491')) {function content_58ff669303fe05_16409491($_smarty_tpl) {?>
-=======
-  'unifunc' => 'content_58fe1879339f28_64332598',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58fe1879339f28_64332598')) {function content_58fe1879339f28_64332598($_smarty_tpl) {?>
->>>>>>> dev
+<?php if ($_valid && !is_callable('content_5902996d47c952_94912552')) {function content_5902996d47c952_94912552($_smarty_tpl) {?>
 <div id="notif" class="notification-center dropdown">
   <div class="notification js-notification dropdown-toggle">
     <i class="material-icons">notifications_none</i>

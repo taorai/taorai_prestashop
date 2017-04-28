@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-25 22:09:06
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-28 08:22:53
          compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/new-theme/template/header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:158086235258ff6692c89475-05724300%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-=======
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-24 22:23:37
-         compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/new-theme/template/header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:91468920858fe187908c913-98674889%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> dev
+<?php /*%%SmartyHeaderCode:19752243965902996d1f20e4-71086124%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,11 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-<<<<<<< HEAD
-  'nocache_hash' => '158086235258ff6692c89475-05724300',
-=======
-  'nocache_hash' => '91468920858fe187908c913-98674889',
->>>>>>> dev
+  'nocache_hash' => '19752243965902996d1f20e4-71086124',
   'function' => 
   array (
   ),
@@ -51,15 +41,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-<<<<<<< HEAD
-  'unifunc' => 'content_58ff6692d32e18_75379792',
+  'unifunc' => 'content_5902996d28a4b0_49890534',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58ff6692d32e18_75379792')) {function content_58ff6692d32e18_75379792($_smarty_tpl) {?>
-=======
-  'unifunc' => 'content_58fe18791351f6_74308186',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58fe18791351f6_74308186')) {function content_58fe18791351f6_74308186($_smarty_tpl) {?>
->>>>>>> dev
+<?php if ($_valid && !is_callable('content_5902996d28a4b0_49890534')) {function content_5902996d28a4b0_49890534($_smarty_tpl) {?>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=0.75, maximum-scale=0.75, user-scalable=0">
 <meta name="apple-mobile-web-app-capable" content="yes">

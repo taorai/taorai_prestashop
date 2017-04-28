@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-25 22:09:06
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-28 08:22:53
          compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/new-theme/template/modal.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:162344796758ff6692b31935-48916024%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-=======
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-24 22:23:36
-         compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/new-theme/template/modal.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:163596319658fe1878e86fe9-83662952%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> dev
+<?php /*%%SmartyHeaderCode:9822231775902996d0ca845-68068905%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,11 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-<<<<<<< HEAD
-  'nocache_hash' => '162344796758ff6692b31935-48916024',
-=======
-  'nocache_hash' => '163596319658fe1878e86fe9-83662952',
->>>>>>> dev
+  'nocache_hash' => '9822231775902996d0ca845-68068905',
   'function' => 
   array (
   ),
@@ -36,15 +26,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-<<<<<<< HEAD
-  'unifunc' => 'content_58ff6692b68f34_28490465',
+  'unifunc' => 'content_5902996d0f3c43_24952674',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58ff6692b68f34_28490465')) {function content_58ff6692b68f34_28490465($_smarty_tpl) {?>
-=======
-  'unifunc' => 'content_58fe1878eb6583_35852692',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58fe1878eb6583_35852692')) {function content_58fe1878eb6583_35852692($_smarty_tpl) {?>
->>>>>>> dev
+<?php if ($_valid && !is_callable('content_5902996d0f3c43_24952674')) {function content_5902996d0f3c43_24952674($_smarty_tpl) {?>
 <div class="modal fade" id="<?php echo $_smarty_tpl->tpl_vars['modal_id']->value;?>
 " tabindex="-1">
 	<div class="modal-dialog <?php if (isset($_smarty_tpl->tpl_vars['modal_class']->value)) {?><?php echo $_smarty_tpl->tpl_vars['modal_class']->value;?>

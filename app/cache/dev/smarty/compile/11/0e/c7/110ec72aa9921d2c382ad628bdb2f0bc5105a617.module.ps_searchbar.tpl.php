@@ -1,6 +1,12 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-25 22:24:38
+<<<<<<< HEAD
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-26 12:28:08
          compiled from "module:ps_searchbar/ps_searchbar.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:162755967858ff6a364e71e5-25444651%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:127129116659002fe8439cc1-05410486%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+=======
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-28 00:26:34
+         compiled from "module:ps_searchbar/ps_searchbar.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:865835221590229cac712b1-36670241%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+>>>>>>> non-debug-mode-fix
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +17,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'module',
     ),
   ),
-  'nocache_hash' => '162755967858ff6a364e71e5-25444651',
+<<<<<<< HEAD
+  'nocache_hash' => '127129116659002fe8439cc1-05410486',
+=======
+  'nocache_hash' => '865835221590229cac712b1-36670241',
+>>>>>>> non-debug-mode-fix
   'function' => 
   array (
   ),
@@ -22,9 +32,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_58ff6a364efbc1_28980755',
+<<<<<<< HEAD
+  'unifunc' => 'content_59002fe8440d63_03451809',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58ff6a364efbc1_28980755')) {function content_58ff6a364efbc1_28980755($_smarty_tpl) {?><!-- begin /home/steven/GitRepository/taorai/themes/classic/modules/ps_searchbar/ps_searchbar.tpl -->
+<?php if ($_valid && !is_callable('content_59002fe8440d63_03451809')) {function content_59002fe8440d63_03451809($_smarty_tpl) {?><!-- begin /home/steven/GitRepository/taorai/themes/classic/modules/ps_searchbar/ps_searchbar.tpl -->
+=======
+  'unifunc' => 'content_590229cac7a283_38135155',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_590229cac7a283_38135155')) {function content_590229cac7a283_38135155($_smarty_tpl) {?><!-- begin /home/steven/GitRepository/taorai/themes/classic/modules/ps_searchbar/ps_searchbar.tpl -->
+>>>>>>> non-debug-mode-fix
 <!-- Block search module TOP -->
 <div id="search_widget" class="col-lg-4 col-md-5 col-sm-12 search-widget" data-search-controller-url="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['search_controller_url']->value, ENT_QUOTES, 'UTF-8');?>
 ">

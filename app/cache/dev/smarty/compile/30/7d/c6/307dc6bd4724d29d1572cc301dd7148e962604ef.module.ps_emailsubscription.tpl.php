@@ -1,6 +1,12 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-25 22:24:38
+<<<<<<< HEAD
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-26 12:28:08
          compiled from "module:ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:607421458ff6a36505a52-61883472%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:39142215559002fe8457824-34627876%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+=======
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-28 00:26:34
+         compiled from "module:ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:148983137590229caca2702-03746922%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+>>>>>>> non-debug-mode-fix
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +17,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'module',
     ),
   ),
-  'nocache_hash' => '607421458ff6a36505a52-61883472',
+<<<<<<< HEAD
+  'nocache_hash' => '39142215559002fe8457824-34627876',
+=======
+  'nocache_hash' => '148983137590229caca2702-03746922',
+>>>>>>> non-debug-mode-fix
   'function' => 
   array (
   ),
@@ -25,9 +35,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_58ff6a3651c5d1_49488825',
+<<<<<<< HEAD
+  'unifunc' => 'content_59002fe846f142_67083582',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58ff6a3651c5d1_49488825')) {function content_58ff6a3651c5d1_49488825($_smarty_tpl) {?><!-- begin /home/steven/GitRepository/taorai/themes/classic/modules/ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl -->
+<?php if ($_valid && !is_callable('content_59002fe846f142_67083582')) {function content_59002fe846f142_67083582($_smarty_tpl) {?><!-- begin /home/steven/GitRepository/taorai/themes/classic/modules/ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl -->
+=======
+  'unifunc' => 'content_590229cacc9a86_79080969',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_590229cacc9a86_79080969')) {function content_590229cacc9a86_79080969($_smarty_tpl) {?><!-- begin /home/steven/GitRepository/taorai/themes/classic/modules/ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl -->
+>>>>>>> non-debug-mode-fix
 
 <div class="block_newsletter col-lg-8 col-md-12 col-sm-12" style="float: right;">
   <div class="row">

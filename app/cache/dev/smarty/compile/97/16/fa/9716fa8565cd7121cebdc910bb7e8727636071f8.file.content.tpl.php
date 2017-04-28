@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-25 19:01:26
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-28 08:23:00
          compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/default/template/content.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:35370980058ff3a968d57e8-24593291%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-=======
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-24 22:25:07
-         compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/default/template/content.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:35509422558fe18d392d8e3-07863355%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> dev
+<?php /*%%SmartyHeaderCode:7374853959029974f093a1-95575674%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,11 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-<<<<<<< HEAD
-  'nocache_hash' => '35370980058ff3a968d57e8-24593291',
-=======
-  'nocache_hash' => '35509422558fe18d392d8e3-07863355',
->>>>>>> dev
+  'nocache_hash' => '7374853959029974f093a1-95575674',
   'function' => 
   array (
   ),
@@ -31,15 +21,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-<<<<<<< HEAD
-  'unifunc' => 'content_58ff3a968dc484_62514116',
+  'unifunc' => 'content_59029974f12e39_77664245',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58ff3a968dc484_62514116')) {function content_58ff3a968dc484_62514116($_smarty_tpl) {?>
-=======
-  'unifunc' => 'content_58fe18d3934451_80707356',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58fe18d3934451_80707356')) {function content_58fe18d3934451_80707356($_smarty_tpl) {?>
->>>>>>> dev
+<?php if ($_valid && !is_callable('content_59029974f12e39_77664245')) {function content_59029974f12e39_77664245($_smarty_tpl) {?>
 <div id="ajax_confirmation" class="alert alert-success hide"></div>
 
 <div id="ajaxBox" style="display:none"></div>

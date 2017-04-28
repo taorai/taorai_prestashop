@@ -1,6 +1,12 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-25 22:24:38
+<<<<<<< HEAD
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-26 12:28:08
          compiled from "module:ps_contactinfo/ps_contactinfo.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:189692619658ff6a3656d236-08760705%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:134056097059002fe84c2ce0-40632153%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+=======
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-28 00:26:34
+         compiled from "module:ps_contactinfo/ps_contactinfo.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:995836618590229cad3ce08-42893191%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+>>>>>>> non-debug-mode-fix
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +17,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'module',
     ),
   ),
-  'nocache_hash' => '189692619658ff6a3656d236-08760705',
+<<<<<<< HEAD
+  'nocache_hash' => '134056097059002fe84c2ce0-40632153',
+=======
+  'nocache_hash' => '995836618590229cad3ce08-42893191',
+>>>>>>> non-debug-mode-fix
   'function' => 
   array (
   ),
@@ -22,9 +32,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_58ff6a36592321_29395661',
+<<<<<<< HEAD
+  'unifunc' => 'content_59002fe84e7812_25447557',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58ff6a36592321_29395661')) {function content_58ff6a36592321_29395661($_smarty_tpl) {?><!-- begin /home/steven/GitRepository/taorai/themes/classic/modules/ps_contactinfo/ps_contactinfo.tpl -->
+<?php if ($_valid && !is_callable('content_59002fe84e7812_25447557')) {function content_59002fe84e7812_25447557($_smarty_tpl) {?><!-- begin /home/steven/GitRepository/taorai/themes/classic/modules/ps_contactinfo/ps_contactinfo.tpl -->
+=======
+  'unifunc' => 'content_590229cad6bf75_77768469',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_590229cad6bf75_77768469')) {function content_590229cad6bf75_77768469($_smarty_tpl) {?><!-- begin /home/steven/GitRepository/taorai/themes/classic/modules/ps_contactinfo/ps_contactinfo.tpl -->
+>>>>>>> non-debug-mode-fix
 
 <div class="block-contact col-md-4 links wrapper">
   <div class="hidden-sm-down">

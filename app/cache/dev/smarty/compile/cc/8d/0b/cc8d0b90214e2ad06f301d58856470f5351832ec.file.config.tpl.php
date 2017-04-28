@@ -1,12 +1,12 @@
 <<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-25 19:01:17
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-28 08:18:14
          compiled from "/home/steven/GitRepository/taorai/modules/dashgoals/views/templates/hook/config.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:102534600758ff3a8ddde2e5-37975847%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:68920374259029856165281-01254729%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 =======
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-24 21:32:54
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-28 07:11:36
          compiled from "/home/steven/GitRepository/taorai/modules/dashgoals/views/templates/hook/config.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:152497781158fe0c96c951a9-33921448%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> dev
+<?php /*%%SmartyHeaderCode:1230931953590288b8aa0fb4-57293496%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+>>>>>>> non-debug-mode-fix
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -18,10 +18,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     ),
   ),
 <<<<<<< HEAD
-  'nocache_hash' => '102534600758ff3a8ddde2e5-37975847',
+  'nocache_hash' => '68920374259029856165281-01254729',
 =======
-  'nocache_hash' => '152497781158fe0c96c951a9-33921448',
->>>>>>> dev
+  'nocache_hash' => '1230931953590288b8aa0fb4-57293496',
+>>>>>>> non-debug-mode-fix
   'function' => 
   array (
   ),
@@ -36,14 +36,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
 <<<<<<< HEAD
-  'unifunc' => 'content_58ff3a8de101e4_44756242',
+  'unifunc' => 'content_590298561935c9_30256955',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58ff3a8de101e4_44756242')) {function content_58ff3a8de101e4_44756242($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_590298561935c9_30256955')) {function content_590298561935c9_30256955($_smarty_tpl) {?>
 =======
-  'unifunc' => 'content_58fe0c96cc8ff6_11654059',
+  'unifunc' => 'content_590288b8ad7f40_88617656',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58fe0c96cc8ff6_11654059')) {function content_58fe0c96cc8ff6_11654059($_smarty_tpl) {?>
->>>>>>> dev
+<?php if ($_valid && !is_callable('content_590288b8ad7f40_88617656')) {function content_590288b8ad7f40_88617656($_smarty_tpl) {?>
+>>>>>>> non-debug-mode-fix
 <section id="dashgoals_config" class="dash_config hide">
 	<header><i class="icon-wrench"></i> <?php echo smartyTranslate(array('s'=>'Configuration','d'=>'Admin.Global'),$_smarty_tpl);?>
 </header>

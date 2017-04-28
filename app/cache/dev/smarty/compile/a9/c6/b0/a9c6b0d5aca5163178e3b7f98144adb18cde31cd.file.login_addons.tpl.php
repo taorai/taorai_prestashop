@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-25 22:09:58
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-28 08:23:05
          compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/default/template/controllers/modules/login_addons.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:64629132058ff66c6f07cd8-77786902%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-=======
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-24 22:25:08
-         compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/default/template/controllers/modules/login_addons.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:133725469758fe18d464f5a8-01123314%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> dev
+<?php /*%%SmartyHeaderCode:7405113735902997944ccf7-45946533%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,11 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-<<<<<<< HEAD
-  'nocache_hash' => '64629132058ff66c6f07cd8-77786902',
-=======
-  'nocache_hash' => '133725469758fe18d464f5a8-01123314',
->>>>>>> dev
+  'nocache_hash' => '7405113735902997944ccf7-45946533',
   'function' => 
   array (
   ),
@@ -37,15 +27,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-<<<<<<< HEAD
-  'unifunc' => 'content_58ff66c6f3f3e5_92241349',
+  'unifunc' => 'content_59029979485362_42207915',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58ff66c6f3f3e5_92241349')) {function content_58ff66c6f3f3e5_92241349($_smarty_tpl) {?>
-=======
-  'unifunc' => 'content_58fe18d4697553_65222413',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58fe18d4697553_65222413')) {function content_58fe18d4697553_65222413($_smarty_tpl) {?>
->>>>>>> dev
+<?php if ($_valid && !is_callable('content_59029979485362_42207915')) {function content_59029979485362_42207915($_smarty_tpl) {?>
 
 <div class="modal-body">
 <?php if ($_smarty_tpl->tpl_vars['add_permission']->value=='1') {?>

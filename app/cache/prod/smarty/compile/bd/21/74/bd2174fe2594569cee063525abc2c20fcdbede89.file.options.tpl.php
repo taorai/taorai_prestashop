@@ -1,6 +1,12 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-22 07:35:54
+<<<<<<< HEAD
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-27 07:05:12
          compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/default/template/controllers/preferences/helpers/options/options.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:98401070758faa56adbeb43-49891956%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1932369976590135b84b3a12-23675033%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+=======
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-27 22:26:47
+         compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/default/template/controllers/preferences/helpers/options/options.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:75388992259020db7be70c1-41997714%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+>>>>>>> non-debug-mode-fix
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,7 +23,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '98401070758faa56adbeb43-49891956',
+<<<<<<< HEAD
+  'nocache_hash' => '1932369976590135b84b3a12-23675033',
+=======
+  'nocache_hash' => '75388992259020db7be70c1-41997714',
+>>>>>>> non-debug-mode-fix
   'function' => 
   array (
   ),
@@ -55,9 +65,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_58faa56b3b5ab2_44251099',
+<<<<<<< HEAD
+  'unifunc' => 'content_590135b8968624_93902851',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58faa56b3b5ab2_44251099')) {function content_58faa56b3b5ab2_44251099($_smarty_tpl) {?><?php if (!is_callable('smarty_function_counter')) include '/home/steven/GitRepository/taorai/vendor/prestashop/smarty/plugins/function.counter.php';
+<?php if ($_valid && !is_callable('content_590135b8968624_93902851')) {function content_590135b8968624_93902851($_smarty_tpl) {?><?php if (!is_callable('smarty_function_counter')) include '/home/steven/GitRepository/taorai/vendor/prestashop/smarty/plugins/function.counter.php';
+=======
+  'unifunc' => 'content_59020db80f6dc4_16819239',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_59020db80f6dc4_16819239')) {function content_59020db80f6dc4_16819239($_smarty_tpl) {?><?php if (!is_callable('smarty_function_counter')) include '/home/steven/GitRepository/taorai/vendor/prestashop/smarty/plugins/function.counter.php';
+>>>>>>> non-debug-mode-fix
 if (!is_callable('smarty_modifier_replace')) include '/home/steven/GitRepository/taorai/vendor/prestashop/smarty/plugins/modifier.replace.php';
 ?>
 

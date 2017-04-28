@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-25 22:09:06
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-28 08:22:53
          compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/new-theme/template/page_header_toolbar.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:100639083958ff6692b77a13-14074525%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-=======
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-24 22:23:36
-         compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/new-theme/template/page_header_toolbar.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:183306963558fe1878ec5103-98839833%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> dev
+<?php /*%%SmartyHeaderCode:5996038615902996d0fe9c4-83953492%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,11 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-<<<<<<< HEAD
-  'nocache_hash' => '100639083958ff6692b77a13-14074525',
-=======
-  'nocache_hash' => '183306963558fe1878ec5103-98839833',
->>>>>>> dev
+  'nocache_hash' => '5996038615902996d0fe9c4-83953492',
   'function' => 
   array (
   ),
@@ -46,15 +36,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-<<<<<<< HEAD
-  'unifunc' => 'content_58ff6692c83664_36530544',
+  'unifunc' => 'content_5902996d1ed946_38713913',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58ff6692c83664_36530544')) {function content_58ff6692c83664_36530544($_smarty_tpl) {?>
-=======
-  'unifunc' => 'content_58fe18790864c7_16448216',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58fe18790864c7_16448216')) {function content_58fe18790864c7_16448216($_smarty_tpl) {?>
->>>>>>> dev
+<?php if ($_valid && !is_callable('content_5902996d1ed946_38713913')) {function content_5902996d1ed946_38713913($_smarty_tpl) {?>
 
 <div class="header-toolbar">
 
