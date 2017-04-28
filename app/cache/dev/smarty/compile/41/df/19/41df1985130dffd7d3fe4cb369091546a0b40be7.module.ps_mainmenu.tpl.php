@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 <?php /* Smarty version Smarty-3.1.19, created on 2017-04-26 12:28:08
          compiled from "module:ps_mainmenu/ps_mainmenu.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2175907059002fe83f0856-98417572%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+=======
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-28 00:26:34
+         compiled from "module:ps_mainmenu/ps_mainmenu.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:2022940597590229cac0f686-61637015%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+>>>>>>> non-debug-mode-fix
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +17,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'module',
     ),
   ),
+<<<<<<< HEAD
   'nocache_hash' => '2175907059002fe83f0856-98417572',
+=======
+  'nocache_hash' => '2022940597590229cac0f686-61637015',
+>>>>>>> non-debug-mode-fix
   'function' => 
   array (
     'menu' => 
@@ -38,9 +48,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => 0,
   'version' => 'Smarty-3.1.19',
+<<<<<<< HEAD
   'unifunc' => 'content_59002fe84365d1_01115943',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_59002fe84365d1_01115943')) {function content_59002fe84365d1_01115943($_smarty_tpl) {?><!-- begin /home/steven/GitRepository/taorai/themes/classic/modules/ps_mainmenu/ps_mainmenu.tpl --><?php $_smarty_tpl->tpl_vars['_counter'] = new Smarty_variable(0, null, 0);?>
+=======
+  'unifunc' => 'content_590229cac6d571_68085496',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_590229cac6d571_68085496')) {function content_590229cac6d571_68085496($_smarty_tpl) {?><!-- begin /home/steven/GitRepository/taorai/themes/classic/modules/ps_mainmenu/ps_mainmenu.tpl --><?php $_smarty_tpl->tpl_vars['_counter'] = new Smarty_variable(0, null, 0);?>
+>>>>>>> non-debug-mode-fix
 <?php if (!function_exists('smarty_template_function_menu')) {
     function smarty_template_function_menu($_smarty_tpl,$params) {
     $saved_tpl_vars = $_smarty_tpl->tpl_vars;

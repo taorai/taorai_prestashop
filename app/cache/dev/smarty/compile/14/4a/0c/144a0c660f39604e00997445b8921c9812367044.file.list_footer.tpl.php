@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-25 19:04:37
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-27 23:30:07
          compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/default/template/helpers/list/list_footer.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:130941995458ff3b553dc7d5-35747295%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-=======
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-24 22:25:07
-         compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/default/template/helpers/list/list_footer.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:213355891458fe18d3355c32-17917422%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> dev
+<?php /*%%SmartyHeaderCode:39811219459021c8f7acda6-79720769%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,11 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-<<<<<<< HEAD
-  'nocache_hash' => '130941995458ff3b553dc7d5-35747295',
-=======
-  'nocache_hash' => '213355891458fe18d3355c32-17917422',
->>>>>>> dev
+  'nocache_hash' => '39811219459021c8f7acda6-79720769',
   'function' => 
   array (
   ),
@@ -51,15 +41,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-<<<<<<< HEAD
-  'unifunc' => 'content_58ff3b554d0f31_65622686',
+  'unifunc' => 'content_59021c8f899ab2_16349926',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58ff3b554d0f31_65622686')) {function content_58ff3b554d0f31_65622686($_smarty_tpl) {?>
-=======
-  'unifunc' => 'content_58fe18d344c5c1_58851176',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58fe18d344c5c1_58851176')) {function content_58fe18d344c5c1_58851176($_smarty_tpl) {?>
->>>>>>> dev
+<?php if ($_valid && !is_callable('content_59021c8f899ab2_16349926')) {function content_59021c8f899ab2_16349926($_smarty_tpl) {?>
 </table>
 </div>
 <div class="row">

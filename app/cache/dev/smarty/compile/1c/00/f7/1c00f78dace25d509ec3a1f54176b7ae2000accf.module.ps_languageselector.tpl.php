@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 <?php /* Smarty version Smarty-3.1.19, created on 2017-04-26 12:28:08
          compiled from "module:ps_languageselector/ps_languageselector.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:58063649159002fe83324e8-81057467%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+=======
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-28 00:26:34
+         compiled from "module:ps_languageselector/ps_languageselector.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:1656335041590229cab88417-51559490%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+>>>>>>> non-debug-mode-fix
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +17,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'module',
     ),
   ),
+<<<<<<< HEAD
   'nocache_hash' => '58063649159002fe83324e8-81057467',
+=======
+  'nocache_hash' => '1656335041590229cab88417-51559490',
+>>>>>>> non-debug-mode-fix
   'function' => 
   array (
   ),
@@ -23,9 +33,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
+<<<<<<< HEAD
   'unifunc' => 'content_59002fe8350f31_32774651',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_59002fe8350f31_32774651')) {function content_59002fe8350f31_32774651($_smarty_tpl) {?><!-- begin /home/steven/GitRepository/taorai/themes/classic/modules/ps_languageselector/ps_languageselector.tpl -->
+=======
+  'unifunc' => 'content_590229cabba749_01952314',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_590229cabba749_01952314')) {function content_590229cabba749_01952314($_smarty_tpl) {?><!-- begin /home/steven/GitRepository/taorai/themes/classic/modules/ps_languageselector/ps_languageselector.tpl -->
+>>>>>>> non-debug-mode-fix
 <div id="_desktop_language_selector">
   <div class="language-selector-wrapper">
     <span class="hidden-md-up"><?php echo smartyTranslate(array('s'=>'Language:','d'=>'Shop.Theme'),$_smarty_tpl);?>
