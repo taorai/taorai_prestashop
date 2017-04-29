@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-28 08:22:53
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-29 09:17:50
          compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/new-theme/template/page_header_toolbar.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:5996038615902996d0fe9c4-83953492%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2845125175903f7cede1991-56546509%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '5996038615902996d0fe9c4-83953492',
+  'nocache_hash' => '2845125175903f7cede1991-56546509',
   'function' => 
   array (
   ),
@@ -36,9 +36,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5902996d1ed946_38713913',
+  'unifunc' => 'content_5903f7ceed35a3_72203073',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5902996d1ed946_38713913')) {function content_5902996d1ed946_38713913($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_5903f7ceed35a3_72203073')) {function content_5903f7ceed35a3_72203073($_smarty_tpl) {?>
 
 <div class="header-toolbar">
 

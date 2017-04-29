@@ -736,40 +736,40 @@ class __TwigTemplate_6051472032ee93b2306fe5558390400a5307f7bd973187249aaf3c032bd
   ";
         // line 449
         echo "  ";
-        $this->loadTemplate("PrestaShopBundle:Admin\\Product:catalog.html.twig", "PrestaShopBundle:Admin\\Product:catalog.html.twig", 449, "1354488514")->display(array_merge($context, array("id" => "catalog_duplicate_all_modal", "title" => $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("Duplicating products", array(), "Admin.Catalog.Notification"), "closable" => true, "progressbar" => array("id" => "catalog_duplicate_all_progression", "label" => $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("Duplicating...", array(), "Admin.Catalog.Notification")), "actions" => array())));
+        $this->loadTemplate("PrestaShopBundle:Admin\\Product:catalog.html.twig", "PrestaShopBundle:Admin\\Product:catalog.html.twig", 449, "170900667")->display(array_merge($context, array("id" => "catalog_duplicate_all_modal", "title" => $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("Duplicating products", array(), "Admin.Catalog.Notification"), "closable" => true, "progressbar" => array("id" => "catalog_duplicate_all_progression", "label" => $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("Duplicating...", array(), "Admin.Catalog.Notification")), "actions" => array())));
         // line 468
         echo "
 
   ";
         // line 471
         echo "  ";
-        $this->loadTemplate("PrestaShopBundle:Admin\\Product:catalog.html.twig", "PrestaShopBundle:Admin\\Product:catalog.html.twig", 471, "1431805444")->display(array_merge($context, array("id" => "catalog_activate_all_modal", "title" => $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("Activating products", array(), "Admin.Catalog.Notification"), "closable" => true, "progressbar" => array("id" => "catalog_activate_all_progression", "label" => $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("Activating...", array(), "Admin.Catalog.Notification")), "actions" => array())));
+        $this->loadTemplate("PrestaShopBundle:Admin\\Product:catalog.html.twig", "PrestaShopBundle:Admin\\Product:catalog.html.twig", 471, "2041704470")->display(array_merge($context, array("id" => "catalog_activate_all_modal", "title" => $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("Activating products", array(), "Admin.Catalog.Notification"), "closable" => true, "progressbar" => array("id" => "catalog_activate_all_progression", "label" => $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("Activating...", array(), "Admin.Catalog.Notification")), "actions" => array())));
         // line 490
         echo "
 
   ";
         // line 493
         echo "  ";
-        $this->loadTemplate("PrestaShopBundle:Admin\\Product:catalog.html.twig", "PrestaShopBundle:Admin\\Product:catalog.html.twig", 493, "233970982")->display(array_merge($context, array("id" => "catalog_deactivate_all_modal", "title" => $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("Deactivating products", array(), "Admin.Catalog.Notification"), "closable" => true, "progressbar" => array("id" => "catalog_deactivate_all_progression", "label" => $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("Deactivating...", array(), "Admin.Catalog.Notification")), "actions" => array())));
+        $this->loadTemplate("PrestaShopBundle:Admin\\Product:catalog.html.twig", "PrestaShopBundle:Admin\\Product:catalog.html.twig", 493, "1027735380")->display(array_merge($context, array("id" => "catalog_deactivate_all_modal", "title" => $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("Deactivating products", array(), "Admin.Catalog.Notification"), "closable" => true, "progressbar" => array("id" => "catalog_deactivate_all_progression", "label" => $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("Deactivating...", array(), "Admin.Catalog.Notification")), "actions" => array())));
         // line 512
         echo "
 
   ";
         // line 515
         echo "  ";
-        $this->loadTemplate("PrestaShopBundle:Admin\\Product:catalog.html.twig", "PrestaShopBundle:Admin\\Product:catalog.html.twig", 515, "1888099763")->display(array_merge($context, array("id" => "catalog_delete_all_modal", "title" => $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("Deleting products", array(), "Admin.Catalog.Notification"), "closable" => true, "progressbar" => array("id" => "catalog_delete_all_progression", "label" => $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("Deleting...", array(), "Admin.Catalog.Notification")), "actions" => array())));
+        $this->loadTemplate("PrestaShopBundle:Admin\\Product:catalog.html.twig", "PrestaShopBundle:Admin\\Product:catalog.html.twig", 515, "1769970281")->display(array_merge($context, array("id" => "catalog_delete_all_modal", "title" => $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("Deleting products", array(), "Admin.Catalog.Notification"), "closable" => true, "progressbar" => array("id" => "catalog_delete_all_progression", "label" => $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("Deleting...", array(), "Admin.Catalog.Notification")), "actions" => array())));
         // line 534
         echo "
 
   ";
         // line 537
         echo "  ";
-        $this->loadTemplate("PrestaShopBundle:Admin\\Product:catalog.html.twig", "PrestaShopBundle:Admin\\Product:catalog.html.twig", 537, "943006448")->display(array_merge($context, array("id" => "catalog_deletion_modal", "title" => $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("Delete products?", array(), "Admin.Catalog.Feature"), "closable" => true, "actions" => array(0 => array("type" => "button", "label" => $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("Delete now", array(), "Admin.Actions"), "value" => "confirm", "class" => "btn btn-primary btn-lg")))));
+        $this->loadTemplate("PrestaShopBundle:Admin\\Product:catalog.html.twig", "PrestaShopBundle:Admin\\Product:catalog.html.twig", 537, "1196165213")->display(array_merge($context, array("id" => "catalog_deletion_modal", "title" => $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("Delete products?", array(), "Admin.Catalog.Feature"), "closable" => true, "actions" => array(0 => array("type" => "button", "label" => $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("Delete now", array(), "Admin.Actions"), "value" => "confirm", "class" => "btn btn-primary btn-lg")))));
         // line 554
         echo "
   ";
         // line 555
-        $this->loadTemplate("PrestaShopBundle:Admin\\Product:catalog.html.twig", "PrestaShopBundle:Admin\\Product:catalog.html.twig", 555, "1010100312")->display(array_merge($context, array("id" => "catalog_sql_query_modal", "title" => $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("SQL query", array(), "Admin.Global"), "closable" => true, "actions" => array(0 => array("type" => "button", "label" => $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("Export to SQL Manager", array(), "Admin.Actions"), "value" => "sql_manager", "class" => "btn btn-primary btn-lg")))));
+        $this->loadTemplate("PrestaShopBundle:Admin\\Product:catalog.html.twig", "PrestaShopBundle:Admin\\Product:catalog.html.twig", 555, "1917615291")->display(array_merge($context, array("id" => "catalog_sql_query_modal", "title" => $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("SQL query", array(), "Admin.Global"), "closable" => true, "actions" => array(0 => array("type" => "button", "label" => $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("Export to SQL Manager", array(), "Admin.Actions"), "value" => "sql_manager", "class" => "btn btn-primary btn-lg")))));
         // line 575
         echo "
 ";
@@ -806,7 +806,7 @@ class __TwigTemplate_6051472032ee93b2306fe5558390400a5307f7bd973187249aaf3c032bd
 
 
 /* PrestaShopBundle:Admin\Product:catalog.html.twig */
-class __TwigTemplate_6051472032ee93b2306fe5558390400a5307f7bd973187249aaf3c032bdf9a12_1354488514 extends Twig_Template
+class __TwigTemplate_6051472032ee93b2306fe5558390400a5307f7bd973187249aaf3c032bdf9a12_170900667 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -879,7 +879,7 @@ class __TwigTemplate_6051472032ee93b2306fe5558390400a5307f7bd973187249aaf3c032bd
 
 
 /* PrestaShopBundle:Admin\Product:catalog.html.twig */
-class __TwigTemplate_6051472032ee93b2306fe5558390400a5307f7bd973187249aaf3c032bdf9a12_1431805444 extends Twig_Template
+class __TwigTemplate_6051472032ee93b2306fe5558390400a5307f7bd973187249aaf3c032bdf9a12_2041704470 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -952,7 +952,7 @@ class __TwigTemplate_6051472032ee93b2306fe5558390400a5307f7bd973187249aaf3c032bd
 
 
 /* PrestaShopBundle:Admin\Product:catalog.html.twig */
-class __TwigTemplate_6051472032ee93b2306fe5558390400a5307f7bd973187249aaf3c032bdf9a12_233970982 extends Twig_Template
+class __TwigTemplate_6051472032ee93b2306fe5558390400a5307f7bd973187249aaf3c032bdf9a12_1027735380 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -1025,7 +1025,7 @@ class __TwigTemplate_6051472032ee93b2306fe5558390400a5307f7bd973187249aaf3c032bd
 
 
 /* PrestaShopBundle:Admin\Product:catalog.html.twig */
-class __TwigTemplate_6051472032ee93b2306fe5558390400a5307f7bd973187249aaf3c032bdf9a12_1888099763 extends Twig_Template
+class __TwigTemplate_6051472032ee93b2306fe5558390400a5307f7bd973187249aaf3c032bdf9a12_1769970281 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -1098,7 +1098,7 @@ class __TwigTemplate_6051472032ee93b2306fe5558390400a5307f7bd973187249aaf3c032bd
 
 
 /* PrestaShopBundle:Admin\Product:catalog.html.twig */
-class __TwigTemplate_6051472032ee93b2306fe5558390400a5307f7bd973187249aaf3c032bdf9a12_943006448 extends Twig_Template
+class __TwigTemplate_6051472032ee93b2306fe5558390400a5307f7bd973187249aaf3c032bdf9a12_1196165213 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -1165,7 +1165,7 @@ class __TwigTemplate_6051472032ee93b2306fe5558390400a5307f7bd973187249aaf3c032bd
 
 
 /* PrestaShopBundle:Admin\Product:catalog.html.twig */
-class __TwigTemplate_6051472032ee93b2306fe5558390400a5307f7bd973187249aaf3c032bdf9a12_1010100312 extends Twig_Template
+class __TwigTemplate_6051472032ee93b2306fe5558390400a5307f7bd973187249aaf3c032bdf9a12_1917615291 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {

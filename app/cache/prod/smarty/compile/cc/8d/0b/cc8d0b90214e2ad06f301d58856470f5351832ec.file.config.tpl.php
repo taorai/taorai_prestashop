@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-04-28 08:31:37
+<?php /* Smarty version Smarty-3.1.19, created on 2017-04-29 09:16:02
          compiled from "/home/steven/GitRepository/taorai/modules/dashgoals/views/templates/hook/config.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:91864046159029b7979bad6-10790708%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2740230915903f762a7c410-03515854%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '91864046159029b7979bad6-10790708',
+  'nocache_hash' => '2740230915903f762a7c410-03515854',
   'function' => 
   array (
   ),
@@ -25,9 +25,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_59029b797cac49_27054602',
+  'unifunc' => 'content_5903f762ab0002_52368166',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_59029b797cac49_27054602')) {function content_59029b797cac49_27054602($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_5903f762ab0002_52368166')) {function content_5903f762ab0002_52368166($_smarty_tpl) {?>
 <section id="dashgoals_config" class="dash_config hide">
 	<header><i class="icon-wrench"></i> <?php echo smartyTranslate(array('s'=>'Configuration','d'=>'Admin.Global'),$_smarty_tpl);?>
 </header>

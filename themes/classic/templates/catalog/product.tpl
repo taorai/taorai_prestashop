@@ -165,6 +165,11 @@
               {l s='Product Details' d='Shop.Theme.Catalog'}
             </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link{if !$product.description} active{/if}" data-toggle="tab" href="#product-comments">
+              {l s='Reviews & Comments' d='Shop.Theme.Catalog'}
+            </a>
+          </li>
           {if $product.attachments}
           <li class="nav-item">
             <a class="nav-link" data-toggle="tab" href="#attachments">
@@ -188,6 +193,10 @@
 
          {block name='product_details'}
          {include file='catalog/_partials/product-details.tpl'}
+         {/block}
+
+         {block name='product_comments'}
+         {include file='catalog/_partials/product-comments.tpl'}
          {/block}
 
          {block name='product_attachments'}
