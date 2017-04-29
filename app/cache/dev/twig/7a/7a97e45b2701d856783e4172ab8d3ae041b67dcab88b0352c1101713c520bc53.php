@@ -15,8 +15,8 @@ class __TwigTemplate_8a285c95775617e272b0799531eea5b107c36c84621eca1a5a77758f597
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_96820d6377b10c99db17183ead3216d03cb107837c1ad8b55114107c6b76ea37 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_96820d6377b10c99db17183ead3216d03cb107837c1ad8b55114107c6b76ea37->enter($__internal_96820d6377b10c99db17183ead3216d03cb107837c1ad8b55114107c6b76ea37_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@CsaGuzzle/Icon/guzzle.svg"));
+        $__internal_79a45cf10dbcb5b8b90ef20050865e193f4992dc07a5d811a8e0542a550b96fd = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_79a45cf10dbcb5b8b90ef20050865e193f4992dc07a5d811a8e0542a550b96fd->enter($__internal_79a45cf10dbcb5b8b90ef20050865e193f4992dc07a5d811a8e0542a550b96fd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@CsaGuzzle/Icon/guzzle.svg"));
 
         // line 1
         echo "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" x=\"0px\" y=\"0px\" height=\"";
@@ -29,7 +29,7 @@ class __TwigTemplate_8a285c95775617e272b0799531eea5b107c36c84621eca1a5a77758f597
 </svg>
 ";
         
-        $__internal_96820d6377b10c99db17183ead3216d03cb107837c1ad8b55114107c6b76ea37->leave($__internal_96820d6377b10c99db17183ead3216d03cb107837c1ad8b55114107c6b76ea37_prof);
+        $__internal_79a45cf10dbcb5b8b90ef20050865e193f4992dc07a5d811a8e0542a550b96fd->leave($__internal_79a45cf10dbcb5b8b90ef20050865e193f4992dc07a5d811a8e0542a550b96fd_prof);
 
     }
 

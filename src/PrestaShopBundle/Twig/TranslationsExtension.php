@@ -142,7 +142,7 @@ class TranslationsExtension extends \Twig_Extension
         $output = '';
         end($translationsTree);
         list($lastTranslationDomain) = each($translationsTree);
-        reset($translationTree);
+        reset($translationsTree);
 
         foreach ($translationsTree as $topLevelDomain => $tree) {
             $output .= $this->concatenateSubtreeHeader($topLevelDomain, $tree);
@@ -286,7 +286,7 @@ class TranslationsExtension extends \Twig_Extension
 
         // Extract default translation value from xliff files for reset
         if (is_array($translationValue)) {
-            $defaultTranslationValue = $translationValue['xlf'];
+            $defaultTranslationValue = (!empty($translationValue['xlf']) ? $translationValue['xlf'] : "");
         }
 
         return $defaultTranslationValue;
@@ -299,7 +299,7 @@ class TranslationsExtension extends \Twig_Extension
      */
     protected function getTranslationValue($translation)
     {
-        return !empty($translation['db']) ? $translation['db'] : $translation['xlf'];
+        return !empty($translation['db']) ? $translation['db'] : (!empty($translation['xlf']) ? $translation['xlf'] : "");
     }
 
     /**
@@ -360,7 +360,7 @@ class TranslationsExtension extends \Twig_Extension
                 )
             );
 
-            $output .= $this->getNavigation($this->parseDomain($subtree));
+            $output .= $this->getNavigation($id);
         }
 
         $formStart = $this->getTranslationsFormStart($subtree, $output);

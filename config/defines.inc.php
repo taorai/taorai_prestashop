@@ -35,9 +35,8 @@ if (_PS_MODE_DEV_ === true) {
     @error_reporting(E_ALL | E_STRICT);
     define('_PS_DEBUG_SQL_', true);
 } else {
-    @ini_set('display_errors', 'on');
-    @error_reporting(E_ALL | E_STRICT);
-    define('_PS_DEBUG_SQL_', true);
+    @ini_set('display_errors', 'off');
+    define('_PS_DEBUG_SQL_', false);
 }
 
 define('_PS_DEBUG_PROFILING_', false);
