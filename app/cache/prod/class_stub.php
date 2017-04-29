@@ -254,3 +254,4 @@ class WebserviceSpecificManagementImages extends WebserviceSpecificManagementIma
 class WebserviceSpecificManagementSearch extends WebserviceSpecificManagementSearchCore {};
 class Windows extends WindowsCore {};
 class Zone extends ZoneCore {};
+class ProductComment extends ProductCommentCore {};

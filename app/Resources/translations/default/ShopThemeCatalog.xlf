@@ -738,6 +738,12 @@ File: themes/classic/templates/catalog/product.tpl:153</note>
         <note>Context:
 File: themes/classic/templates/catalog/product.tpl:159</note>
       </trans-unit>
+      <trans-unit id="ee6551f49c711301acfa7e662b88e235">
+        <source>Comments(%d)</source>
+        <target>Comments(%d)</target>
+        <note>Context:
+File: themes/classic/templates/catalog/product.tpl</note>
+      </trans-unit>
       <trans-unit id="7e2708aeb65763c54052f57ed1a1ec1d">
         <source>Attachments</source>
         <target>Attachments</target>

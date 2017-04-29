@@ -167,7 +167,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link{if !$product.description} active{/if}" data-toggle="tab" href="#product-comments">
-              {l s='Reviews & Comments' d='Shop.Theme.Catalog'}
+              {l s='Comments(%d)' d='Shop.Theme.Catalog' sprintf=[$product.comments|@count]}
             </a>
           </li>
           {if $product.attachments}

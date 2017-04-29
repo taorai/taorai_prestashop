@@ -255,3 +255,5 @@ class WebserviceSpecificManagementImages extends \WebserviceSpecificManagementIm
 class WebserviceSpecificManagementSearch extends \WebserviceSpecificManagementSearch {};
 class Windows extends \Windows {};
 class Zone extends \Zone {};
+
+class ProductComment extends ProductCommentCore {};

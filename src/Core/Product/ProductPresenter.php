@@ -30,6 +30,7 @@ namespace PrestaShop\PrestaShop\Core\Product;
 use PrestaShop\PrestaShop\Adapter\Image\ImageRetriever;
 use PrestaShop\PrestaShop\Adapter\Product\PriceFormatter;
 use PrestaShop\PrestaShop\Adapter\Product\ProductColorsRetriever;
+use PrestaShop\PrestaShop\Adapter\Product\ProductCommentDataProvider;
 use Symfony\Component\Translation\TranslatorInterface;
 use Configuration;
 use Language;
@@ -206,6 +207,14 @@ class ProductPresenter
     ) {
         $presentedProduct['quantity_discounts'] =
             (isset($product['quantity_discounts'])) ? $product['quantity_discounts'] : array();
+
+        return $presentedProduct;
+    }
+
+    private function addCommentsInformation(
+        array $presentedProduct
+    ) {
+        $presentedProduct['comments'] = ProductCommentDataProvider::getProductComments($presentedProduct['id_product']);
 
         return $presentedProduct;
     }
@@ -627,6 +636,10 @@ class ProductPresenter
             $product
         );
 
+        $presentedProduct = $this->addCommentsInformation(
+            $presentedProduct
+        );
+
         // If product has attributes and it's no added to card
         if (isset($product['attributes']) && !isset($product['cart_quantity'])) {
             $presentedProduct = $this->addReferenceToDisplay(
@@ -735,6 +748,7 @@ class ProductPresenter
             "quantity_all_versions",
             "id_image",
             "features",
+            "comments",
             "attachments",
             "virtual",
             "pack",

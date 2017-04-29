@@ -4727,4 +4727,10 @@
     'type' => 'class',
     'override' => false,
   ),
+  'ProductCommentCore' => 
+  array (
+    'path' => 'classes/ProductComment.php',
+    'type' => 'class',
+    'override' => false,
+  ),
 ); ?>
