@@ -70,6 +70,7 @@ class PrestaShopCollection extends \PrestaShopCollection {};
 class PrestaShopLogger extends \PrestaShopLogger {};
 class Product extends \Product {};
 class ProductAssembler extends \ProductAssembler {};
+class ProductComment extends \ProductComment {};
 class ProductDownload extends \ProductDownload {};
 class ProductPresenterFactory extends \ProductPresenterFactory {};
 class ProductSale extends \ProductSale {};
@@ -255,5 +256,3 @@ class WebserviceOutputXML extends \WebserviceOutputXML {};
 class WebserviceRequest extends \WebserviceRequest {};
 class WebserviceSpecificManagementImages extends \WebserviceSpecificManagementImages {};
 class WebserviceSpecificManagementSearch extends \WebserviceSpecificManagementSearch {};
-
-class ProductComment extends ProductCommentCore {};

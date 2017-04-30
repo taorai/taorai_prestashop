@@ -69,6 +69,7 @@ class PrestaShopCollection extends PrestaShopCollectionCore {};
 class PrestaShopLogger extends PrestaShopLoggerCore {};
 class Product extends ProductCore {};
 class ProductAssembler extends ProductAssemblerCore {};
+class ProductComment extends ProductCommentCore {};
 class ProductDownload extends ProductDownloadCore {};
 class ProductPresenterFactory extends ProductPresenterFactoryCore {};
 class ProductSale extends ProductSaleCore {};
@@ -254,5 +255,3 @@ class WebserviceOutputXML extends WebserviceOutputXMLCore {};
 class WebserviceRequest extends WebserviceRequestCore {};
 class WebserviceSpecificManagementImages extends WebserviceSpecificManagementImagesCore {};
 class WebserviceSpecificManagementSearch extends WebserviceSpecificManagementSearchCore {};
-
-class ProductComment extends ProductCommentCore {};

@@ -42,4 +42,29 @@ class ProductCommentDataProvider
 
         return $product_comment;
     }
+
+     /**
+     * Get a product comment from order
+     *
+     * @param int $id_product
+     * @param int $id_order
+     * @param object|null $context
+     *
+     * @throws \LogicException If the product id is not set
+     *
+     * @return \ProductCommentCore $product_comment
+     */
+    public function getProductCommentsInOrder($id_product, $id_order, $context = null)
+    {
+        if (!$id_product) {
+            throw new \LogicException('You need to provide a product id', 5002);
+        }
+        if (!$id_order) {
+            throw new \LogicException('You need to provide an order id', 5002);
+        }
+
+        $product_comment = \ProductCommentCore::getCommentsInOrder($id_product, $id_order);
+
+        return $product_comment;
+    }
 }

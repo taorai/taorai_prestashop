@@ -40,6 +40,7 @@ class ProductCommentCore extends ObjectModel
         'fields' => array(
             'id_parent' => array('type' => self::TYPE_INT, 'validate' => 'isUnsignedInt'),
             'id_customer' => array('type' => self::TYPE_INT, 'validate' => 'isUnsignedInt'),
+            'id_order' => array('type' => self::TYPE_INT, 'validate' => 'isUnsignedInt'),
             'date_add' => array('type' => self::TYPE_DATE, 'validate' => 'isDate'),
             'content' => array('type' => self::TYPE_STRING, 'validate' => 'isGenericName'),
         ),
@@ -86,6 +87,23 @@ class ProductCommentCore extends ObjectModel
     }
 
     /**
+     * Get comments for a given product in order
+     *
+     * @param int $idProduct
+     * @param int $idOrder
+     *
+     * @return array Multiple arrays with comments' data
+     */
+    public static function getCommentsInOrder($idProduct, $idOrder)
+    {
+        return Db::getInstance()->executeS('
+        SELECT pc.`id_comment`, pc.`content`, pc.`date_add`
+        FROM `'._DB_PREFIX_.'product_comments` pc
+        WHERE pc.`id_product` = '.(int)$idProduct.' AND pc.`id_order` = '.(int)$idOrder.'
+        LIMIT 1');
+    }
+
+    /**
      * Get all comments
      *
      * @return array Multiple arrays with comments' data
@@ -96,7 +114,7 @@ class ProductCommentCore extends ObjectModel
         SELECT pc.`id_comment`, pc.`content`, pc.`date_add`, c.`firstname`, c.`lastname`
         FROM `'._DB_PREFIX_.'product_comments` pc
         LEFT JOIN `'._DB_PREFIX_.'customer` c ON pc.`id_customer`=c.`id_customer`
-        ORDER BY pc.`id_comment` DESC LIMIT 200');
+        ORDER BY pc.`id_comment` DESC');
     }
 
     /**

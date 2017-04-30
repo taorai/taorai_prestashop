@@ -146,6 +146,9 @@ class OrderDetailControllerCore extends FrontController
                     $this->redirect();
                 }
             }
+        } else if (Tools::isSubmit('submitComment')) {
+            $idOrder = (int)Tools::getValue('id_order');
+            Tools::redirect('index.php?controller=order-detail&id_order='.$idOrder);
         }
     }
 

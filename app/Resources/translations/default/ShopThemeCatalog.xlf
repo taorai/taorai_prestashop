@@ -548,6 +548,28 @@ File: themes/starterTheme/templates/customer/_partials/order-detail-return.tpl:1
       </trans-unit>
     </body>
   </file>
+  <file original="themes/starterTheme/templates/customer/_partials/order-detail-no-return.tpl" source-language="en-US" target-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="66d441a0fe1b6f6b5b4a33769f11e2cf">
+        <source>Leave a comment or any suggestion regarding this product.</source>
+        <target>Leave a comment or any suggestion regarding this product.</target>
+        <note>Context:
+File: themes/starterTheme/templates/customer/_partials/order-detail-no-return.tpl</note>
+      </trans-unit>
+      <trans-unit id="48881913e6addc0c3c439f02229ac91e">
+        <source>Apply to all products</source>
+        <target>Apply to all products</target>
+        <note>Context:
+File: themes/starterTheme/templates/customer/_partials/order-detail-no-return.tpl</note>
+      </trans-unit>
+      <trans-unit id="056e2a65c7f7fd41643ea85f7dfbc278">
+        <source>Save all comments</source>
+        <target>Save all comments</target>
+        <note>Context:
+File: themes/starterTheme/templates/customer/_partials/order-detail-no-return.tpl</note>
+      </trans-unit>
+    </body>
+  </file>
   <file original="themes/starterTheme/templates/catalog/_partials/product-customization.tpl" source-language="en-US" target-language="en" datatype="plaintext">
     <body>
       <trans-unit id="54c02ba7929b1fda4847991a45b58a48">
