@@ -179,6 +179,7 @@ class PrestaShopBackup extends PrestaShopBackupCore {};
 class PrestaShopCollection extends PrestaShopCollectionCore {};
 class PrestaShopLogger extends PrestaShopLoggerCore {};
 class ProductAssembler extends ProductAssemblerCore {};
+class ProductComment extends ProductCommentCore {};
 class ProductDownload extends ProductDownloadCore {};
 class Product extends ProductCore {};
 class ProductPresenterFactory extends ProductPresenterFactoryCore {};

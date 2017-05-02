@@ -37,22 +37,18 @@
           </div>
         </div>
       {/foreach}
-    </div>
-  {/if}
-{/block}
-
-{block name='order_message_form'}
-  <section class="order-message-form box">
+      {block name='order_message_form'}
+  <section class="order-message-form box" style="box-shadow: none; margin-bottom: 0; padding-bottom: 0;">
     <form action="{$urls.pages.order_detail}" method="post">
 
       <header>
-        <h3>{l s='Add a message' d='Shop.Theme.Customeraccount'}</h3>
+        <!-- <h3>{l s='Add a message' d='Shop.Theme.Customeraccount'}</h3> -->
         <p>{l s='If you would like to add a comment about your order, please write it in the field below.' d='Shop.Theme.Customeraccount'}</p>
       </header>
 
       <section class="form-fields">
 
-        <div class="form-group row">
+<!--         <div class="form-group row">
           <label class="col-md-3 form-control-label">{l s='Product' d='Shop.Forms.Labels'}</label>
           <div class="col-md-5">
             <select name="id_product" class="form-control form-control-select">
@@ -62,11 +58,11 @@
               {/foreach}
             </select>
           </div>
-        </div>
+        </div> -->
 
-        <div class="form-group row">
-          <label class="col-md-3 form-control-label"></label>
-          <div class="col-md-9">
+         <div class="form-group row">
+          <!-- <label class="col-md-3 form-control-label"></label> -->
+          <div class="col-md-12">
             <textarea rows="3" name="msgText" class="form-control"></textarea>
           </div>
         </div>
@@ -83,3 +79,8 @@
     </form>
   </section>
 {/block}
+
+    </div>
+  {/if}
+{/block}
+

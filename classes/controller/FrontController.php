@@ -1646,6 +1646,9 @@ class FrontControllerCore extends Controller
         $breadcrumb = $this->getBreadcrumbLinks();
         $breadcrumb['count'] = count($breadcrumb['links']);
 
+        // hide the current product in the breadcrumb
+        unset($breadcrumb['links'][$breadcrumb['count'] - 1]);
+
         return $breadcrumb;
     }
 
@@ -1657,7 +1660,7 @@ class FrontControllerCore extends Controller
             'title' => $this->getTranslator()->trans('Home', array(), 'Shop.Theme'),
             'url' => $this->context->link->getPageLink('index', true),
         );
-
+        
         return $breadcrumb;
     }
 
