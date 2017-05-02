@@ -32,3 +32,14 @@ function apply_comment_to_all_mobile(event) {
 		$($textarea_all[index]).val(comment_target);
 	});
 }
+
+// display / hide wire payment info in order detail page
+function toggleWirePaymentDetail(toggleFlag) {
+	var $toggleOn = $(document.getElementById("toggle-display-payment-details"));
+	var $toggleOff = $(document.getElementById("toggle-hide-payment-details"));
+	var $divPaymentInfo = $(document.getElementById("div-payment-detail"));
+
+	$toggleOn.css('display', toggleFlag == 0 ? 'block' : 'none');
+	$toggleOff.css('display', toggleFlag == 0 ? 'none' : 'block');
+	$divPaymentInfo.css('display', toggleFlag == 0 ? 'none' : 'block');
+}
