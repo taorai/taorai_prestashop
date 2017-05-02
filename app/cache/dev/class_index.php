@@ -803,6 +803,18 @@
     'type' => 'class',
     'override' => false,
   ),
+  'AdminProductCommentsController' => 
+  array (
+    'path' => '',
+    'type' => 'class',
+    'override' => false,
+  ),
+  'AdminProductCommentsControllerCore' => 
+  array (
+    'path' => 'controllers/admin/AdminProductCommentsController.php',
+    'type' => 'class',
+    'override' => false,
+  ),
   'AdminProductsController' => 
   array (
     'path' => '',

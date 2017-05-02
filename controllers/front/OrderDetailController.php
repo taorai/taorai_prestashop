@@ -148,7 +148,49 @@ class OrderDetailControllerCore extends FrontController
             }
         } else if (Tools::isSubmit('submitComment')) {
             $idOrder = (int)Tools::getValue('id_order');
-            Tools::redirect('index.php?controller=order-detail&id_order='.$idOrder);
+            $commentValues = Tools::getValue('textarea_comment_product');
+            $idProducts = Tools::getValue('id_product');
+            $idAttributes = Tools::getValue('id_product_attribute');
+            $errorCnt = 0;
+
+            foreach ($idProducts as $key => $id_product) {
+                // check if it already has a comment in this order regarding this product
+                $cntOrderComment = ProductComment::nbCommentsInOrder($id_product, $idAttributes[$key], $idOrder);
+
+                if (!$idOrder || !Validate::isUnsignedId($idOrder)) {
+                    $this->errors[] = $this->trans('The order is no longer valid.', array(), 'Shop.Notifications.Error');
+                } elseif (empty($commentValues[$key])) {
+                    continue;
+                } elseif (!Validate::isMessage($commentValues[$key])) {
+                    $this->errors[] = $this->trans('This message is invalid (HTML is not allowed).', array(), 'Shop.Notifications.Error');
+                } elseif ($cntOrderComment > 0) {
+                    $this->errors[] = $this->trans('You have already given a comment on this product in this order.', array(), 'Shop.Notifications.Error');
+                }
+
+                $errorCnt = count($this->errors);
+
+                if (!$errorCnt) {
+                    $order = new Order($idOrder);
+                    if (Validate::isLoadedObject($order) && $order->id_customer == $this->context->customer->id) {
+                        $pc = new ProductComment();
+                        $pc->id_customer = (int)$order->id_customer;
+                        $pc->id_product = $id_product;
+                        $pc->id_order = (int)$order->id;
+                        $pc->content = $commentValues[$key];
+                        $pc->id_attribute = $idAttributes[$key];
+                        $pc->ip_address = (int)ip2long($_SERVER['REMOTE_ADDR']);
+                        $pc->add();
+                    } else {
+                        break;
+                        $this->redirect_after = '404';
+                        $this->redirect();
+                    }
+                }
+            }
+            
+            if (!$errorCnt) {
+                Tools::redirect('index.php?controller=order-detail&id_order='.$idOrder.'&commentsent');
+            }
         }
     }
 

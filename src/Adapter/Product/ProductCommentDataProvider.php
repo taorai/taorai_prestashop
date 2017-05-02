@@ -54,7 +54,7 @@ class ProductCommentDataProvider
      *
      * @return \ProductCommentCore $product_comment
      */
-    public function getProductCommentsInOrder($id_product, $id_order, $context = null)
+    public function getProductCommentInOrder($id_product, $id_order, $context = null)
     {
         if (!$id_product) {
             throw new \LogicException('You need to provide a product id', 5002);
@@ -63,7 +63,7 @@ class ProductCommentDataProvider
             throw new \LogicException('You need to provide an order id', 5002);
         }
 
-        $product_comment = \ProductCommentCore::getCommentsInOrder($id_product, $id_order);
+        $product_comment = \ProductCommentCore::getCommentInOrder($id_product, $id_order);
 
         return $product_comment;
     }

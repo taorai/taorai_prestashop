@@ -803,6 +803,18 @@
     'type' => 'class',
     'override' => false,
   ),
+  'AdminProductCommentsController' => 
+  array (
+    'path' => '',
+    'type' => 'class',
+    'override' => false,
+  ),
+  'AdminProductCommentsControllerCore' => 
+  array (
+    'path' => 'controllers/admin/AdminProductCommentsController.php',
+    'type' => 'class',
+    'override' => false,
+  ),
   'AdminProductsController' => 
   array (
     'path' => '',
@@ -3629,6 +3641,18 @@
     'type' => 'class',
     'override' => false,
   ),
+  'ProductComment' => 
+  array (
+    'path' => '',
+    'type' => 'class',
+    'override' => false,
+  ),
+  'ProductCommentCore' => 
+  array (
+    'path' => 'classes/ProductComment.php',
+    'type' => 'class',
+    'override' => false,
+  ),
   'ProductController' => 
   array (
     'path' => '',
@@ -4724,12 +4748,6 @@
   'ZoneCore' => 
   array (
     'path' => 'classes/Zone.php',
-    'type' => 'class',
-    'override' => false,
-  ),
-  'ProductCommentCore' => 
-  array (
-    'path' => 'classes/ProductComment.php',
     'type' => 'class',
     'override' => false,
   ),

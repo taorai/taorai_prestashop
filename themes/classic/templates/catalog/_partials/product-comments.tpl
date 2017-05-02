@@ -3,7 +3,7 @@ id="product-comments" data-product="{$product.embedded_attributes|json_encode}">
 
 {block name='product_comments'}
 <section>
-  <table style="font-size: small;">
+  <table style="font-size: small;width: 100%">
     {foreach from=$product.comments item=comment}
     <tr style="border-bottom: 1px solid lightgray;">
       <td style="padding-bottom: 1rem;padding-top: 1rem;padding-left: 1rem">{$comment.content}</td>

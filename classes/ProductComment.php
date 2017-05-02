@@ -12,11 +12,9 @@
  */
 class ProductCommentCore extends ObjectModel
 {
-    /** @var string Name */
-    public $name;
 
-    /** @var int id_comment primary key */
-    public $id_comment;
+    /** @var int id_product_comments primary key */
+    public $id_product_comments;
 
     /** @var int $id_product */
     public $id_product;
@@ -24,25 +22,33 @@ class ProductCommentCore extends ObjectModel
    /** @var int $id_customer */
     public $id_customer;
 
+   /** @var int $id_attribute */
+    public $id_attribute;
+
    /** @var datetime $date_add */
     public $date_add;
 
     /** @var text $content */
     public $content;
 
+    /** @var varchar $ip_address */
+    public $ip_address;
+
     /**
      * @see ObjectModel::$definition
      */
     public static $definition = array(
         'table' => 'product_comments',
-        'primary' => 'id_comment',
+        'primary' => 'id_product_comments',
         'multilang' => false,
         'fields' => array(
-            'id_parent' => array('type' => self::TYPE_INT, 'validate' => 'isUnsignedInt'),
+            'id_product' => array('type' => self::TYPE_INT, 'validate' => 'isUnsignedInt'),
             'id_customer' => array('type' => self::TYPE_INT, 'validate' => 'isUnsignedInt'),
             'id_order' => array('type' => self::TYPE_INT, 'validate' => 'isUnsignedInt'),
+            'id_attribute' => array('type' => self::TYPE_INT, 'validate' => 'isUnsignedInt'),
             'date_add' => array('type' => self::TYPE_DATE, 'validate' => 'isDate'),
             'content' => array('type' => self::TYPE_STRING, 'validate' => 'isGenericName'),
+            'ip_address' => array('type' => self::TYPE_STRING, 'validate' => 'isIp2Long', 'size' => 15),
         ),
     );
 
@@ -54,7 +60,7 @@ class ProductCommentCore extends ObjectModel
     );
 
     /**
-     * Get a comment data for a given id_comment
+     * Get a comment data for a given id_product_comments
      *
      * @param int $idComment
      *
@@ -65,7 +71,7 @@ class ProductCommentCore extends ObjectModel
         return Db::getInstance()->getRow('
 			SELECT *
 			FROM `'._DB_PREFIX_.'product_comments` f
-			WHERE f.`id_comment` = '.(int) $idComment
+			WHERE f.`id_product_comments` = '.(int) $idComment
         );
     }
 
@@ -79,11 +85,11 @@ class ProductCommentCore extends ObjectModel
     public static function getComments($idProduct)
     {
         return Db::getInstance()->executeS('
-        SELECT pc.`id_comment`, pc.`content`, pc.`date_add`, c.`firstname`, c.`lastname`
+        SELECT pc.`id_product_comments`, pc.`content`, pc.`date_add`, pc.`id_attribute`, c.`firstname`, c.`lastname`
         FROM `'._DB_PREFIX_.'product_comments` pc
         LEFT JOIN `'._DB_PREFIX_.'customer` c ON pc.`id_customer`=c.`id_customer`
         WHERE pc.`id_product` = '.(int)$idProduct.'
-        ORDER BY pc.`id_comment` DESC LIMIT 200');
+        ORDER BY pc.`id_product_comments` DESC LIMIT 200');
     }
 
     /**
@@ -94,12 +100,13 @@ class ProductCommentCore extends ObjectModel
      *
      * @return array Multiple arrays with comments' data
      */
-    public static function getCommentsInOrder($idProduct, $idOrder)
+    public static function getCommentInOrder($idProduct, $idAttribute, $idOrder)
     {
         return Db::getInstance()->executeS('
-        SELECT pc.`id_comment`, pc.`content`, pc.`date_add`
+        SELECT pc.`id_product_comments`, pc.`content`, pc.`date_add`, pc.`id_attribute`, pc.`ip_address`
         FROM `'._DB_PREFIX_.'product_comments` pc
-        WHERE pc.`id_product` = '.(int)$idProduct.' AND pc.`id_order` = '.(int)$idOrder.'
+        WHERE pc.`id_product` = '.(int)$idProduct.' AND pc.`id_order` = '.(int)$idOrder.
+        ((int)$idAttribute > 0 ? ' AND pc.`id_attribute` = '.(int)$idAttribute : '').'
         LIMIT 1');
     }
 
@@ -111,10 +118,10 @@ class ProductCommentCore extends ObjectModel
     public static function getAllComments()
     {
         return Db::getInstance()->executeS('
-        SELECT pc.`id_comment`, pc.`content`, pc.`date_add`, c.`firstname`, c.`lastname`
+        SELECT pc.`id_product_comments`, pc.`content`, pc.`date_add`, pc.`id_attribute`, c.`firstname`, c.`lastname`, pc.`ip_address`
         FROM `'._DB_PREFIX_.'product_comments` pc
         LEFT JOIN `'._DB_PREFIX_.'customer` c ON pc.`id_customer`=c.`id_customer`
-        ORDER BY pc.`id_comment` DESC');
+        ORDER BY pc.`id_product_comments` DESC');
     }
 
     /**
@@ -164,7 +171,7 @@ class ProductCommentCore extends ObjectModel
     {
         Db::getInstance()->execute('
 			DELETE FROM `'._DB_PREFIX_.'product_comments`
-			WHERE `id_comment` = '.(int) $this->id
+			WHERE `id_product_comments` = '.(int) $this->id_product_comments
         );
 
         $return = parent::delete();
@@ -173,7 +180,7 @@ class ProductCommentCore extends ObjectModel
     }
 
     /**
-    * Count number of comments for a given prdduct
+    * Count number of comments for a given product
     *
     * @param int $idProduct
     *
@@ -187,4 +194,20 @@ class ProductCommentCore extends ObjectModel
         WHERE ag.`id_product` = '.(int) $idProduct);
     }
 
+    /**
+    * Count number of comments for a given product in a given order
+    *
+    * @param int $idProduct
+    * @param int $idOrder
+    *
+    * @return int Number of comments
+    */
+    public static function nbCommentsInOrder($idProduct, $idAttribute, $idOrder)
+    {
+        return Db::getInstance()->getValue('
+        SELECT COUNT(*) as nb
+        FROM `'._DB_PREFIX_.'product_comments` ag
+        WHERE ag.`id_product` = '.(int) $idProduct.' AND ag.`id_order` = '.(int)$idOrder.
+        ((int)$idAttribute > 0 ? ' AND ag.`id_attribute` = '.(int)$idAttribute : ''));
+    }
 }
