@@ -176,6 +176,36 @@ $catalogue = new MessageCatalogue('en-US', array (
     'Please let us know if you have any questions.' => 'Please let us know if you have any questions.',
     'If the conditions of return listed above are not respected, we reserve the right to refuse your package and/or reimbursement.' => 'If the conditions of return listed above are not respected, we reserve the right to refuse your package and/or reimbursement.',
   ),
+  'ModulesWirepaymentAdmin' => 
+  array (
+    'Wire payment' => 'Wire payment',
+    'Are you sure about removing these details?' => 'Are you sure about removing these details?',
+    'Account owner and account details must be configured before using this module.' => 'Account owner and account details must be configured before using this module.',
+    'No currency has been set for this module.' => 'No currency has been set for this module.',
+    'Account details are required.' => 'Account details are required.',
+    'Account owner is required.' => 'Account owner is required.',
+    'Account owner' => 'Account owner',
+    'Such as bank branch, IBAN number, BIC, etc.' => 'Such as bank branch, IBAN number, BIC, etc.',
+    'Bank address' => 'Bank address',
+    'Customization' => 'Customization',
+    'This module allows you to accept secure payments by bank wire.' => 'This module allows you to accept secure payments by bank wire.',
+    'That said, you must manually confirm the order upon receiving the bank wire.' => 'That said, you must manually confirm the order upon receiving the bank wire.',
+  ),
+  'ModulesWirepaymentShop' => 
+  array (
+    'Pay by bank wire' => 'Pay by Bank Transfer',
+    'Please send us a bank wire with:' => 'Please send us a bank transfer with:',
+    'Please specify your order reference %s in the bankwire description.' => 'Please specify your order reference %s in the bank transfer description.',
+    'Bankwire' => 'Bank Transfer',
+    '%1$s (tax incl.)' => '%1$s (tax incl.)',
+    'This payment method is not available.' => 'This payment method is not available.',
+    '(order processing will be longer)' => '(order processing will be longer)',
+    'Amount' => 'Amount',
+    'Name of account owner' => 'Name of account owner',
+    'Bank name' => 'Bank name',
+    'Your order on %s is complete.' => 'Your order on %s is complete.',
+    'Your order will be sent as soon as we receive payment.' => 'Your order will be sent as soon as we receive payment.',
+  ),
   'ModulesPscleanerAdmin' => 
   array (
     'PrestaShop Cleaner' => 'PrestaShop Cleaner',
@@ -5897,18 +5927,6 @@ $catalogue = new MessageCatalogue('en-US', array (
     'Tax value' => 'Tax value',
     'Total to pay' => 'Total to pay',
   ),
-  'ModulesWirepaymentShop' => 
-  array (
-    '%1$s (tax incl.)' => '%1$s (tax incl.)',
-    'This payment method is not available.' => 'This payment method is not available.',
-    'Pay by bank wire' => 'Pay by bank wire',
-    '(order processing will be longer)' => '(order processing will be longer)',
-    'Amount' => 'Amount',
-    'Name of account owner' => 'Name of account owner',
-    'Bank name' => 'Bank name',
-    'Your order on %s is complete.' => 'Your order on %s is complete.',
-    'Your order will be sent as soon as we receive payment.' => 'Your order will be sent as soon as we receive payment.',
-  ),
   'AdminLoginNotification' => 
   array (
     'SSL is activated. However, your IP is allowed to enter unsecure mode for maintenance or local IP issues.' => 'SSL is activated. However, your IP is allowed to enter unsecure mode for maintenance or local IP issues.',
@@ -6143,20 +6161,6 @@ $catalogue = new MessageCatalogue('en-US', array (
     'Information' => 'Information',
     'Shipping and payment' => 'Shipping and payment',
     'and' => 'and',
-  ),
-  'ModulesWirepaymentAdmin' => 
-  array (
-    'Are you sure about removing these details?' => 'Are you sure about removing these details?',
-    'Account owner and account details must be configured before using this module.' => 'Account owner and account details must be configured before using this module.',
-    'No currency has been set for this module.' => 'No currency has been set for this module.',
-    'Account details are required.' => 'Account details are required.',
-    'Account owner is required.' => 'Account owner is required.',
-    'Account owner' => 'Account owner',
-    'Such as bank branch, IBAN number, BIC, etc.' => 'Such as bank branch, IBAN number, BIC, etc.',
-    'Bank address' => 'Bank address',
-    'Customization' => 'Customization',
-    'This module allows you to accept secure payments by bank wire.' => 'This module allows you to accept secure payments by bank wire.',
-    'That said, you must manually confirm the order upon receiving the bank wire.' => 'That said, you must manually confirm the order upon receiving the bank wire.',
   ),
   'ModulesSocialfollowAdmin' => 
   array (

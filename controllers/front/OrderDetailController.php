@@ -239,6 +239,7 @@ class OrderDetailControllerCore extends FrontController
                 $this->context->smarty->assign([
                     'order' => $this->order_to_display,
                     'HOOK_DISPLAYORDERDETAIL' => Hook::exec('displayOrderDetail', ['order' => $order]),
+                    'HOOK_PAYMENT_RETURN' => Hook::exec('displayPaymentReturn', array('order' => $order)),
                 ]);
             } else {
                 $this->redirect_after = '404';

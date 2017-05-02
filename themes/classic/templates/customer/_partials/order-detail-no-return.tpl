@@ -136,7 +136,7 @@
               </tr>
             {/if}
           {/foreach}
-          <tr class="text-xs-right line-{$order.totals.total.type}">
+          <tr class="text-xs-right line-{$order.totals.total.type}" style="font-size: x-large;">
             <td colspan="3">{$order.totals.total.label}</td>
             <td>{$order.totals.total.value}</td>
           </tr>
@@ -223,7 +223,7 @@
         </div>
       {/if}
     {/foreach}
-    <div class="order-total row">
+    <div class="order-total row" style="font-weight: bold;font-size: large;padding-top: 1rem;">
       <div class="col-xs-8"><strong>{$order.totals.total.label}</strong></div>
       <div class="col-xs-4 text-xs-right">{$order.totals.total.value}</div>
     </div>
