@@ -146,6 +146,7 @@ class TabLangCore extends DataLangCore
                 md5('Webservice') => $this->translator->trans('Webservice', array(), 'Admin.Navigation.Menu', $this->locale),
                 md5('Zones') => $this->translator->trans('Zones', array(), 'Admin.Navigation.Menu', $this->locale),
                 md5('Modules Catalog') => $this->translator->trans('Modules Catalog', array(), 'Admin.Navigation.Menu', $this->locale),
+                md5('Product Comments') => $this->translator->trans('Product Comments', array(), 'Admin.Navigation.Menu', $this->locale),
             ),
         );
     }

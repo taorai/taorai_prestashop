@@ -38,6 +38,7 @@ use Cart;
 use Configuration;
 use Context;
 use CustomerMessage;
+use ProductComment;
 use HistoryController;
 use Order;
 use OrderReturn;
@@ -97,6 +98,7 @@ class OrderPresenter implements PresenterInterface
             'id_address_delivery' => $order->id_address_delivery,
             'id_address_invoice' => $order->id_address_invoice,
             'labels' => $this->getLabels(),
+            'delivery_status' => $order->getCurrentOrderState() && $order->getCurrentOrderState()->delivery,
         );
     }
 
@@ -118,6 +120,8 @@ class OrderPresenter implements PresenterInterface
             $orderProduct['price'] = $this->priceFormatter->format($orderProduct['product_price']);
             $orderProduct['quantity'] = $orderProduct['product_quantity'];
             $orderProduct['total'] = $this->priceFormatter->format($orderProduct['total_price']);
+            $productComments = ProductComment::getCommentInOrder($orderProduct['product_id'], (int)$orderProduct['product_attribute_id'], (int)$order->id);
+            $orderProduct['comment'] = $productComments ? $productComments[0]['content'] : '';
 
             if ($orderPaid && $orderProduct['is_virtual']) {
                 $id_product_download = ProductDownload::getIdFromIdProduct($orderProduct['product_id']);
@@ -140,6 +144,7 @@ class OrderPresenter implements PresenterInterface
                     $orderProduct['unit_price_full'] = $cartProduct['unit_price_full'];
                 }
             }
+
 
             OrderReturn::addReturnedQuantity($orderProducts, $order->id);
         }

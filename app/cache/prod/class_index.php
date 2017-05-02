@@ -803,6 +803,18 @@
     'type' => 'class',
     'override' => false,
   ),
+  'AdminProductCommentsController' => 
+  array (
+    'path' => '',
+    'type' => 'class',
+    'override' => false,
+  ),
+  'AdminProductCommentsControllerCore' => 
+  array (
+    'path' => 'controllers/admin/AdminProductCommentsController.php',
+    'type' => 'class',
+    'override' => false,
+  ),
   'AdminProductsController' => 
   array (
     'path' => '',
@@ -3626,6 +3638,18 @@
   'ProductAssemblerCore' => 
   array (
     'path' => 'classes/ProductAssembler.php',
+    'type' => 'class',
+    'override' => false,
+  ),
+  'ProductComment' => 
+  array (
+    'path' => '',
+    'type' => 'class',
+    'override' => false,
+  ),
+  'ProductCommentCore' => 
+  array (
+    'path' => 'classes/ProductComment.php',
     'type' => 'class',
     'override' => false,
   ),

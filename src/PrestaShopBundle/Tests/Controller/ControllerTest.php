@@ -150,6 +150,7 @@ class ControllerTest extends \PHPUnit_Framework_TestCase
             array('AdminContactsController'),
             array('AdminLegacyLayoutController'),
             array('AdminPPreferencesController'),
+            array('AdminProductCommentsController'),
         );
     }
 

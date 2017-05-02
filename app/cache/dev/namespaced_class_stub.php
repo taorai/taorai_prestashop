@@ -180,6 +180,7 @@ class PrestaShopBackup extends \PrestaShopBackup {};
 class PrestaShopCollection extends \PrestaShopCollection {};
 class PrestaShopLogger extends \PrestaShopLogger {};
 class ProductAssembler extends \ProductAssembler {};
+class ProductComment extends \ProductComment {};
 class ProductDownload extends \ProductDownload {};
 class Product extends \Product {};
 class ProductPresenterFactory extends \ProductPresenterFactory {};
