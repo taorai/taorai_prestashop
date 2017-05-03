@@ -74,17 +74,18 @@ class SitemapControllerCore extends FrontController
             );
         }
 
-        $links[] = array(
-            'id' => 'stores-page',
-            'label' => $this->trans('Our stores', array(), 'Shop.Theme'),
-            'url' => $this->context->link->getPageLink('stores'),
-        );
+        // do not show store & contact info
+        // $links[] = array(
+        //     'id' => 'stores-page',
+        //     'label' => $this->trans('Our stores', array(), 'Shop.Theme'),
+        //     'url' => $this->context->link->getPageLink('stores'),
+        // );
 
-        $links[] = array(
-            'id' => 'contact-page',
-            'label' => $this->trans('Contact us', array(), 'Shop.Theme'),
-            'url' => $this->context->link->getPageLink('contact'),
-        );
+        // $links[] = array(
+        //     'id' => 'contact-page',
+        //     'label' => $this->trans('Contact us', array(), 'Shop.Theme'),
+        //     'url' => $this->context->link->getPageLink('contact'),
+        // );
 
         $links[] = array(
             'id' => 'sitemap-page',
@@ -130,7 +131,7 @@ class SitemapControllerCore extends FrontController
             ),
         );
 
-        if (Configuration::isCatalogMode() && Configuration::get('PS_DISPLAY_BEST_SELLERS')) {
+        // if (Configuration::isCatalogMode() && Configuration::get('PS_DISPLAY_BEST_SELLERS')) {
             $links[] = array(
                 'id' => 'best-sales-page',
                 'label' => $this->trans('Best sellers', array(), 'Shop.Theme.Catalog'),
@@ -141,7 +142,7 @@ class SitemapControllerCore extends FrontController
                 'label' => $this->trans('Price drop', array(), 'Shop.Theme.Catalog'),
                 'url' => $this->context->link->getPageLink('prices-drop'),
             );
-        }
+        // }
 
         if (Configuration::get('PS_DISPLAY_SUPPLIERS')) {
             $manufacturers = Manufacturer::getLiteManufacturersList($this->context->language->id, 'sitemap');
