@@ -704,6 +704,12 @@ File: themes/starterTheme/templates/customer/order-detail.tpl:107</note>
         <note>Context:
 File: themes/starterTheme/templates/customer/order-detail.tpl:23</note>
       </trans-unit>
+      <trans-unit id="3726d2bc671a53445f9f57095bf9d76b">
+        <source>Bank Transfer</source>
+        <target>Bank Transfer</target>
+        <note>Context:
+File: themes/starterTheme/templates/customer/order-detail.tpl</note>
+      </trans-unit>
       <trans-unit id="d350478ea9dc7f1f8ae3c78a41630f1d">
         <source>Delivery address %alias%</source>
         <target>Delivery address %alias%</target>

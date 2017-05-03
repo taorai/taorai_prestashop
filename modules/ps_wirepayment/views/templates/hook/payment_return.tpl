@@ -32,7 +32,7 @@
 
     <p>
       {l s='Please specify your order reference %s in the bankwire description.' sprintf=[$reference] d='Modules.Wirepayment.Shop'}<br/>
-      {l s='We\'ve also sent you this information by e-mail.' d='Modules.Wirepayment.Shop'}
+      <!-- {l s='We\'ve also sent you this information by e-mail.' d='Modules.Wirepayment.Shop'} -->
     </p>
     <strong>{l s='Your order will be sent as soon as we receive payment.' d='Modules.Wirepayment.Shop'}</strong>
     <p>
