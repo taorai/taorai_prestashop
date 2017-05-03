@@ -30,10 +30,10 @@
 </dl>
 {foreach from=$bankwireOwner key=index item=owner}
 	<dl>
-	    <dt>{l s='Name of account owner' d='Modules.Wirepayment.Shop'}</dt>
-	    <dd>{$bankwireOwner[$index]}</dd>
 	    <dt>{l s='Bank name' d='Modules.Wirepayment.Shop'}</dt>
 	    <dd>{$bankwireAddress[$index] nofilter}</dd>
+	    <dt>{l s='Name of account owner' d='Modules.Wirepayment.Shop'}</dt>
+	    <dd>{$bankwireOwner[$index]}</dd>
 	    <dt>{l s='Please include these details' d='Modules.Wirepayment.Shop'}</dt>
 	    <dd>{$bankwireDetails[$index] nofilter}</dd>
 	</dl>
