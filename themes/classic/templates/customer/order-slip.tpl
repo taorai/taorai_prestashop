@@ -31,7 +31,7 @@
 {block name='page_content'}
   <h6>{l s='Credit slips you have received after canceled orders.' d='Shop.Theme.Customeraccount'}</h6>
   {if $credit_slips}
-    <table class="table table-striped table-bordered hidden-sm-down">
+    <table class="table table-bordered hidden-sm-down">
       <thead class="thead-default">
         <tr>
           <th>{l s='Order' d='Shop.Theme.Customeraccount'}</th>
@@ -42,8 +42,8 @@
       </thead>
       <tbody>
         {foreach from=$credit_slips item=slip}
-          <tr>
-            <td><a href="{$slip.order_url_details}" data-link-action="view-order-details">{$slip.order_reference}</a></td>
+          <tr onmouseover="this.className='tr_over'" onmouseout="this.className='tr_out'" onclick="window.parent.location='{$slip.order_url_details}'">
+            <td>{$slip.order_reference}</td>
             <td scope="row">{$slip.credit_slip_number}</td>
             <td>{$slip.credit_slip_date}</td>
             <td class="text-xs-center">
@@ -56,23 +56,27 @@
     <div class="credit-slips hidden-md-up">
       {foreach from=$credit_slips item=slip}
         <div class="credit-slip">
-          <ul>
-            <li>
-              <strong>{l s='Order' d='Shop.Theme.Customeraccount'}</strong>
-              <a href="{$slip.order_url_details}" data-link-action="view-order-details">{$slip.order_reference}</a>
-            </li>
-            <li>
-              <strong>{l s='Credit slip' d='Shop.Theme.Customeraccount'}</strong>
-              {$slip.credit_slip_number}
-            </li>
-            <li>
-              <strong>{l s='Date issued' d='Shop.Theme.Customeraccount'}</strong>
-              {$slip.credit_slip_date}
-            </li>
-            <li>
-              <a href="{$slip.url}">{l s='View credit slip' d='Shop.Theme.Customeraccount'}</a>
-            </li>
-          </ul>
+          <div class="row">
+            <div class="col-xs-12">
+              <div>
+                <a href="{$slip.order_url_details}">
+                  <strong>{l s='Order' d='Shop.Theme.Customeraccount'}</strong>
+                  {$slip.order_reference}
+                </a>
+              </div>
+              <div>
+                <strong>{l s='Credit slip' d='Shop.Theme.Customeraccount'}</strong>
+                {$slip.credit_slip_number}
+              </div>
+              <div class="date">
+                <strong>{l s='Date issued' d='Shop.Theme.Customeraccount'}</strong>
+                {$slip.credit_slip_date}
+              </div>
+              <div style="float:right;">
+                <a href="{$slip.url}">{l s='View credit slip' d='Shop.Theme.Customeraccount'}</a>
+              </div>
+            </div>
+          </div>
         </div>
       {/foreach}
     </div>
