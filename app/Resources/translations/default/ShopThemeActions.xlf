@@ -418,6 +418,18 @@ File: themes/starterTheme/templates/customer/addresses.tpl:18</note>
         <note>Context:
 File: themes/starterTheme/templates/customer/order-detail.tpl:19</note>
       </trans-unit>
+      <trans-unit id="06c883a79771ecda24de1687ed7915ba">
+        <source>Show Details</source>
+        <target>Show Details</target>
+        <note>Context:
+File: themes/starterTheme/templates/customer/order-detail.tpl:19</note>
+      </trans-unit>
+      <trans-unit id="7c5fb72b2ab0d57476a8b930a59f0650">
+        <source>Hide Details</source>
+        <target>Hide Details</target>
+        <note>Context:
+File: themes/starterTheme/templates/customer/order-detail.tpl:19</note>
+      </trans-unit>
     </body>
   </file>
   <file original="themes/starterTheme/templates/customer/order-follow.tpl" source-language="en-US" target-language="en" datatype="plaintext">

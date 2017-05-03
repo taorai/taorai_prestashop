@@ -242,9 +242,9 @@ class Ps_Wirepayment extends PaymentModule
                     new Currency($params['order']->id_currency),
                     false
                 ),
-                'bankwireDetails' => $bankwireDetails,
-                'bankwireAddress' => $bankwireAddress,
-                'bankwireOwner' => $bankwireOwner,
+                'bankwireDetails' => explode('-', $bankwireDetails),
+                'bankwireAddress' => explode('-', $bankwireAddress),
+                'bankwireOwner' => explode('-', $bankwireOwner),
                 'status' => 'ok',
                 'reference' => $params['order']->reference,
                 'contact_url' => $this->context->link->getPageLink('contact', true)

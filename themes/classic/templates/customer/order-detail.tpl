@@ -54,7 +54,42 @@
       <div class="box">
           <ul>
             <li><strong>{l s='Carrier' d='Shop.Theme.Checkout'}</strong> {$order.carrier.name}</li>
-            <li><strong>{l s='Payment method' d='Shop.Theme.Checkout'}</strong> {$order.details.payment}</li>
+            <li>
+              <div class="row">
+                <div class="col-xs-8">
+                  <strong>
+                    {l s='Payment method' d='Shop.Theme.Checkout'}
+                  </strong>
+                  {if strcasecmp(trim($order.details.payment), "Wire payment") == 0}
+                    {l s='Bank Transfer' d='Shop.Theme.Checkout'}
+                  {/if}
+                </div>
+                {if strcasecmp(trim($order.details.payment), "Wire payment") == 0}
+                  <div class="col-xs-4 text-xs-right">
+                    <a href="###" class="button-primary" id="toggle-display-payment-details" style="display:block;" onclick="toggleWirePaymentDetail(1);">{l s='Show Details' d='Shop.Theme.Actions'}</a>
+                    <a href="###" class="button-primary" id="toggle-hide-payment-details" style="display:none;" onclick="toggleWirePaymentDetail(0);">{l s='Hide Details' d='Shop.Theme.Actions'}</a>
+                  </div>
+                {/if}
+              </div>
+              
+              {if strcasecmp(trim($order.details.payment), "Wire payment") == 0}
+                <div id="div-payment-detail" style="display: none;padding: 1rem;">
+                  {block name='hook_payment_return'}
+                    {if ! empty($HOOK_PAYMENT_RETURN)}
+                    <section id="content-hook_payment_return" class="card definition-list">
+                      <div class="card-block">
+                        <div class="row">
+                          <div class="col-md-12">
+                            {$HOOK_PAYMENT_RETURN nofilter}
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    {/if}
+                  {/block}
+                </div>
+              {/if}
+            </li>
 
             {if $order.details.invoice_url}
               <li>
