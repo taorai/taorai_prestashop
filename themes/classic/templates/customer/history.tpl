@@ -50,7 +50,11 @@
             <th scope="row">{$order.details.reference}</th>
             <td>{$order.details.order_date}</td>
             <td class="text-xs-right">{$order.totals.total.value}</td>
-            <td class="hidden-md-down">{$order.details.payment}</td>
+            <td class="hidden-md-down">
+              {if strcasecmp(trim($order.details.payment), "Wire payment") == 0}
+                {l s='Bank Transfer' d='Shop.Theme.Checkout'}
+              {/if}
+            </td>
             <td>
               <span
                 class="label label-pill {$order.history.current.contrast}"
