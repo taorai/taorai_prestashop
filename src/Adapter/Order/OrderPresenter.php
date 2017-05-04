@@ -99,6 +99,7 @@ class OrderPresenter implements PresenterInterface
             'id_address_invoice' => $order->id_address_invoice,
             'labels' => $this->getLabels(),
             'delivery_status' => $order->getCurrentOrderState() && $order->getCurrentOrderState()->delivery,
+            'paid_status' => $order->getCurrentOrderState() && $order->getCurrentOrderState()->paid,
         );
     }
 

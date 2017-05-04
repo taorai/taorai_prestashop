@@ -64,7 +64,7 @@
                     {l s='Bank Transfer' d='Shop.Theme.Checkout'}
                   {/if}
                 </div>
-                {if strcasecmp(trim($order.details.payment), "Wire payment") == 0}
+                {if strcasecmp(trim($order.details.payment), "Wire payment") == 0 && !$order.paid_status}
                   <div class="col-xs-4 text-xs-right">
                     <a href="###" class="button-primary" id="toggle-display-payment-details" style="display:block;" onclick="toggleWirePaymentDetail(1);">{l s='Show Details' d='Shop.Theme.Actions'}</a>
                     <a href="###" class="button-primary" id="toggle-hide-payment-details" style="display:none;" onclick="toggleWirePaymentDetail(0);">{l s='Hide Details' d='Shop.Theme.Actions'}</a>
@@ -72,7 +72,7 @@
                 {/if}
               </div>
               
-              {if strcasecmp(trim($order.details.payment), "Wire payment") == 0}
+              {if strcasecmp(trim($order.details.payment), "Wire payment") == 0 && !$order.paid_status}
                 <div id="div-payment-detail" style="display: none;padding: 1rem;">
                   {block name='hook_payment_return'}
                     {if ! empty($HOOK_PAYMENT_RETURN)}
