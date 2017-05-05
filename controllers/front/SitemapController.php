@@ -123,25 +123,23 @@ class SitemapControllerCore extends FrontController
      */
     protected function getOffersLinks()
     {
-        $links = array(
-            array(
-                'id' => 'new-product-page',
-                'label' => $this->trans('New products', array(), 'Shop.Theme.Catalog'),
-                'url' => $this->context->link->getPageLink('new-products'),
-            ),
-        );
 
         // if (Configuration::isCatalogMode() && Configuration::get('PS_DISPLAY_BEST_SELLERS')) {
-            $links[] = array(
-                'id' => 'best-sales-page',
-                'label' => $this->trans('Best sellers', array(), 'Shop.Theme.Catalog'),
-                'url' => $this->context->link->getPageLink('best-sales'),
-            );
-            $links[] = array(
-                'id' => 'prices-drop-page',
-                'label' => $this->trans('Price drop', array(), 'Shop.Theme.Catalog'),
-                'url' => $this->context->link->getPageLink('prices-drop'),
-            );
+        $links[] = array(
+            'id' => 'best-sales-page',
+            'label' => $this->trans('Best sellers', array(), 'Shop.Theme.Catalog'),
+            'url' => $this->context->link->getPageLink('best-sales'),
+        );
+        $links[] = array(
+            'id' => 'new-product-page',
+            'label' => $this->trans('New products', array(), 'Shop.Theme.Catalog'),
+            'url' => $this->context->link->getPageLink('new-products'),
+        );
+        $links[] = array(
+            'id' => 'prices-drop-page',
+            'label' => $this->trans('Price drop', array(), 'Shop.Theme.Catalog'),
+            'url' => $this->context->link->getPageLink('prices-drop'),
+        );
         // }
 
         if (Configuration::get('PS_DISPLAY_SUPPLIERS')) {
