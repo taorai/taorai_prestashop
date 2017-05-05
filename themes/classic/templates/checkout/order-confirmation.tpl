@@ -38,7 +38,7 @@
                     </h3>
                   {/block}
 
-                  <p>
+<!--                   <p>
                     {l s='An email has been sent to your mail address %email%.' d='Shop.Theme.Checkout' sprintf=['%email%' => $customer.email]}
                     {if $order.details.invoice_url}
                       {* [1][/1] is for a HTML tag. *}
@@ -51,7 +51,7 @@
                         ]
                       }
                     {/if}
-                  </p>
+                  </p> -->
 
                   {block name='hook_order_confirmation'}
                     {$HOOK_ORDER_CONFIRMATION nofilter}
@@ -84,11 +84,15 @@
                     <h3 class="h3 card-title">{l s='Order details' d='Shop.Theme.Checkout'}:</h3>
                     <ul>
                       <li>{l s='Order reference: %reference%' d='Shop.Theme.Checkout' sprintf=['%reference%' => $order.details.reference]}</li>
-                      <li>{l s='Payment method: %method%' d='Shop.Theme.Checkout' sprintf=['%method%' => $order.details.payment]}</li>
+                      <li>
+                        {l s='Payment method' d='Shop.Theme.Checkout'}: 
+                        {if strcasecmp(trim($order.details.payment), "Wire payment") == 0}
+                          {l s='Bank Transfer' d='Shop.Theme.Checkout'}
+                        {/if}
+                      </li>
                       {if !$order.details.is_virtual}
                         <li>
-                          {l s='Shipping method: %method%  -  <em>%delay%</em>' d='Shop.Theme.Checkout' sprintf=['%method%' => $order.carrier.name, '%delay%' => $order.carrier.delay]}<br>
-                          
+                          {l s='Shipping method: %method%' d='Shop.Theme.Checkout' sprintf=['%method%' => $order.carrier.name]}<br>
                         </li>
                       {/if}
                     </ul>

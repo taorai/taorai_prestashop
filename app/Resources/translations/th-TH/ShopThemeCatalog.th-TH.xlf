@@ -66,7 +66,7 @@ File: controllers/front/SitemapController.php:141</note>
     <body>
       <trans-unit id="9ff0635f5737513b1a6f559ac2bff745" approved="yes">
         <source>New products</source>
-        <target xml:lang="th">สินค้าใหม่</target>
+        <target xml:lang="th">New arrivals</target>
         <note>Context:
 File: themes/classic/modules/ps_newproducts/views/templates/hook/ps_newproducts.tpl:28</note>
       </trans-unit>
@@ -166,7 +166,7 @@ File: src/Core/Product/ProductPresenter.php:338</note>
       </trans-unit>
       <trans-unit id="656c3be690ee43df4b845bd2a2ebe587" approved="yes">
         <source>New product</source>
-        <target xml:lang="th">สินค้าใหม่</target>
+        <target xml:lang="th">New arrivals</target>
         <note>Context:
 File: src/Core/Product/ProductPresenter.php:356</note>
       </trans-unit>

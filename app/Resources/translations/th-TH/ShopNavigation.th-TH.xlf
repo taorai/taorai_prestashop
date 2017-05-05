@@ -16,7 +16,7 @@ File: classes/lang/MetaLang.php:43</note>
       </trans-unit>
       <trans-unit id="9ff0635f5737513b1a6f559ac2bff745" approved="yes">
         <source>New products</source>
-        <target xml:lang="th">สินค้าใหม่</target>
+        <target xml:lang="th">New arrivals</target>
         <note>Context:
 File: classes/lang/MetaLang.php:44</note>
       </trans-unit>

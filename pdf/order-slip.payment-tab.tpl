@@ -26,7 +26,10 @@
 	<tr>
 		<td class="payment center small grey bold" width="44%">{l s='Payment Method' d='Shop.Pdf' pdf='true'}</td>
 		<td class="payment left white" width="56%">
-			{$order->payment}
+			<!-- {$order->payment} -->
+			{if strcasecmp(trim($order->payment), "Wire payment") == 0}
+	            {l s='Bank Transfer' d='Shop.Theme.Checkout'}
+        	{/if}
 		</td>
 	</tr>
 </table>

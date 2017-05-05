@@ -29,7 +29,12 @@
 			<table width="100%" border="0">
 				{foreach from=$order_invoice->getOrderPaymentCollection() item=payment}
 					<tr>
-						<td class="right small">{$payment->payment_method}</td>
+						<td class="right small">
+							<!-- {$payment->payment_method} -->
+							{if strcasecmp(trim($payment->payment_method), "Wire payment") == 0}
+					            {l s='Bank Transfer' d='Shop.Theme.Checkout'}
+				        	{/if}
+						</td>
 						<td class="right small">{displayPrice currency=$payment->id_currency price=$payment->amount}</td>
 					</tr>
 				{/foreach}
