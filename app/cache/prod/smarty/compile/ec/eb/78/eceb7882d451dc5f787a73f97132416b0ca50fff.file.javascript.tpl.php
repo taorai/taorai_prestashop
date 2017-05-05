@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-05-05 06:48:01
+<?php /* Smarty version Smarty-3.1.19, created on 2017-05-05 07:31:22
          compiled from "/home/steven/GitRepository/taorai/themes/javascript.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1772864482590bbdb10d2d22-17089868%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1956463395590bc7da67bbe4-10972340%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1772864482590bbdb10d2d22-17089868',
+  'nocache_hash' => '1956463395590bc7da67bbe4-10972340',
   'function' => 
   array (
   ),
@@ -27,9 +27,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_590bbdb10f9ed0_73775249',
+  'unifunc' => 'content_590bc7da6a9bf1_70015611',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_590bbdb10f9ed0_73775249')) {function content_590bbdb10f9ed0_73775249($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_590bc7da6a9bf1_70015611')) {function content_590bc7da6a9bf1_70015611($_smarty_tpl) {?>
 <?php if (isset($_smarty_tpl->tpl_vars['js_def']->value)&&is_array($_smarty_tpl->tpl_vars['js_def']->value)&&count($_smarty_tpl->tpl_vars['js_def']->value)) {?>
 <script type="text/javascript">
 <?php  $_smarty_tpl->tpl_vars['def'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['def']->_loop = false;

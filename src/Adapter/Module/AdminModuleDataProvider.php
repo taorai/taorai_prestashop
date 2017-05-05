@@ -185,9 +185,9 @@ class AdminModuleDataProvider implements ModuleInterface
                 $addon->attributes->set('url_active', $url_active);
             }
 
-            // to allow Installed module can work locally
-            // $categoryParent = $this->categoriesProvider->getParentCategory($addon->attributes->get('categoryName'));
-            // $addon->attributes->set('categoryParent', $categoryParent);
+            // comment to allow work locally
+            $categoryParent = $this->categoriesProvider->getParentCategory($addon->attributes->get('categoryName'));
+            $addon->attributes->set('categoryParent', $categoryParent);
         }
 
         return $addons;
