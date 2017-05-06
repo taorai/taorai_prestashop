@@ -3,17 +3,11 @@
 
 Hi {firstname} {lastname},
 
-Your order has been shipped 
+สั่งซื้อของคุณได้รับการจัดส่ง
 
-Your order with the reference {order_name} has been shipped.
+ใบสั่งซื้อของคุณที่มีหมายเลขอ้างอิง {order_name} ได้เริ่มจัดส่งแล้ว
 
-Thank you for shopping with {shop_name}! 		 
+ขอบคุณที่ซื้อสินค้าที่ {shop_name}! 		 
 
-You can review your order and download your invoice from the
-"Order history" [{history_url}]
-section of your customer account by clicking "My account"
-[{my_account_url}] on our shop. 
-
-{shop_name} [{shop_url}] powered
-by PrestaShop(tm) [http://www.prestashop.com/] 
-
+คุณสามารถตรวจสอบคำสั่งซื้อของคุณได้จากส่วน "ประวัติการสั่งซื้อ" [{history_url}]
+ของบัญชีลูกค้าของคุณโดยการคลิก "บัญชีของฉัน" [{my_account_url}] ที่ร้านของเรา
