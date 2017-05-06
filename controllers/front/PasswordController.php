@@ -162,18 +162,20 @@ class PasswordControllerCore extends FrontController
                             ];
 
                             if (
-                                Mail::Send(
-                                    $this->context->language->id,
-                                    'password',
-                                    $this->trans(
-                                        'Your new password',
-                                        array(),
-                                        'Emails.Subject'
-                                    ),
-                                    $mail_params,
-                                    $customer->email,
-                                    $customer->firstname.' '.$customer->lastname
-                                )
+                                true
+                                // do not auto send new password email after reset
+                                // Mail::Send(
+                                //     $this->context->language->id,
+                                //     'password',
+                                //     $this->trans(
+                                //         'Your new password',
+                                //         array(),
+                                //         'Emails.Subject'
+                                //     ),
+                                //     $mail_params,
+                                //     $customer->email,
+                                //     $customer->firstname.' '.$customer->lastname
+                                // )
                             ) {
                                 $this->context->smarty->assign([
                                     'customer_email' => $customer->email

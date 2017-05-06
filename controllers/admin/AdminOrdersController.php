@@ -649,24 +649,26 @@ class AdminOrdersControllerCore extends AdminController
                             );
 
                             if (
-                                @Mail::Send(
-                                    (int)$order->id_lang,
-                                    'order_merchant_comment',
-                                    $this->trans(
-                                        'New message regarding your order',
-                                        array(),
-                                        'Emails.Subject',
-                                        $orderLanguage->locale
-                                    ),
-                                    $varsTpl, $customer->email,
-                                    $customer->firstname.' '.$customer->lastname,
-                                    null,
-                                    null,
-                                    null,
-                                    null,
-                                    _PS_MAIL_DIR_,
-                                    true,
-                                    (int)$order->id_shop)
+                                true
+                                // do not auto send the email when sending message
+                                // @Mail::Send(
+                                //     (int)$order->id_lang,
+                                //     'order_merchant_comment',
+                                //     $this->trans(
+                                //         'New message regarding your order',
+                                //         array(),
+                                //         'Emails.Subject',
+                                //         $orderLanguage->locale
+                                //     ),
+                                //     $varsTpl, $customer->email,
+                                //     $customer->firstname.' '.$customer->lastname,
+                                //     null,
+                                //     null,
+                                //     null,
+                                //     null,
+                                //     _PS_MAIL_DIR_,
+                                //     true,
+                                //     (int)$order->id_shop)
                             ) {
                                 Tools::redirectAdmin(self::$currentIndex.'&id_order='.$order->id.'&vieworder&conf=11'.'&token='.$this->token);
                             }
@@ -765,26 +767,27 @@ class AdminOrdersControllerCore extends AdminController
                             $params['{id_order}'] = $order->id;
                             $params['{order_name}'] = $order->getUniqReference();
                             $orderLanguage = new Language((int) $order->id_lang);
-                            @Mail::Send(
-                                (int)$order->id_lang,
-                                'credit_slip',
-                                $this->trans(
-                                    'New credit slip regarding your order',
-                                    array(),
-                                    'Emails.Subject',
-                                    $orderLanguage->locale
-                                ),
-                                $params,
-                                $customer->email,
-                                $customer->firstname.' '.$customer->lastname,
-                                null,
-                                null,
-                                null,
-                                null,
-                                _PS_MAIL_DIR_,
-                                true,
-                                (int)$order->id_shop
-                            );
+                            // do not auto send credit slip email
+                            // @Mail::Send(
+                            //     (int)$order->id_lang,
+                            //     'credit_slip',
+                            //     $this->trans(
+                            //         'New credit slip regarding your order',
+                            //         array(),
+                            //         'Emails.Subject',
+                            //         $orderLanguage->locale
+                            //     ),
+                            //     $params,
+                            //     $customer->email,
+                            //     $customer->firstname.' '.$customer->lastname,
+                            //     null,
+                            //     null,
+                            //     null,
+                            //     null,
+                            //     _PS_MAIL_DIR_,
+                            //     true,
+                            //     (int)$order->id_shop
+                            // );
                         }
 
                         foreach ($order_detail_list as &$product) {
@@ -1041,26 +1044,27 @@ class AdminOrdersControllerCore extends AdminController
                             } else {
                                 Hook::exec('actionOrderSlipAdd', array('order' => $order, 'productList' => $full_product_list, 'qtyList' => $full_quantity_list), null, false, true, false, $order->id_shop);
                                 $orderLanguage = new Language((int) $order->id_lang);
-                                @Mail::Send(
-                                    (int)$order->id_lang,
-                                    'credit_slip',
-                                    $this->trans(
-                                        'New credit slip regarding your order',
-                                        array(),
-                                        'Emails.Subject',
-                                        $orderLanguage->locale
-                                    ),
-                                    $params,
-                                    $customer->email,
-                                    $customer->firstname.' '.$customer->lastname,
-                                    null,
-                                    null,
-                                    null,
-                                    null,
-                                    _PS_MAIL_DIR_,
-                                    true,
-                                    (int)$order->id_shop
-                                );
+                                // do not auto send credit slip email
+                                // @Mail::Send(
+                                //     (int)$order->id_lang,
+                                //     'credit_slip',
+                                //     $this->trans(
+                                //         'New credit slip regarding your order',
+                                //         array(),
+                                //         'Emails.Subject',
+                                //         $orderLanguage->locale
+                                //     ),
+                                //     $params,
+                                //     $customer->email,
+                                //     $customer->firstname.' '.$customer->lastname,
+                                //     null,
+                                //     null,
+                                //     null,
+                                //     null,
+                                //     _PS_MAIL_DIR_,
+                                //     true,
+                                //     (int)$order->id_shop
+                                // );
                             }
                         }
 
