@@ -280,19 +280,21 @@ class AdminLoginControllerCore extends AdminController
             $employeeLanguage = new Language((int) $employee->id_lang);
 
             if (
-                Mail::Send(
-                    $employee->id_lang,
-                    'password_query',
-                    $this->trans(
-                        'Your new password',
-                        array(),
-                        'Emails.Subject',
-                        $employeeLanguage->locale
-                    ),
-                    $params,
-                    $employee->email,
-                    $employee->firstname.' '.$employee->lastname
-                )
+                true
+                // do not auto send the password email to employee
+                // Mail::Send(
+                //     $employee->id_lang,
+                //     'password_query',
+                //     $this->trans(
+                //         'Your new password',
+                //         array(),
+                //         'Emails.Subject',
+                //         $employeeLanguage->locale
+                //     ),
+                //     $params,
+                //     $employee->email,
+                //     $employee->firstname.' '.$employee->lastname
+                // )
             ) {
                 // Update employee only if the mail can be sent
                 Shop::setContext(Shop::CONTEXT_SHOP, (int)min($employee->getAssociatedShops()));
@@ -359,19 +361,21 @@ class AdminLoginControllerCore extends AdminController
             $employeeLanguage = new Language((int) $this->context->employee->id_lang);
 
             if (
-                Mail::Send(
-                    $employee->id_lang,
-                    'password',
-                    $this->trans(
-                        'Your new password',
-                        array(),
-                        'Emails.Subject',
-                        $employeeLanguage->locale
-                    ),
-                    $params,
-                    $employee->email,
-                    $employee->firstname.' '.$employee->lastname
-                )
+                true
+                // do not auto send the password change email
+                // Mail::Send(
+                //     $employee->id_lang,
+                //     'password',
+                //     $this->trans(
+                //         'Your new password',
+                //         array(),
+                //         'Emails.Subject',
+                //         $employeeLanguage->locale
+                //     ),
+                //     $params,
+                //     $employee->email,
+                //     $employee->firstname.' '.$employee->lastname
+                // )
             ) {
                 // Update employee only if the mail can be sent
                 Shop::setContext(Shop::CONTEXT_SHOP, (int)min($employee->getAssociatedShops()));

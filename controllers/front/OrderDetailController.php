@@ -108,37 +108,38 @@ class OrderDetailControllerCore extends FrontController
                         $product_name = $product->name[(int)$this->context->language->id];
                     }
 
-                    if (Validate::isLoadedObject($customer)) {
-                        Mail::Send(
-                            $this->context->language->id,
-                            'order_customer_comment',
-                            $this->trans(
-                                'Message from a customer',
-                                array(),
-                                'Emails.Subject'
-                            ),
-                            array(
-                                '{lastname}' => $customer->lastname,
-                                '{firstname}' => $customer->firstname,
-                                '{email}' => $customer->email,
-                                '{id_order}' => (int)$order->id,
-                                '{order_name}' => $order->getUniqReference(),
-                                '{message}' => Tools::nl2br($msgText),
-                                '{product_name}' => $product_name
-                            ),
-                            $to,
-                            $toName,
-                            strval(Configuration::get('PS_SHOP_EMAIL')),
-                            $customer->firstname.' '.$customer->lastname,
-                            null,
-                            null,
-                            _PS_MAIL_DIR_,
-                            false,
-                            null,
-                            null,
-                            $customer->email
-                        );
-                    }
+                    // do not auto send email when sending message
+                    // if (Validate::isLoadedObject($customer)) {
+                    //     Mail::Send(
+                    //         $this->context->language->id,
+                    //         'order_customer_comment',
+                    //         $this->trans(
+                    //             'Message from a customer',
+                    //             array(),
+                    //             'Emails.Subject'
+                    //         ),
+                    //         array(
+                    //             '{lastname}' => $customer->lastname,
+                    //             '{firstname}' => $customer->firstname,
+                    //             '{email}' => $customer->email,
+                    //             '{id_order}' => (int)$order->id,
+                    //             '{order_name}' => $order->getUniqReference(),
+                    //             '{message}' => Tools::nl2br($msgText),
+                    //             '{product_name}' => $product_name
+                    //         ),
+                    //         $to,
+                    //         $toName,
+                    //         strval(Configuration::get('PS_SHOP_EMAIL')),
+                    //         $customer->firstname.' '.$customer->lastname,
+                    //         null,
+                    //         null,
+                    //         _PS_MAIL_DIR_,
+                    //         false,
+                    //         null,
+                    //         null,
+                    //         $customer->email
+                    //     );
+                    // }
 
                     Tools::redirect('index.php?controller=order-detail&id_order='.$idOrder.'&messagesent');
                 } else {
