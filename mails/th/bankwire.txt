@@ -3,33 +3,37 @@
 
 Hi {firstname} {lastname},
 
-Thank you for shopping with {shop_name}! 
+ขอบคุณสำหรับการช็อปปิ้งกับ {shop_name}! 
 
-Your order with the reference {order_name} has been placed
-successfully and will be SHIPPED AS SOON AS WE RECEIVE YOUR PAYMENT. 
+ใบสั่งซื้อของคุณที่มีหมายเลขอ้างอิง {order_name}
+ถูกวางไว้เรียบร้อยแล้วและจะจัดส่งทันทีที่เราได้รับการชำระเงินของคุณ
 
-You have selected to pay by wire transfer. 
+คุณเลือกที่จะชำระเงินด้วยการโอนเงินผ่านธนาคาร
 
-Here are the bank details for your transfer:
+ต่อไปนี้เป็นรายละเอียดสำหรับการชำระเงินผ่านการโอนเงินผ่านธนาคารของคุณ: 
 
-AMOUNT: {total_paid}
+จำนวน: {total_paid}
 
-ACCOUNT OWNER: {bankwire_owner}
+ชื่อธนาคาร: SCB
+ชื่อเจ้าของบัญชี: LEI WANG
+หมายเลขบัญชีธนาคาร: 4075173044
 
-ACCOUNT DETAILS: {bankwire_details}
+ชื่อธนาคาร: BBL
+ชื่อเจ้าของบัญชี: MR.LEI WANG
+หมายเลขบัญชีธนาคาร: 0298023318
 
-BANK ADDRESS: {bankwire_address} 		 
+ชื่อธนาคาร: KBANK
+ชื่อเจ้าของบัญชี: MR. LEI WANG
+หมายเลขบัญชีธนาคาร: 0243794315
 
-You can review your order and download your invoice from the
-"Order history" [{history_url}]
-section of your customer account by clicking "My account"
-[{my_account_url}] on our shop. 
+ชื่อธนาคาร: KTB
+ชื่อเจ้าของบัญชี: LEI WANG
+หมายเลขบัญชีธนาคาร: 9857354653
 
-If you have a guest account, you can follow your order via the
-"Guest Tracking"
-[{guest_tracking_url}] section on our
-shop. 
+ชื่อธนาคาร: BAY
+ชื่อเจ้าของบัญชี: LEI WANG
+หมายเลขบัญชีธนาคาร: 6281152849	 
 
-{shop_name} [{shop_url}] powered
-by PrestaShop(tm) [http://www.prestashop.com/] 
+คุณสามารถตรวจสอบคำสั่งซื้อของคุณได้จากส่วน "ประวัติการสั่งซื้อ" [{history_url}]
+ของบัญชีลูกค้าของคุณโดยการคลิก "บัญชีของฉัน" [{my_account_url}] ที่ร้านของเรา
 
