@@ -456,25 +456,26 @@ class AdminCustomerThreadsControllerCore extends AdminController
                         $from_email = null;
                     }
 
-                    $language = new Language((int) $ct->id_lang);
+                    // do not auto send email when reply the message
+                    // $language = new Language((int) $ct->id_lang);
 
-                    if (Mail::Send(
-                        (int)$ct->id_lang,
-                        'reply_msg',
-                        $this->trans(
-                            'An answer to your message is available #ct%thread_id% #tc%thread_token%',
-                            array(
-                                '%thread_id%' => $ct->id,
-                                '%thread_token%' => $ct->token,
-                            ),
-                            'Emails.Subject',
-                            $language->locale
-                        ),
-                        $params, Tools::getValue('msg_email'), null, $from_email, $from_name, $file_attachment, null,
-                        _PS_MAIL_DIR_, true, $ct->id_shop)) {
-                        $ct->status = 'closed';
-                        $ct->update();
-                    }
+                    // if (Mail::Send(
+                    //     (int)$ct->id_lang,
+                    //     'reply_msg',
+                    //     $this->trans(
+                    //         'An answer to your message is available #ct%thread_id% #tc%thread_token%',
+                    //         array(
+                    //             '%thread_id%' => $ct->id,
+                    //             '%thread_token%' => $ct->token,
+                    //         ),
+                    //         'Emails.Subject',
+                    //         $language->locale
+                    //     ),
+                    //     $params, Tools::getValue('msg_email'), null, $from_email, $from_name, $file_attachment, null,
+                    //     _PS_MAIL_DIR_, true, $ct->id_shop)) {
+                    //     $ct->status = 'closed';
+                    //     $ct->update();
+                    // }
                     Tools::redirectAdmin(
                         self::$currentIndex.'&id_customer_thread='.(int)$id_customer_thread.'&viewcustomer_thread&token='.Tools::getValue('token')
                     );
