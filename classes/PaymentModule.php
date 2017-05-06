@@ -817,27 +817,28 @@ abstract class PaymentModuleCore extends Module
                             PrestaShopLogger::addLog('PaymentModule::validateOrder - Mail is about to be sent', 1, null, 'Cart', (int)$id_cart, true);
                         }
 
-                        $orderLanguage = new Language((int) $order->id_lang);
+                        // do not send order conf email after placing order
+                        // $orderLanguage = new Language((int) $order->id_lang);
 
-                        if (Validate::isEmail($this->context->customer->email)) {
-                            Mail::Send(
-                                (int)$order->id_lang,
-                                'order_conf',
-                                Context::getContext()->getTranslator()->trans(
-                                    'Order confirmation',
-                                    array(),
-                                    'Emails.Subject',
-                                    $orderLanguage->locale
-                                ),
-                                $data,
-                                $this->context->customer->email,
-                                $this->context->customer->firstname.' '.$this->context->customer->lastname,
-                                null,
-                                null,
-                                $file_attachement,
-                                null, _PS_MAIL_DIR_, false, (int)$order->id_shop
-                            );
-                        }
+                        // if (Validate::isEmail($this->context->customer->email)) {
+                        //     Mail::Send(
+                        //         (int)$order->id_lang,
+                        //         'order_conf',
+                        //         Context::getContext()->getTranslator()->trans(
+                        //             'Order confirmation',
+                        //             array(),
+                        //             'Emails.Subject',
+                        //             $orderLanguage->locale
+                        //         ),
+                        //         $data,
+                        //         $this->context->customer->email,
+                        //         $this->context->customer->firstname.' '.$this->context->customer->lastname,
+                        //         null,
+                        //         null,
+                        //         $file_attachement,
+                        //         null, _PS_MAIL_DIR_, false, (int)$order->id_shop
+                        //     );
+                        // }
                     }
 
                     // updates stock in shops
