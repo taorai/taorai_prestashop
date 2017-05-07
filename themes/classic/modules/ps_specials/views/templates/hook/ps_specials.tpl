@@ -23,7 +23,7 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 
-<section class="featured-products clearfix m-t-3">
+<section class="featured-products clearfix m-t-0">
   <h1 class="h1 products-section-title text-uppercase">
     {l s='On sale' d='Shop.Theme.Catalog'}
   </h1>
