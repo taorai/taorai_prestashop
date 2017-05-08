@@ -42,13 +42,11 @@
       </thead>
       <tbody>
         {foreach from=$credit_slips item=slip}
-          <tr onmouseover="this.className='tr_over'" onmouseout="this.className='tr_out'" onclick="window.parent.location='{$slip.order_url_details}'">
-            <td>{$slip.order_reference}</td>
+          <tr onmouseover="this.className='tr_over'" onmouseout="this.className='tr_out'">
+            <td><a href="{$slip.order_url_details}">{$slip.order_reference}</a></td>
             <td scope="row">{$slip.credit_slip_number}</td>
             <td>{$slip.credit_slip_date}</td>
-            <td class="text-xs-center">
-              <a href="{$slip.url}"><i class="material-icons">&#xE415;</i></a>
-            </td>
+            <td>{$slip.refund_amount}</td>
           </tr>
         {/foreach}
       </tbody>
@@ -56,24 +54,25 @@
     <div class="credit-slips hidden-md-up">
       {foreach from=$credit_slips item=slip}
         <div class="credit-slip">
-          <div class="row">
+          <div class="row" style="border-top: 1px dotted">
             <div class="col-xs-12">
               <div>
-                <a href="{$slip.order_url_details}">
-                  <strong>{l s='Order' d='Shop.Theme.Customeraccount'}</strong>
-                  {$slip.order_reference}
-                </a>
+                  <strong>{l s='Order' d='Shop.Theme.Customeraccount'}</strong>&nbsp;&nbsp;
+                  <a href="{$slip.order_url_details}">
+                    {$slip.order_reference}
+                  </a>
               </div>
               <div>
-                <strong>{l s='Credit slip' d='Shop.Theme.Customeraccount'}</strong>
+                <strong>{l s='Credit slip' d='Shop.Theme.Customeraccount'}</strong>&nbsp;&nbsp;
                 {$slip.credit_slip_number}
               </div>
               <div class="date">
-                <strong>{l s='Date issued' d='Shop.Theme.Customeraccount'}</strong>
+                <strong>{l s='Date issued' d='Shop.Theme.Customeraccount'}</strong>&nbsp;&nbsp;
                 {$slip.credit_slip_date}
               </div>
               <div style="float:right;">
-                <a href="{$slip.url}">{l s='View credit slip' d='Shop.Theme.Customeraccount'}</a>
+                <strong>{l s='View credit slip' d='Shop.Theme.Customeraccount'}</strong>&nbsp;&nbsp;
+                {$slip.refund_amount}
               </div>
             </div>
           </div>
