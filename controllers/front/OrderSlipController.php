@@ -69,6 +69,7 @@ class OrderSlipControllerCore extends FrontController
             $credit_slips[$order_slip['id_order_slip']]['credit_slip_date'] = Tools::displayDate($order_slip['date_add'], null, false);
             $credit_slips[$order_slip['id_order_slip']]['url'] = $this->context->link->getPageLink('pdf-order-slip', true, null, 'id_order_slip='.(int)$order_slip['id_order_slip']);
             $credit_slips[$order_slip['id_order_slip']]['order_url_details'] = $this->context->link->getPageLink('order-detail', true, null, 'id_order='.(int)$order_slip['id_order']);
+            $credit_slips[$order_slip['id_order_slip']]['refund_amount'] = Tools::displayPrice($order_slip['total_shipping_tax_excl'] + $order_slip['total_products_tax_excl']);
         }
         return $credit_slips;
     }
