@@ -10,7 +10,7 @@ SetEnv HTTP_MOD_REWRITE On
 RewriteEngine on
 
 
-#Domain: localhost
+#Domain: 127.0.0.1
 RewriteRule . - [E=REWRITEBASE:/taorai/]
 RewriteRule ^api$ api/ [L]
 
