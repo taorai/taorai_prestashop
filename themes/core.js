@@ -2552,7 +2552,7 @@
 	
 	      if (event.refreshUrl) {
 	        window.history.pushState({ id_product_attribute: resp.id_product_attribute }, undefined, resp.product_url);
-	        // window.location.reload();
+	        // window.location.reload(); 
 	      }
 	
 	      _prestashop2['default'].emit('updatedProduct', resp);
