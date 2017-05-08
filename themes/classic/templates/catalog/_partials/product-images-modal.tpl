@@ -41,6 +41,7 @@
               <ul class="product-images js-modal-product-images">
                 {foreach from=$product.images item=image}
                   <li class="thumb-container">
+                    <!-- this part needs to change due to the variants bug -->
                     <img data-image-large-src="{$image.large.url}" class="thumb js-modal-thumb" src="{$image.medium.url}" alt="{$image.legend}" title="{$image.legend}" width="{$image.medium.width}" itemprop="image">
                   </li>
                 {/foreach}
