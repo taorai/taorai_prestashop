@@ -54,7 +54,7 @@
     <div class="credit-slips hidden-md-up">
       {foreach from=$credit_slips item=slip}
         <div class="credit-slip">
-          <div class="row" style="border-top: 1px dotted">
+          <div class="row" style="margin-bottom: 1rem;">
             <div class="col-xs-12">
               <div>
                   <strong>{l s='Order' d='Shop.Theme.Customeraccount'}</strong>&nbsp;&nbsp;
