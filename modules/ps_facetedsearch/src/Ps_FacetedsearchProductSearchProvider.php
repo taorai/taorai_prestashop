@@ -117,9 +117,9 @@ class Ps_FacetedsearchProductSearchProvider implements ProductSearchProviderInte
     private function getAvailableSortOrders()
     {
         return [
-            (new SortOrder('product', 'position', 'asc'))->setLabel(
-                $this->module->getTranslator()->trans('Relevance', array(), 'Modules.Facetedsearch.Shop')
-            ),
+            // (new SortOrder('product', 'position', 'asc'))->setLabel(
+            //     $this->module->getTranslator()->trans('Relevance', array(), 'Modules.Facetedsearch.Shop')
+            // ),
             // (new SortOrder('product', 'name', 'asc'))->setLabel(
             //     $this->module->getTranslator()->trans('Name, A to Z', array(), 'Shop.Theme.Catalog')
             // ),
