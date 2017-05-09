@@ -338,16 +338,6 @@ File: themes/starterTheme/templates/customer/_partials/block-address.tpl:14</not
       </trans-unit>
     </body>
   </file>
-  <file original="themes/classic/templates/checkout/_partials/cart-summary.tpl" source-language="en-US" target-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="acb0f29bb6d39aaabc7d2d62aaa4a57d">
-        <source>show details</source>
-        <target>show details</target>
-        <note>Context:
-File: themes/classic/templates/checkout/_partials/cart-summary.tpl:38</note>
-      </trans-unit>
-    </body>
-  </file>
   <file original="themes/classic/templates/checkout/_partials/cart-voucher.tpl" source-language="en-US" target-language="en" datatype="plaintext">
     <body>
       <trans-unit id="ec211f7c20af43e742bf2570c3cb84f9">

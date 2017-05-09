@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 <?php /* Smarty version Smarty-3.1.19, created on 2017-05-08 22:23:46
          compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/default/template/search_form.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:139112344759108d82a6f2e8-12224232%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+=======
+<?php /* Smarty version Smarty-3.1.19, created on 2017-05-08 21:45:47
+         compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/default/template/search_form.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:17969020105910849bdb3a73-83226557%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+>>>>>>> variant-bug-fix
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +17,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
+<<<<<<< HEAD
   'nocache_hash' => '139112344759108d82a6f2e8-12224232',
+=======
+  'nocache_hash' => '17969020105910849bdb3a73-83226557',
+>>>>>>> variant-bug-fix
   'function' => 
   array (
   ),
@@ -24,9 +34,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
+<<<<<<< HEAD
   'unifunc' => 'content_59108d82a9f728_23771672',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_59108d82a9f728_23771672')) {function content_59108d82a9f728_23771672($_smarty_tpl) {?>
+=======
+  'unifunc' => 'content_5910849bde46b7_56332250',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_5910849bde46b7_56332250')) {function content_5910849bde46b7_56332250($_smarty_tpl) {?>
+>>>>>>> variant-bug-fix
 <form id="header_search" class="bo_search_form" method="post" action="<?php echo $_smarty_tpl->tpl_vars['baseAdminUrl']->value;?>
 index.php?controller=AdminSearch&amp;token=<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['getAdminToken'][0][0]->getAdminTokenLiteSmarty(array('tab'=>'AdminSearch'),$_smarty_tpl);?>
 " role="search">
