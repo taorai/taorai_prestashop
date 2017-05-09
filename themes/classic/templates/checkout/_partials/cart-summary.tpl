@@ -33,11 +33,6 @@
 
         <p>{$cart.summary_string}</p>
 
-<!--         <p>
-          <a href="#" data-toggle="collapse" data-target="#cart-summary-product-list" aria-expanded="true">
-            {l s='show details' d='Shop.Theme.Actions'}
-          </a>
-        </p> -->
 
         {block name='cart_summary_product_list'}
           <div class="collapse in" id="cart-summary-product-list">

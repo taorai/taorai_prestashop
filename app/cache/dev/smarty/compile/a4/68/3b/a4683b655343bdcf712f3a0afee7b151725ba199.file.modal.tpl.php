@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.19, created on 2017-05-08 22:23:46
+<?php /* Smarty version Smarty-3.1.19, created on 2017-05-09 09:37:33
          compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/default/template/modal.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:212061940559108d826e0202-98341587%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-=======
-<?php /* Smarty version Smarty-3.1.19, created on 2017-05-08 21:45:48
-         compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/default/template/modal.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:8338927005910849cd43d38-57872449%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> variant-bug-fix
+<?php /*%%SmartyHeaderCode:115137101259112b6daf2b03-36834029%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,11 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-<<<<<<< HEAD
-  'nocache_hash' => '212061940559108d826e0202-98341587',
-=======
-  'nocache_hash' => '8338927005910849cd43d38-57872449',
->>>>>>> variant-bug-fix
+  'nocache_hash' => '115137101259112b6daf2b03-36834029',
   'function' => 
   array (
   ),
@@ -36,15 +26,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-<<<<<<< HEAD
-  'unifunc' => 'content_59108d82707968_00968839',
+  'unifunc' => 'content_59112b6db29cc7_69843953',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_59108d82707968_00968839')) {function content_59108d82707968_00968839($_smarty_tpl) {?>
-=======
-  'unifunc' => 'content_5910849cd79b41_61989377',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5910849cd79b41_61989377')) {function content_5910849cd79b41_61989377($_smarty_tpl) {?>
->>>>>>> variant-bug-fix
+<?php if ($_valid && !is_callable('content_59112b6db29cc7_69843953')) {function content_59112b6db29cc7_69843953($_smarty_tpl) {?>
 <div class="modal fade" id="<?php echo $_smarty_tpl->tpl_vars['modal_id']->value;?>
 " tabindex="-1">
 	<div class="modal-dialog <?php if (isset($_smarty_tpl->tpl_vars['modal_class']->value)) {?><?php echo $_smarty_tpl->tpl_vars['modal_class']->value;?>
