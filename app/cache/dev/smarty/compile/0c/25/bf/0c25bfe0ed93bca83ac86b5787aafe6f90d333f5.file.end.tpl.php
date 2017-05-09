@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.19, created on 2017-05-08 22:23:45
+<?php /* Smarty version Smarty-3.1.19, created on 2017-05-09 09:37:39
          compiled from "/home/steven/GitRepository/taorai/modules/welcome/views/contents/end.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:13658473759108d81dd8683-01587528%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-=======
-<?php /* Smarty version Smarty-3.1.19, created on 2017-05-08 21:45:54
-         compiled from "/home/steven/GitRepository/taorai/modules/welcome/views/contents/end.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:279422172591084a2689286-18005867%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> variant-bug-fix
+<?php /*%%SmartyHeaderCode:24987101359112b73a65464-67805624%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,25 +11,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-<<<<<<< HEAD
-  'nocache_hash' => '13658473759108d81dd8683-01587528',
-=======
-  'nocache_hash' => '279422172591084a2689286-18005867',
->>>>>>> variant-bug-fix
+  'nocache_hash' => '24987101359112b73a65464-67805624',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-<<<<<<< HEAD
-  'unifunc' => 'content_59108d81de6b36_99244452',
+  'unifunc' => 'content_59112b73a735d8_85611530',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_59108d81de6b36_99244452')) {function content_59108d81de6b36_99244452($_smarty_tpl) {?>
-=======
-  'unifunc' => 'content_591084a26978d6_89974794',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_591084a26978d6_89974794')) {function content_591084a26978d6_89974794($_smarty_tpl) {?>
->>>>>>> variant-bug-fix
+<?php if ($_valid && !is_callable('content_59112b73a735d8_85611530')) {function content_59112b73a735d8_85611530($_smarty_tpl) {?>
 
 <div id="onboarding-welcome" class="modal-header">
   <button class="onboarding-button-next pull-right close" type="button">&times;</button>

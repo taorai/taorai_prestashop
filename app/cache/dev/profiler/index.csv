@@ -1,4 +1,2 @@
-371478,127.0.0.1,POST,https://127.0.0.1/taorai/admin_portal/index.php/international/translations/module?_token=IoEizT9TpLV6jJUmWxl5eB_Xghnn7HIA6jM-GmxNKPw,1493941561,,200
-5ca04b,127.0.0.1,GET,https://127.0.0.1/taorai/admin_portal/index.php/module/manage?_token=gQRhyQE7W6Fdtut3BkZSyn4adFSG3MXDmAALDzrcgS8,1494253467,,200
-98da67,127.0.0.1,POST,https://127.0.0.1/taorai/admin_portal/index.php/module/manage/action/disable/ps_customeraccountlinks?_token=gQRhyQE7W6Fdtut3BkZSyn4adFSG3MXDmAALDzrcgS8,1494253493,,200
-79cb5e,127.0.0.1,POST,https://127.0.0.1/taorai/admin_portal/index.php/international/translations/list?_token=gQRhyQE7W6Fdtut3BkZSyn4adFSG3MXDmAALDzrcgS8,1494254756,,200
+f1878a,127.0.0.1,POST,https://127.0.0.1/taorai/admin_portal/index.php/international/translations/edit?_token=VDdtBBLToi6zGKMaOcQOBMonPtjUAWYdjgohiMTVFVY,1494297431,,200
+3d5f0d,127.0.0.1,POST,https://127.0.0.1/taorai/admin_portal/index.php/international/translations/list?_token=VDdtBBLToi6zGKMaOcQOBMonPtjUAWYdjgohiMTVFVY,1494297462,,200
