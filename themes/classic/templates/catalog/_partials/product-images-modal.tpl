@@ -35,26 +35,6 @@
           {/block}
         </figcaption>
         </figure>
-        <aside id="thumbnails" class="thumbnails js-thumbnails text-xs-center">
-          {block name='product_images'}
-            <div class="js-modal-mask mask {if $imagesCount <= 5} nomargin {/if}">
-              <ul class="product-images js-modal-product-images">
-                {foreach from=$product.images item=image}
-                  <li class="thumb-container">
-                    <!-- this part needs to change due to the variants bug -->
-                    <img data-image-large-src="{$image.large.url}" class="thumb js-modal-thumb" src="{$image.medium.url}" alt="{$image.legend}" title="{$image.legend}" width="{$image.medium.width}" itemprop="image">
-                  </li>
-                {/foreach}
-              </ul>
-            </div>
-          {/block}
-          {if $imagesCount > 5}
-            <div class="arrows js-modal-arrows">
-              <i class="material-icons arrow-up js-modal-arrow-up">&#xE5C7;</i>
-              <i class="material-icons arrow-down js-modal-arrow-down">&#xE5C5;</i>
-            </div>
-          {/if}
-        </aside>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
