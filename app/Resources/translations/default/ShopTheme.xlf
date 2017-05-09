@@ -82,6 +82,12 @@ File: controllers/front/SitemapController.php:107</note>
         <note>Context:
 File: controllers/front/SitemapController.php:113</note>
       </trans-unit>
+      <trans-unit id="d95cf4ab2cbf1dfb63f066b50558b07d">
+        <source>My account</source>
+        <target>My account</target>
+        <note>Context:
+File: controllers/front/SitemapController.php</note>
+      </trans-unit>
     </body>
   </file>
   <file original="themes/starterTheme/templates/cms/stores.tpl" source-language="en-US" target-language="en" datatype="plaintext">
