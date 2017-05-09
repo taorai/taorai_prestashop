@@ -109,10 +109,16 @@ class SitemapControllerCore extends FrontController
             'url' => $this->context->link->getPageLink('authentication'),
         );
 
+        // $links[] = array(
+        //     'id' => 'register-page',
+        //     'label' => $this->trans('Create new account', array(), 'Shop.Theme'),
+        //     'url' => $this->context->link->getPageLink('authentication'),
+        // );
+
         $links[] = array(
-            'id' => 'register-page',
-            'label' => $this->trans('Create new account', array(), 'Shop.Theme'),
-            'url' => $this->context->link->getPageLink('authentication'),
+            'id' => 'my-account-page',
+            'label' => $this->trans('My account', array(), 'Shop.Theme'),
+            'url' => $this->context->link->getPageLink('my-account'),
         );
 
         return $links;
