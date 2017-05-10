@@ -20,7 +20,14 @@
                     </span>
                   </span>
                 {/if}
-                {$node.label}
+                <div style="width:100%;text-align:-webkit-center;">
+                  {$node.label}
+                </div>
+                {if isset($node.menu_thumbnail_image) && $node.menu_thumbnail_image}
+                  <div style="width:100%">
+                    <img src="{$node.menu_thumbnail_image}" />
+                  </div>
+                {/if}
               </a>
               {if $node.children|count}
               <div {if $depth === 0} class="popover sub-menu js-sub-menu collapse"{else} class="collapse"{/if} id="top_sub_menu_{$_expand_id}">
