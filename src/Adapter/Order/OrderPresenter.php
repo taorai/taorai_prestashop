@@ -420,10 +420,12 @@ class OrderPresenter implements PresenterInterface
         if (!$order->isVirtual()) {
             $orderAddresses['delivery'] = $this->objectPresenter->present($addressDelivery);
             $orderAddresses['delivery']['formatted'] = AddressFormat::generateAddress($addressDelivery, array(), '<br />');
+            $orderAddresses['delivery']['formatted_one_line'] = AddressFormat::generateAddress($addressDelivery, array(), '  ');
         }
 
         $orderAddresses['invoice'] = $this->objectPresenter->present($addressInvoice);
         $orderAddresses['invoice']['formatted'] = AddressFormat::generateAddress($addressInvoice, array(), '<br />');
+        $orderAddresses['invoice']['formatted_one_line'] = AddressFormat::generateAddress($addressInvoice, array(), '  ');
 
         return $orderAddresses;
     }

@@ -1554,6 +1554,7 @@ class FrontControllerCore extends Controller
         $addresses = $this->context->customer->getSimpleAddresses();
         foreach ($addresses as &$a) {
             $a['formatted'] = AddressFormat::generateAddress(new Address($a['id']), array(), '<br>');
+            $a['formatted_one_line'] = AddressFormat::generateAddress(new Address($a['id']), array(), '  ');
         }
         $cust['addresses'] = $addresses;
 
@@ -1579,6 +1580,7 @@ class FrontControllerCore extends Controller
 
             'address' => array(
                 'formatted' => AddressFormat::generateAddress($address, array(), '<br>'),
+                'formatted_one_line' => AddressFormat::generateAddress($address, array(), '  '),
                 'address1' => $address->address1,
                 'address2' => $address->address2,
                 'postcode' => $address->postcode,

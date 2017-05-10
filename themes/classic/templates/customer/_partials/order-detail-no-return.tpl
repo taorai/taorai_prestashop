@@ -195,16 +195,16 @@
               <div class="col-md-12">
                 <textarea rows="3" name="textarea_comment_product[]" class="form-control" id="textarea_comment_product_mobile-{$product.id_product}-{$product.id_product_attribute}"></textarea>
               </div>
-              <div class="col-md-12" style="margin-top: 1rem;width: 100%;">
+              <div class="col-md-12" style="margin-top: 1rem;width: 100%;padding: 0px">
                 {if count($order.products) > 1}
-                  <button type="button"  name="button_apply_comment_to_all_product" id="button_apply_comment_to_all_product_mobile-{$product.id_product}-{$product.id_product_attribute}" class="btn btn-primary form-control-submit" style="font-size: x-small;" onclick="apply_comment_to_all_mobile(event);">
+                  <button type="button"  name="button_apply_comment_to_all_product" id="button_apply_comment_to_all_product_mobile-{$product.id_product}-{$product.id_product_attribute}" class="btn btn-primary form-control-submit" style="font-size: xx-small;padding-left: 1rem;padding-right: 1rem;" onclick="apply_comment_to_all_mobile(event);">
                     {l s='Apply to all products' d='Shop.Theme.Catalog'}
                   </button>
                 {/if}
                 <input type="hidden" name="id_order" value="{$order.details.id}">
                 <input type="hidden" name="id_product[]" value="{$product.id_product}">
                 <input type="hidden" name="id_product_attribute[]" value="{$product.id_product_attribute}">
-                <button type="submit" name="submitComment" class="btn btn-primary form-control-submit" style="font-size: x-small;">
+                <button type="submit" name="submitComment" class="btn btn-primary form-control-submit" style="font-size: xx-small;padding-left: 1rem;padding-right: 1rem;">
                   {l s='Save all comments' d='Shop.Theme.Catalog'}
                 </button>
               </div>
@@ -218,14 +218,14 @@
     {foreach $order.subtotals as $line}
       {if $line.value}
         <div class="order-total row">
-          <div class="col-xs-8"><strong>{$line.label}</strong></div>
-          <div class="col-xs-4 text-xs-right">{$line.value}</div>
+          <div class="col-xs-7"><strong>{$line.label}</strong></div>
+          <div class="col-xs-5 text-xs-right">{$line.value}</div>
         </div>
       {/if}
     {/foreach}
     <div class="order-total row" style="font-weight: bold;font-size: large;padding-top: 1rem;">
-      <div class="col-xs-8"><strong>{$order.totals.total.label}</strong></div>
-      <div class="col-xs-4 text-xs-right">{$order.totals.total.value}</div>
+      <div class="col-xs-7"><strong>{$order.totals.total.label}</strong></div>
+      <div class="col-xs-5 text-xs-right">{$order.totals.total.value}</div>
     </div>
   </div>
 {/block}
