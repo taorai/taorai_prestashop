@@ -682,6 +682,18 @@ File: themes/classic/templates/catalog/_partials/product-discounts.tpl:34</note>
         <note>Context:
 File: themes/classic/templates/catalog/_partials/product-discounts.tpl:42</note>
       </trans-unit>
+      <trans-unit id="813a766f117d6336274b53df5a1d1059">
+        <source>Wholesale Price</source>
+        <target>Wholesale Price</target>
+        <note>Context:
+File: themes/classic/templates/catalog/_partials/product-discounts.tpl:42</note>
+      </trans-unit>
+      <trans-unit id="1fbf1f5e116a7e125dd070f7bfcc3b2c">
+        <source>More than %quantity%</source>
+        <target>More than %quantity%</target>
+        <note>Context:
+File: themes/classic/templates/catalog/_partials/product-discounts.tpl:42</note>
+      </trans-unit>
     </body>
   </file>
   <file original="themes/starterTheme/templates/catalog/_partials/product-prices.tpl" source-language="en-US" target-language="en" datatype="plaintext">
