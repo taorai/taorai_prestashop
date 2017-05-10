@@ -4432,6 +4432,17 @@ class ProductCore extends ObjectModel
             );
         }
 
+        $row['original_price'] = Product::getPriceStatic(
+            (int)$row['id_product'],
+            true,
+            $id_product_attribute,
+            6,
+            null,
+            false,
+            false,
+            1
+        );
+
         $row['reduction'] = Product::getPriceStatic(
             (int)$row['id_product'],
             (bool)$usetax,
