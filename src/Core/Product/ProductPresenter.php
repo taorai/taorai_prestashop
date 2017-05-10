@@ -742,6 +742,7 @@ class ProductPresenter
             "attribute_price",
             "price_tax_exc",
             "price_without_reduction",
+            "original_price",
             "reduction",
             "specific_prices",
             "quantity",
