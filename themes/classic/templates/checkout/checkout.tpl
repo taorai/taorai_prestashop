@@ -23,7 +23,7 @@
       {include file='_partials/notifications.tpl'}
     {/block}
 
-    <section id="wrapper">
+    <section id="wrapper" style="padding-top:0px">
       <div class="container">
 
       {block name='content'}
