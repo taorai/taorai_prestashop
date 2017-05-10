@@ -47,7 +47,9 @@
 
         $this->search_string = Tools::getValue('s');
         if (!$this->search_string) {
-            $this->search_string = Tools::getValue('search_query');
+            // $this->search_string = Tools::getValue('search_query');
+            // redirect to home page if search string is null
+            Tools::redirect('');
         }
 
         $this->search_tag = Tools::getValue('tag');
