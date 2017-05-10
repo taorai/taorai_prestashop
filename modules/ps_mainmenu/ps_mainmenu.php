@@ -467,7 +467,8 @@ class Ps_MainMenu extends Module implements WidgetInterface
             'children' => [],
             'open_in_new_window' => false,
             'image_urls' => [],
-            'page_identifier' => null
+            'page_identifier' => null,
+            'menu_thumbnail_image' => ''
         ];
 
         return array_merge($defaults, $fields);
@@ -744,6 +745,7 @@ class Ps_MainMenu extends Module implements WidgetInterface
                         if (preg_match('/^'.$category['id_category'].'-([0-9])?_thumb.jpg/i', $file) === 1) {
                             $image_url = $this->context->link->getMediaLink(_THEME_CAT_DIR_.$file);
                             $node['image_urls'][] = $image_url;
+                            $node['menu_thumbnail_image'] = $image_url;
                         }
                     }
                 }
