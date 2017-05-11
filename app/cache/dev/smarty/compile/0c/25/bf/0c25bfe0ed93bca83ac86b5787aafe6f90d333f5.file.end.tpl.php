@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-05-10 21:48:40
+<?php /* Smarty version Smarty-3.1.19, created on 2017-05-11 11:41:55
          compiled from "/home/steven/GitRepository/taorai/modules/welcome/views/contents/end.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:6797532885913284826cfc7-92174359%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:6793865365913eb93abe869-70027371%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,15 +11,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '6797532885913284826cfc7-92174359',
+  'nocache_hash' => '6793865365913eb93abe869-70027371',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_591328482886b8_92997167',
+  'unifunc' => 'content_5913eb93accdc2_24853243',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_591328482886b8_92997167')) {function content_591328482886b8_92997167($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_5913eb93accdc2_24853243')) {function content_5913eb93accdc2_24853243($_smarty_tpl) {?>
 
 <div id="onboarding-welcome" class="modal-header">
   <button class="onboarding-button-next pull-right close" type="button">&times;</button>
