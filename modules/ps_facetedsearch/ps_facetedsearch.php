@@ -1951,7 +1951,7 @@ class Ps_Facetedsearch extends Module implements WidgetInterface
 
                         $mergedRanges = $rangeAggregator->mergeRanges(
                             $aggregatedRanges['ranges'],
-                            10
+                            3
                         );
 
                         $price_array['list_of_values'] = array_map(function (array $range) {
@@ -1994,7 +1994,7 @@ class Ps_Facetedsearch extends Module implements WidgetInterface
 
                         $mergedRanges = $rangeAggregator->mergeRanges(
                             $aggregatedRanges['ranges'],
-                            10
+                            3
                         );
 
                         $weight_array['list_of_values'] = array_map(function (array $range) {
