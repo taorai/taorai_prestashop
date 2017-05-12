@@ -169,7 +169,7 @@ class Ps_FacetedsearchRangeAggregator
         if ($outputLength >= count($ranges)) {
             $raw_ranges = $ranges;
         } else {
-            $parts = array_chunk($ranges, floor(count($ranges) / $outputLength));
+            $parts = array_chunk($ranges, round(count($ranges) / $outputLength));
 
             $raw_ranges = array_map(function (array $ranges) {
                 $min = $ranges[0]['min'];
@@ -184,6 +184,26 @@ class Ps_FacetedsearchRangeAggregator
                 ];
             }, $parts);
         }
+
+        for ($i=0; $i < count($raw_ranges) - 1; $i++) { 
+            $raw_ranges[$i]['max'] = $raw_ranges[$i + 1]['min'] - 1;
+        }
+
+        // $min = $ranges[0]['min'];
+        // $max = $ranges[count($ranges) - 1]['max'];
+        // $step = floor(($max - $min) / $outputLength);
+        // for ($i=0; $i < $outputLength; $i++) {
+        //     if ($i == 0) {
+        //         $raw_ranges[0]['min'] = 1;
+        //         $raw_ranges[0]['max'] = $min + $step;
+        //     } else if ($i == $outputLength - 1) {
+        //         $raw_ranges[$i]['min'] = $raw_ranges[$i - 1]['max'] + 1;
+        //         $raw_ranges[$i]['max'] = $max;
+        //     } else {
+        //         $raw_ranges[$i]['min'] = $raw_ranges[$i - 1]['max'] + 1;
+        //         $raw_ranges[$i]['max'] = $raw_ranges[$i]['min'] + $step;
+        //     }
+        // }
 
         return $raw_ranges;
     }
