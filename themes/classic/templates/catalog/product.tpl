@@ -148,7 +148,7 @@
     </div>
 
   </div>
-  <div class="row" style="overflow: hidden;margin-bottom: 2rem;">
+  <div class="row" style="margin-bottom: 2rem;">
     <div class="col-md-12" style="padding: 0 1rem 0 1rem;">
       {block name='product_tabs'}
       <div class="tabs" style="margin: 0;">
