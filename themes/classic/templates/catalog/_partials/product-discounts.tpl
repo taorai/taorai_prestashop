@@ -35,7 +35,7 @@
         </thead>
         <tbody>
           <tr>
-            <td>1 - {$product.quantity_discounts[0].quantity - 1}</td>
+            <td><= {$product.quantity_discounts[0].quantity - 1}</td>
             <td>{$product.original_price}</td>
           </tr>
           {foreach from=$product.quantity_discounts item='quantity_discount' key='index' name='quantity_discounts'}
