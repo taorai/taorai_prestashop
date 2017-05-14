@@ -30,7 +30,7 @@
 
 {else}
 
-  <div class="form-group row {if !empty($field.errors)}has-error{/if}" {if $field.required != '1'} style="display:none"{/if}>
+  <div class="form-group row {if !empty($field.errors)}has-error{/if}" {if $field.required != '1' && trim($field.name) != 'new_password'} style="display:none"{/if}>
     <label class="col-md-3 form-control-label{if $field.required} required{/if}">
       {if $field.type !== 'checkbox'}
         {$field.label}
