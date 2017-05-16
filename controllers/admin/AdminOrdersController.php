@@ -459,12 +459,13 @@ class AdminOrdersControllerCore extends AdminController
             ShopUrl::cacheMainDomainForShop((int)$order->id_shop);
         }
 
-        /* Update shipping number and carrier */
+        /* Update shipping number and carrier and shipping cost override */
         if (Tools::isSubmit('submitShippingNumber') && isset($order)) {
             if ($this->access('edit')) {
                 $tracking_number = Tools::getValue('shipping_tracking_number');
                 $id_carrier = Tools::getValue('shipping_carrier');
                 $old_tracking_number = $order->shipping_number;
+                $old_shipping_cost = $order->total_shipping;
 
                 $order_carrier = new OrderCarrier(Tools::getValue('id_order_carrier'));
                 if (!Validate::isLoadedObject($order_carrier)) {
@@ -507,11 +508,22 @@ class AdminOrdersControllerCore extends AdminController
 
                                 Tools::redirectAdmin(self::$currentIndex.'&id_order='.$order->id.'&vieworder&conf=4&token='.$this->token);
                             } else {
-                                $this->errors[] = $this->trans('An error occurred while sending an email to the customer.', array(), 'Admin.Orderscustomers.Notification');
+                                $this->errors[] = $this->trans('Send in-transit email is disabled', array(), 'Admin.Orderscustomers.Notification');
                             }
                         }
                     } else {
                         $this->errors[] = $this->trans('The order carrier cannot be updated.', array(), 'Admin.Orderscustomers.Notification');
+                    }
+
+                    // if set shipping fee, then override the shipping cost field
+                    $updated_shipping_cost = (int) Tools::getValue('updated_shipping_cost');
+                    if ($updated_shipping_cost && $updated_shipping_cost != $old_shipping_cost) {
+                        $order->total_shipping_tax_excl = $updated_shipping_cost;
+                        $order->total_shipping_tax_incl = $updated_shipping_cost;
+                        $order->updateShippingCost($updated_shipping_cost);
+                        $order_carrier->shipping_cost_tax_excl = $updated_shipping_cost;
+                        $order_carrier->shipping_cost_tax_incl = $updated_shipping_cost;
+                        $order_carrier->update();
                     }
                 }
             } else {

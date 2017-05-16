@@ -1969,6 +1969,10 @@ class OrderCore extends ObjectModel
         // update the total of this order
         $this->total_paid += $difference;
 
+        // also change tax incl and tax excl
+        $this->total_paid_tax_incl += $difference;
+        $this->total_paid_tax_excl += $difference;
+
         // update database
         return $this->update();
     }

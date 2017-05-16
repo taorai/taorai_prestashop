@@ -72,6 +72,7 @@
 						data-id-order-carrier="{$line.id_order_carrier|intval}"
 						data-id-carrier="{$line.id_carrier|intval}"
 						data-tracking-number="{$line.tracking_number|htmlentities}"
+						data-updated-shipping-cost="{$line.shipping_cost_tax_excl|htmlentities}"
 						>
  							<i class="icon-pencil"></i>
  							{l s='Edit' d='Admin.Actions'}
@@ -89,6 +90,7 @@
 			<form method="post" action="{$link->getAdminLink('AdminOrders')|escape:'html':'UTF-8'}&amp;vieworder&amp;id_order={$order->id|intval}">
 				<input type="hidden" name="submitShippingNumber" id="submitShippingNumber" value="1" />
 				<input type="hidden" name="id_order_carrier" id="id_order_carrier" />
+				<input type="hidden" name="updateShippingCost" id="updateShippingCost" />
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-label="{l s='Close' d='Admin.Actions'}"><span aria-hidden="true">&times;</span></button>
@@ -114,6 +116,10 @@
 										{/foreach}
 									</select>
 								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-lg-5">{l s='Shipping cost (THB)'}</div>
+								<div class="col-lg-7"><input type="text" name="updated_shipping_cost" id="updated_shipping_cost" /></div>
 							</div>
 						</div>
 					</div>
