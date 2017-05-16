@@ -62,7 +62,7 @@
 						<tr>
 							<td align="center" class="logo" style="border-bottom:4px solid #333333;padding:7px 0">
 								<a title="{shop_name}" href="{shop_url}" style="color:#337ff1">
-									<img src="{shop_logo}" alt="{shop_name}" />
+									<img src="{shop_logo}" alt="{shop_name}" style="width:30%" />
 								</a>
 							</td>
 						</tr>
@@ -86,7 +86,7 @@
 				<td style="padding:7px 0">
 					<font size="2" face="Open-sans, sans-serif" color="#555454">
 						<p data-html-only="1" style="border-bottom:1px solid #D6D4D4;margin:3px 0 7px;text-transform:uppercase;font-weight:500;font-size:18px;padding-bottom:10px">
-							Order {order_name}&nbsp;-&nbsp;Awaiting wire payment 
+							Order {order_name}&nbsp;-&nbsp;Awaiting Bank Transfer payment 
 						</p>
 						<span style="color:#777">
 							Your order with the reference <span style="color:#333"><strong>{order_name}</strong></span> has been placed successfully and will be <strong>shipped as soon as we receive your payment</strong>.						</span>
@@ -108,13 +108,25 @@
 				<td style="padding:7px 0">
 					<font size="2" face="Open-sans, sans-serif" color="#555454">
 						<p style="border-bottom:1px solid #D6D4D4;margin:3px 0 7px;text-transform:uppercase;font-weight:500;font-size:18px;padding-bottom:10px"> 
-							You have selected to pay by wire transfer.						</p>
+							You have selected to pay by Bank Transfer.						</p>
 						<span style="color:#777">
 							Here are the bank details for your transfer:<br /> 
-							<span style="color:#333"><strong>Amount:</strong></span> {total_paid}<br />
-							<span style="color:#333"><strong>Account owner:</strong></span> {bankwire_owner}<br />
-							<span style="color:#333"><strong>Account details:</strong></span> {bankwire_details}<br />
-							<span style="color:#333"><strong>Bank address:</strong></span> {bankwire_address}
+							<span style="color:#333"><strong>Amount:</strong></span> {total_paid}<br /><br />
+							<span style="color:#333"><strong>Bank Name:</strong></span> SCB<br />
+							<span style="color:#333"><strong>Account Name:</strong></span> LEI WANG<br />
+							<span style="color:#333"><strong>Account Number:</strong></span> 4075173044<br /><br />
+							<span style="color:#333"><strong>Bank Name:</strong></span> BBL<br />
+							<span style="color:#333"><strong>Account Name:</strong></span> MR.LEI WANG<br />
+							<span style="color:#333"><strong>Account Number:</strong></span> 0298023318<br /><br />
+							<span style="color:#333"><strong>Bank Name:</strong></span> KBANK<br />
+							<span style="color:#333"><strong>Account Name:</strong></span> MR. LEI WANG<br />
+							<span style="color:#333"><strong>Account Number:</strong></span> 0243794315<br /><br />
+							<span style="color:#333"><strong>Bank Name:</strong></span> KTB<br />
+							<span style="color:#333"><strong>Account Name:</strong></span> LEI WANG<br />
+							<span style="color:#333"><strong>Account Number:</strong></span> 9857354653<br /><br />
+							<span style="color:#333"><strong>Bank Name:</strong></span> BAY<br />
+							<span style="color:#333"><strong>Account Name:</strong></span> LEI WANG<br />
+							<span style="color:#333"><strong>Account Number:</strong></span> 6281152849
 						</span>
 					</font>
 				</td>
@@ -130,18 +142,11 @@
 	<td class="linkbelow" style="padding:7px 0">
 		<font size="2" face="Open-sans, sans-serif" color="#555454">
 			<span>
-				You can review your order and download your invoice from the <a href="{history_url}" style="color:#337ff1">"Order history"</a> section of your customer account by clicking <a href="{my_account_url}" style="color:#337ff1">"My account"</a> on our shop.			</span>
+				You can review your order from the <a href="{history_url}" style="color:#337ff1">"Order history"</a> section of your customer account by clicking <a href="{my_account_url}" style="color:#337ff1">"My account"</a> on our shop.			</span>
 		</font>
 	</td>
 </tr>
-<tr>
-	<td class="linkbelow" style="padding:7px 0">
-		<font size="2" face="Open-sans, sans-serif" color="#555454">
-			<span>
-				If you have a guest account, you can follow your order via the <a href="{guest_tracking_url}" style="color:#337ff1">"Guest Tracking"</a> section on our shop.			</span>
-		</font>
-	</td>
-</tr>
+<!--  -->
 
 						
 					</table>
