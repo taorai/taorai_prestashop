@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-05-16 08:32:11
+<?php /* Smarty version Smarty-3.1.19, created on 2017-05-16 20:13:24
          compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/default/template/header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1210692600591a569bbb2bd1-16983674%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:837616068591afaf48fd049-41241399%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '95b79c9b82add7f19e1068791bc289106147916b' => 
     array (
       0 => '/home/steven/GitRepository/taorai/admin_portal/themes/default/template/header.tpl',
-      1 => 1492823959,
+      1 => 1493879981,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1210692600591a569bbb2bd1-16983674',
+  'nocache_hash' => '837616068591afaf48fd049-41241399',
   'function' => 
   array (
   ),
@@ -75,9 +75,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_591a569bda1203_85386324',
+  'unifunc' => 'content_591afaf49ab2a7_42738675',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_591a569bda1203_85386324')) {function content_591a569bda1203_85386324($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_591afaf49ab2a7_42738675')) {function content_591afaf49ab2a7_42738675($_smarty_tpl) {?>
 <!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 lt-ie6 " lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie7" lang="en"> <![endif]-->
@@ -238,7 +238,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['quick']->key => $_smarty_tpl->tpl_var
 $_smarty_tpl->tpl_vars['quick']->_loop = true;
 ?>
 									<li <?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['quick']->value['link'];?>
-<?php $_tmp6=ob_get_clean();?><?php if ($_smarty_tpl->tpl_vars['link']->value->matchQuickLink($_tmp6)) {?><?php $_smarty_tpl->tpl_vars["matchQuickLink"] = new Smarty_variable($_smarty_tpl->tpl_vars['quick']->value['id_quick_access'], null, 0);?>class="active"<?php }?>>
+<?php $_tmp5=ob_get_clean();?><?php if ($_smarty_tpl->tpl_vars['link']->value->matchQuickLink($_tmp5)) {?><?php $_smarty_tpl->tpl_vars["matchQuickLink"] = new Smarty_variable($_smarty_tpl->tpl_vars['quick']->value['id_quick_access'], null, 0);?>class="active"<?php }?>>
 										<a href="<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_MODIFIER]['escape'][0][0]->smartyEscape($_smarty_tpl->tpl_vars['quick']->value['link'],'html','UTF-8');?>
 " <?php if ($_smarty_tpl->tpl_vars['quick']->value['new_window']) {?>target="_blank"<?php }?>>
 											<?php if (isset($_smarty_tpl->tpl_vars['quick']->value['icon'])) {?>
@@ -473,7 +473,7 @@ $_smarty_tpl->tpl_vars['quick']->_loop = true;
 
 				
 				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-<?php $_tmp7=ob_get_clean();?><?php if ($_tmp7) {?>
+<?php $_tmp6=ob_get_clean();?><?php if ($_tmp6) {?>
 					<ul id="header-list" class="header-list navbar-right">
 						<li class="shopname" data-mobile="true" data-from="header-list" data-target="menu">
               <?php if (isset($_smarty_tpl->tpl_vars['debug_mode']->value)&&$_smarty_tpl->tpl_vars['debug_mode']->value==true) {?>

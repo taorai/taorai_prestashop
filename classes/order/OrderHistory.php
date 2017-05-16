@@ -496,7 +496,8 @@ class OrderHistoryCore extends ObjectModel
                     $result['firstname'].' '.$result['lastname'],
                     null,
                     null,
-                    $file_attachement,
+                    // $file_attachement,
+                    null, // will not send attachment
                     null,
                     _PS_MAIL_DIR_,
                     false,
