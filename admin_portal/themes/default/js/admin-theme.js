@@ -569,6 +569,7 @@ $(document).ready(function() {
 
     $('#id_order_carrier').val($(this).data('id-order-carrier'));
     $('#shipping_tracking_number').val($(this).data('tracking-number'));
+    $('#updated_shipping_cost').val($(this).data('updated-shipping-cost'));
     $('#shipping_carrier option[value='+$(this).data('id-carrier')+']').prop('selected', true);
 
     $('#modal-shipping').modal();
