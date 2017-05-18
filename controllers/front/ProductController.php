@@ -378,17 +378,17 @@ class ProductControllerCore extends ProductPresentingFrontControllerCore
         $this->ajaxDie(Tools::jsonEncode(array(
             'product_prices' => $this->render('catalog/_partials/product-prices'),
             'product_cover_thumbnails' => $this->render('catalog/_partials/product-cover-thumbnails'),
-            'product_customization' => $this->render(
-                'catalog/_partials/product-customization',
-                array(
-                    'customizations' => $product['customizations'],
-                )
-            ),
-            'product_details' => $this->render('catalog/_partials/product-details'),
-            'product_variants' => $this->render('catalog/_partials/product-variants'),
+            // 'product_customization' => $this->render(
+            //     'catalog/_partials/product-customization',
+            //     array(
+            //         'customizations' => $product['customizations'],
+            //     )
+            // ),
+            // 'product_details' => $this->render('catalog/_partials/product-details'),
+            // 'product_variants' => $this->render('catalog/_partials/product-variants'),
             'product_discounts' => $this->render('catalog/_partials/product-discounts'),
             'product_add_to_cart' => $this->render('catalog/_partials/product-add-to-cart'),
-            'product_additional_info' => $this->render('catalog/_partials/product-additional-info'),
+            // 'product_additional_info' => $this->render('catalog/_partials/product-additional-info'),
             'product_images_modal' => $this->render('catalog/_partials/product-images-modal'),
             'product_url' => $this->context->link->getProductLink(
                 $product['id_product'],

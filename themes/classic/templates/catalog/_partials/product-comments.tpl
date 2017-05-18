@@ -1,5 +1,5 @@
 <div class="tab-pane fade{if !$product.description} in active{/if}" style="padding:0"
-id="product-comments" data-product="{$product.embedded_attributes|json_encode}">
+id="product-comments">
 
 {block name='product_comments'}
 <section>
