@@ -50,10 +50,10 @@
 {/block}
 
 {block name='header_top'}
-  <div class="header-top" style="text-align: -webkit-center;">
+  <div class="header-top" style="text-align:center;">
     <div class="container">
        <div class="row">
-        <div class="col-md-2 hidden-sm-down" id="_desktop_logo" style="float: none;margin-bottom: 2em;">
+        <div class="col-md-2 hidden-sm-down" id="_desktop_logo" style="float: none;margin-bottom: 2em;width:100%;text-align:center;">
           <a href="{$urls.base_url}">
             <img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}">
           </a>

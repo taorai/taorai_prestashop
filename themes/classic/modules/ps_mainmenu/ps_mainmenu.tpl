@@ -20,11 +20,11 @@
                     </span>
                   </span>
                 {/if}
-                <div style="width:100%;text-align:-webkit-center;">
+                <div style="width:100%;text-align:center;">
                   {$node.label}
                 </div>
                 {if isset($node.menu_thumbnail_image) && $node.menu_thumbnail_image}
-                  <div style="width:100%;text-align:-webkit-center;">
+                  <div style="width:100%;text-align:center;">
                     <img src="{$node.menu_thumbnail_image}" />
                   </div>
                 {/if}

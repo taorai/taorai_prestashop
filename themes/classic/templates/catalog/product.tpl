@@ -233,7 +233,7 @@
      {if $accessories}
      <div class="col-md-12" style="padding-left:15px;padding-right:15px;">
        <section class="product-accessories clearfix">
-        <h3 class="h5 text-uppercase" style="text-align:-webkit-center;">{l s='You might also like' d='Shop.Theme.Catalog'}</h3>
+        <h3 class="h5 text-uppercase" style="text-align:center;">{l s='You might also like' d='Shop.Theme.Catalog'}</h3>
         <div class="products">
           {foreach from=$accessories item="product_accessory"}
           {block name='product_miniature'}
