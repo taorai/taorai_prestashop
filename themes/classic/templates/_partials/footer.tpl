@@ -42,7 +42,7 @@
       {/block}
     </div>
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-12" style="text-align: center;">
         <p>
           {block name='copyright_link'}
               {l s='%copyright% %year% - Powered by %taorai.asia%' sprintf=['%taorai.asia%' => 'taorai.asia', '%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme'}

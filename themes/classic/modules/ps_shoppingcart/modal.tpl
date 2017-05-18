@@ -25,7 +25,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-7">
+          <div class="col-md-6">
             <div class="cart-content">
               {if $cart.products_count > 1}
                 <p class="cart-products-count">{l s='There are %products_count% items in your cart.' sprintf=['%products_count%' => $cart.products_count] d='Shop.Theme.Checkout'}</p>
