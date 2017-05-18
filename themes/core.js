@@ -2521,41 +2521,43 @@
 	      });
 	    };
 	
-	    _jquery2['default'].post(event.reason.productUrl, { ajax: '1', action: 'refresh' }, null, 'json').then(function (resp) {
-	      (0, _jquery2['default'])('.product-prices').replaceWith(resp.product_prices);
-	      (0, _jquery2['default'])('.product-customization').replaceWith(resp.product_customization);
-	      (0, _jquery2['default'])('.product-variants').replaceWith(resp.product_variants);
-	      (0, _jquery2['default'])('.product-discounts').replaceWith(resp.product_discounts);
-	      (0, _jquery2['default'])('.images-container').replaceWith(resp.product_cover_thumbnails);
-	      (0, _jquery2['default'])('.product-additional-info').replaceWith(resp.product_additional_info);
-	      (0, _jquery2['default'])('#product-details').replaceWith(resp.product_details);
-	
-	      // Replace all "add to cart" sections but the quantity input in order to keep quantity field intact i.e.
-	      // Prevent quantity input from blinking with classic theme.
-	      var $productAddToCart = undefined;
-	      (0, _jquery2['default'])(resp.product_add_to_cart).each(function (index, value) {
-	        if ((0, _jquery2['default'])(value).hasClass('product-add-to-cart')) {
-	          $productAddToCart = (0, _jquery2['default'])(value);
-	        }
-	      });
-	      replaceAddToCartSections($productAddToCart);
-	
-	      var minimalProductQuantity = parseInt(resp.product_minimal_quantity, 10);
-	      var quantityInputSelector = '#quantity_wanted';
-	      var quantityInput = (0, _jquery2['default'])(quantityInputSelector);
-	      var quantity_wanted = quantityInput.val();
-	
-	      if (!isNaN(minimalProductQuantity) && quantity_wanted < minimalProductQuantity && eventType !== 'updatedProductQuantity') {
-	        quantityInput.attr('min', minimalProductQuantity);
-	        quantityInput.val(minimalProductQuantity);
-	      }
-	
-	      if (event.refreshUrl) {
-	        window.history.pushState({ id_product_attribute: resp.id_product_attribute }, undefined, resp.product_url);
-	      }
-	
-	      _prestashop2['default'].emit('updatedProduct', resp);
-	    });
+		if (typeof(event.reason.productUrl) != 'undefined') {
+		    _jquery2['default'].post(event.reason.productUrl, { ajax: '1', action: 'refresh' }, null, 'json').then(function (resp) {
+		      (0, _jquery2['default'])('.product-prices').replaceWith(resp.product_prices);
+		      // (0, _jquery2['default'])('.product-customization').replaceWith(resp.product_customization);
+		      // (0, _jquery2['default'])('.product-variants').replaceWith(resp.product_variants);
+		      (0, _jquery2['default'])('.product-discounts').replaceWith(resp.product_discounts);
+		      (0, _jquery2['default'])('.images-container').replaceWith(resp.product_cover_thumbnails);
+		      // (0, _jquery2['default'])('.product-additional-info').replaceWith(resp.product_additional_info);
+		      // (0, _jquery2['default'])('#product-details').replaceWith(resp.product_details);
+		
+		      // Replace all "add to cart" sections but the quantity input in order to keep quantity field intact i.e.
+		      // Prevent quantity input from blinking with classic theme.
+		      var $productAddToCart = undefined;
+		      (0, _jquery2['default'])(resp.product_add_to_cart).each(function (index, value) {
+		        if ((0, _jquery2['default'])(value).hasClass('product-add-to-cart')) {
+		          $productAddToCart = (0, _jquery2['default'])(value);
+		        }
+		      });
+		      replaceAddToCartSections($productAddToCart);
+		
+		      var minimalProductQuantity = parseInt(resp.product_minimal_quantity, 10);
+		      var quantityInputSelector = '#quantity_wanted';
+		      var quantityInput = (0, _jquery2['default'])(quantityInputSelector);
+		      var quantity_wanted = quantityInput.val();
+		
+		      if (!isNaN(minimalProductQuantity) && quantity_wanted < minimalProductQuantity && eventType !== 'updatedProductQuantity') {
+		        quantityInput.attr('min', minimalProductQuantity);
+		        quantityInput.val(minimalProductQuantity);
+		      }
+		
+		      if (event.refreshUrl) {
+		        window.history.pushState({ id_product_attribute: resp.id_product_attribute }, undefined, resp.product_url);
+		      }
+		
+		      _prestashop2['default'].emit('updatedProduct', resp);
+		    });
+		}
 	  });
 	});
 
