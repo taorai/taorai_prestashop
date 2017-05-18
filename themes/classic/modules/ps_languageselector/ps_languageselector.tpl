@@ -22,7 +22,7 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-<div id="_desktop_language_selector">
+<div id="_desktop_language_selector" style="text-align: center;">
   <div class="language-selector-wrapper">
     <span class="hidden-md-up">{l s='Language:' d='Shop.Theme'}</span>
     <div class="language-selector dropdown js-dropdown">

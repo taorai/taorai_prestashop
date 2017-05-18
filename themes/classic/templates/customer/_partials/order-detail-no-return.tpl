@@ -101,7 +101,7 @@
           </tr>
           {if $order.delivery_status && !$product.comment}
           <tr>
-            <td colspan="4" style="text-align: -webkit-center;">
+            <td colspan="4" style="text-align:center;">
               <div class="col-md-12" style="padding-bottom: 1rem;width: 100%;">
                 <strong>
                   {l s='Leave a comment or any suggestion regarding this product.' d='Shop.Theme.Catalog'}
@@ -186,7 +186,7 @@
             </div>
           </div>
           {if $order.delivery_status && !$product.comment}
-            <div style="text-align: -webkit-center;padding-bottom:1rem">
+            <div style="text-align:center;padding-bottom:1rem">
               <div class="col-md-12" style="padding-bottom: 1rem;width: 100%;">
                 <strong>
                   {l s='Leave a comment or any suggestion regarding this product.' d='Shop.Theme.Catalog'}

@@ -7,7 +7,7 @@ id="product-comments">
     {foreach from=$product.comments item=comment}
     <tr style="border-bottom: 1px solid lightgray;">
       <td style="padding-bottom: 1rem;padding-top: 1rem;padding-left: 1rem">{$comment.content}</td>
-      <td style="width: 25%;text-align: -webkit-center;">
+      <td style="width: 25%;text-align:center;">
         <b>{$comment.firstname} {$comment.lastname}</b>
         <br/>
         <b>{$comment.date_add}</b>
