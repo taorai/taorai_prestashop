@@ -149,7 +149,7 @@
 
   </div>
   <div class="row" style="margin-bottom: 2rem;">
-    <div class="col-md-12" style="padding: 0 1rem 0 1rem;">
+    <div class="col-md-12" style="padding: 0 1rem 2rem 1rem;">
       {block name='product_tabs'}
       <div class="tabs" style="margin: 0;">
         <ul class="nav nav-tabs">
@@ -228,18 +228,21 @@
        </div>
      </div>
 
+
      {block name='product_accessories'}
      {if $accessories}
-     <section class="product-accessories clearfix">
-      <h3 class="h5 text-uppercase">{l s='You might also like' d='Shop.Theme.Catalog'}</h3>
-      <div class="products">
-        {foreach from=$accessories item="product_accessory"}
-        {block name='product_miniature'}
-        {include file='catalog/_partials/miniatures/product.tpl' product=$product_accessory}
-        {/block}
-        {/foreach}
-      </div>
-    </section>
+     <div class="col-md-12" style="padding-left:15px;padding-right:15px;">
+       <section class="product-accessories clearfix">
+        <h3 class="h5 text-uppercase" style="text-align:-webkit-center;">{l s='You might also like' d='Shop.Theme.Catalog'}</h3>
+        <div class="products">
+          {foreach from=$accessories item="product_accessory"}
+          {block name='product_miniature'}
+          {include file='catalog/_partials/miniatures/product.tpl' product=$product_accessory}
+          {/block}
+          {/foreach}
+        </div>
+      </section>
+    </div>
     {/if}
     {/block}
 
