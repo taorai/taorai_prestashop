@@ -26,12 +26,23 @@
 {block name='social_sharing'}
   {if $social_share_links}
     <div class="social-sharing">
-      <span>{l s='Share' d='Shop.Theme.Actions'}</span>
-      <ul>
-        {foreach from=$social_share_links item='social_share_link'}
+      <span style="margin-right:1rem;">{l s='Share' d='Shop.Theme.Actions'}</span>
+      <!-- <ul> -->
+        <!-- {foreach from=$social_share_links item='social_share_link'}
           <li class="{$social_share_link.class} icon-gray"><a href="{$social_share_link.url}" class="text-hide" title="{$social_share_link.label}" target="_blank">{$social_share_link.label}</a></li>
-        {/foreach}
-      </ul>
+        {/foreach} -->
+        <!-- <li> -->
+          <div class="line-it-button" data-lang="en" data-type="share-d" data-url="{$social_share_links['LINE'].url}" style="display: none;margin-left:1rem;"></div>
+        <!-- </li>
+        <li> -->
+          <div style="margin-left:1rem;">
+            <a target="_blank" href="{$social_share_links['facebook'].url}">
+              <img src="/taorai/img/facebook_40_40.png" />
+            </a></div>
+        <!-- </li> -->
+      <!-- </ul> -->
+      
+      <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
     </div>
   {/if}
 {/block}
