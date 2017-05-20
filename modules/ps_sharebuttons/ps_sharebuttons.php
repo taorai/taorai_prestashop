@@ -206,6 +206,13 @@ class Ps_Sharebuttons extends Module implements WidgetInterface
             );
         }
 
+        // add LINE
+        $social_share_links['LINE'] = array(
+            'label' => $this->trans('LINE', array(), 'Modules.Sharebuttons.Shop'),
+            'class' => 'line',
+            'url' => $sharing_url,
+        );
+
         return array(
             'social_share_links' => $social_share_links,
         );
