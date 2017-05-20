@@ -2363,13 +2363,13 @@ class ToolsCore
         if ($cache_control) {
             $cache_control = "<IfModule mod_expires.c>
     ExpiresActive On
-    ExpiresByType image/gif \"access plus 1 month\"
-    ExpiresByType image/jpeg \"access plus 1 month\"
-    ExpiresByType image/png \"access plus 1 month\"
-    ExpiresByType text/css \"access plus 1 week\"
-    ExpiresByType text/javascript \"access plus 1 week\"
-    ExpiresByType application/javascript \"access plus 1 week\"
-    ExpiresByType application/x-javascript \"access plus 1 week\"
+    ExpiresByType image/gif \"access plus 7 days\"
+    ExpiresByType image/jpeg \"access plus 7 days\"
+    ExpiresByType image/png \"access plus 7 days\"
+    ExpiresByType text/css \"access plus 1 hour\"
+    ExpiresByType text/javascript \"access plus 1 hour\"
+    ExpiresByType application/javascript \"access plus 1 hour\"
+    ExpiresByType application/x-javascript \"access plus 1 hour\"
     ExpiresByType image/x-icon \"access plus 1 year\"
     ExpiresByType image/svg+xml \"access plus 1 year\"
     ExpiresByType image/vnd.microsoft.icon \"access plus 1 year\"
