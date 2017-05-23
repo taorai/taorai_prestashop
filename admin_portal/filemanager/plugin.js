@@ -20,7 +20,7 @@ tinymce.PluginManager.add('filemanager', function(editor) {
                 if (typeof editor.settings.filemanager_title !== "undefined" && editor.settings.filemanager_title) 
                     title=editor.settings.filemanager_title;
                 var sort_by="";
-                var descending="false";
+                var descending="true";
 		if (typeof editor.settings.filemanager_sort_by !== "undefined" && editor.settings.filemanager_sort_by) 
                     sort_by=editor.settings.filemanager_sort_by;
 		if (typeof editor.settings.filemanager_descending !== "undefined" && editor.settings.filemanager_descending) 
