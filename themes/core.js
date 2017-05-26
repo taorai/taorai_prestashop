@@ -2334,7 +2334,7 @@
 	function updateResults(data) {
 	    pendingQuery = false;
 	    prestashop.emit('updateProductList', data);
-	    window.history.pushState(data, undefined, data.current_url);
+	    window.history.replaceState(data, undefined, data.current_url);
 	}
 	
 	function handleError() {
@@ -2552,7 +2552,7 @@
 		      }
 		
 		      if (event.refreshUrl) {
-		        window.history.pushState({ id_product_attribute: resp.id_product_attribute }, undefined, resp.product_url);
+		        window.history.replaceState({ id_product_attribute: resp.id_product_attribute }, undefined, resp.product_url);
 		      }
 		
 		      _prestashop2['default'].emit('updatedProduct', resp);
