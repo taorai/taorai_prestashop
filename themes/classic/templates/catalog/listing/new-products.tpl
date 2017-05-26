@@ -15,9 +15,22 @@
       {if $listing.products|count}
 
         <div id="">
-          {block name='product_list_top'}
-            {include file='catalog/_partials/products-top.tpl' listing=$listing}
-          {/block}
+			<div id="js-product-list-top" class="row products-selection">
+			  <div class="col-md-6 hidden-sm-down total-products">
+			    {if $listing.pagination.total_items > 1}
+			      <p>{l s='There are %product_count% products.' d='Shop.Theme.Catalog' sprintf=['%product_count%' => $listing.pagination.total_items]}</p>
+			    {else if $listing.pagination.total_items > 0}
+			      <p>{l s='There is 1 product.' d='Shop.Theme.Catalog'}</p>
+			    {/if}
+			  </div>
+			  <div class="col-sm-12 hidden-md-up text-xs-center showing">
+			    {l s='Showing %from%-%to% of %total% item(s)' d='Shop.Theme.Catalog' sprintf=[
+			    '%from%' => $listing.pagination.items_shown_from ,
+			    '%to%' => $listing.pagination.items_shown_to,
+			    '%total%' => $listing.pagination.total_items
+			    ]}
+			  </div>
+			</div>
         </div>
 
         {block name='product_list_active_filters'}
@@ -27,9 +40,23 @@
         {/block}
 
         <div id="">
-          {block name='product_list'}
-            {include file='catalog/_partials/products.tpl' listing=$listing}
-          {/block}
+          <div id="js-product-list">
+			<div class="products row" style="justify-content: space-between;">
+			    {foreach from=$listing.products item="product"}
+			      {block name='product_miniature'}
+			        {include file='catalog/_partials/miniatures/product.tpl' product=$product}
+			      {/block}
+			    {/foreach}
+			</div>
+
+			<div class="hidden-md-up text-xs-right up">
+			    <a href="#header" class="btn btn-secondary">
+			      {l s='Back to top' d='Shop.Theme.Actions'}
+			      <i class="material-icons">&#xE316;</i>
+			    </a>
+			</div>
+		  </div>
+
         </div>
 
         <div id="js-product-list-bottom">
