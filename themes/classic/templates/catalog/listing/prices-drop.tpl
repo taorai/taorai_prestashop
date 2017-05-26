@@ -41,7 +41,7 @@
 
         <div id="">
           <div id="js-product-list">
-			<div class="products row" style="justify-content: space-between;">
+			<div class="products row" style="justify-content: center;">
 			    {foreach from=$listing.products item="product"}
 			      {block name='product_miniature'}
 			        {include file='catalog/_partials/miniatures/product.tpl' product=$product}
