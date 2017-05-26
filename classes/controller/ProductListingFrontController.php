@@ -276,7 +276,10 @@ abstract class ProductListingFrontControllerCore extends ProductPresentingFrontC
         }
 
         $resultsPerPage = (int) Tools::getValue('resultsPerPage');
-        if ($resultsPerPage <= 0 || $resultsPerPage > 36) {
+        //  show all products for new arrivals & on sale
+        if ($query->getQueryType() == "new-products" || $query->getQueryType() == "prices-drop") {
+            $resultsPerPage = 3000;
+        } else if ($resultsPerPage <= 0 || $resultsPerPage > 36) {
             $resultsPerPage = Configuration::get('PS_PRODUCTS_PER_PAGE');
         }
 
