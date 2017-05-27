@@ -303,6 +303,14 @@
                       'column': 'active'
                     } %}
                   </th>
+
+                  <th>
+                    {{ "Created Time"|trans({}, 'Admin.Global') }}
+                  </th>
+
+                  <th>
+                    {{ "Updated Time"|trans({}, 'Admin.Global') }}
+                  </th>
                   {% if has_category_filter == true %}
                     <th>
                       {{ "Position"|trans({}, 'Admin.Global') }}
@@ -385,6 +393,10 @@
                       <option value="0" {% if (filter_column_active is defined) and filter_column_active == '0' %}selected="selected"{% endif %}>Inactive</option>
                     </select>
                   </th>
+
+                  <th></th>
+                  <th></th>
+
                   {% if has_category_filter == true %}
                     <th>
                       {% if not(activate_drag_and_drop) %}
