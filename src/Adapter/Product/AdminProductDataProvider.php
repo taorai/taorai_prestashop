@@ -195,6 +195,8 @@ class AdminProductDataProvider extends AbstractAdminQueryBuilder implements Prod
             'reference' => array('table' => 'p', 'field' => 'reference', 'filtering' => self::FILTERING_LIKE_BOTH),
             'price' => array('table' => 'p', 'field' => 'price', 'filtering' => ' %s '),
             'id_shop_default' => array('table' => 'p', 'field' => 'id_shop_default'),
+            'created_time' => array('table' => 'p', 'field' => 'date_add'),
+            'updated_time' => array('table' => 'p', 'field' => 'date_upd'),
             'is_virtual' => array('table' => 'p', 'field' => 'is_virtual'),
             'name' => array('table' => 'pl', 'field' => 'name', 'filtering' => self::FILTERING_LIKE_BOTH),
             'link_rewrite' => array('table' => 'pl', 'field' => 'link_rewrite', 'filtering' => self::FILTERING_LIKE_BOTH),

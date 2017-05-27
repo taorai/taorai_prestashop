@@ -66,6 +66,7 @@
                 <td></td>
             {% endif %}
             <td>
+
               {% if product.active|default(0) == 0 %}
                 <a href="#" onclick="unitProductAction(this, 'activate'); return false;">
                   <i class="material-icons action-disabled">clear</i>
@@ -76,6 +77,15 @@
                 </a>
               {% endif %}
             </td>
+
+            <td>
+              {{ product.created_time|default('') }}
+            </td>
+
+            <td>
+              {{ product.updated_time|default('') }}
+            </td>
+
             {% if product.position is defined %}
               <td {% if activate_drag_and_drop %}class="placeholder"{% endif %} style="cursor: pointer; cursor: hand;">
                 {% if activate_drag_and_drop %}
