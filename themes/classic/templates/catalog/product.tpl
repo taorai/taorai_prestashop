@@ -165,11 +165,13 @@
               {l s='Product Details' d='Shop.Theme.Catalog'}
             </a>
           </li>
+          {if $product.comments|@count > 0}
           <li class="nav-item">
             <a class="nav-link{if !$product.description} active{/if}" data-toggle="tab" href="#product-comments">
               {l s='Comments(%d)' d='Shop.Theme.Catalog' sprintf=[$product.comments|@count]}
             </a>
           </li>
+          {/if}
           {if $product.attachments}
           <li class="nav-item">
             <a class="nav-link" data-toggle="tab" href="#attachments">
