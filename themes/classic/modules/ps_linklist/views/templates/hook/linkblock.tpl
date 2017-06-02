@@ -20,7 +20,8 @@
                 id="{$link.id}-{$linkBlock.id}"
                 class="{$link.class}"
                 href="{$link.url}"
-                title="{$link.description}">
+                title="{$link.description}"
+                target="_blank">
               {$link.title}
             </a>
           </li>
