@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-05-27 13:06:02
+<?php /* Smarty version Smarty-3.1.19, created on 2017-06-03 20:50:33
          compiled from "/home/steven/GitRepository/taorai/admin_portal/themes/default/template/footer.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:298736635929174a364063-33035346%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:5386120695932bea9c5da44-87442678%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'fcd6620effa2017361f7823ae3fa1cf280e2dfb1' => 
     array (
       0 => '/home/steven/GitRepository/taorai/admin_portal/themes/default/template/footer.tpl',
-      1 => 1492474529,
+      1 => 1493879981,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '298736635929174a364063-33035346',
+  'nocache_hash' => '5386120695932bea9c5da44-87442678',
   'function' => 
   array (
   ),
@@ -27,9 +27,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5929174a379df5_05861983',
+  'unifunc' => 'content_5932bea9c74497_98746257',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5929174a379df5_05861983')) {function content_5929174a379df5_05861983($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_5932bea9c74497_98746257')) {function content_5932bea9c74497_98746257($_smarty_tpl) {?>
 
 	</div>
 </div>
@@ -62,35 +62,35 @@ s</span>
 	</div>
 	<div class="col-sm-5">
 		<div class="footer-contact">
-			<a href="http://www.prestashop.com/en/contact_us?utm_source=back-office&amp;utm_medium=footer&amp;utm_campaign=back-office-<?php echo strtoupper($_smarty_tpl->tpl_vars['lang_iso']->value);?>
+			<a href="http://www.prestashop.com/en/contact_us?utm_source=back-office&amp;utm_medium=footer&amp;utm_campaign=back-office-<?php echo mb_strtoupper($_smarty_tpl->tpl_vars['lang_iso']->value, 'UTF-8');?>
 &amp;utm_content=<?php if ($_smarty_tpl->tpl_vars['host_mode']->value) {?>cloud<?php } else { ?>download<?php }?>" class="footer_link _blank">
 				<i class="icon-envelope"></i>
 				<?php echo smartyTranslate(array('s'=>'Contact','d'=>'Admin.Navigation.Footer'),$_smarty_tpl);?>
 
 			</a>
 			/&nbsp;
-			<a href="http://forge.prestashop.com/?utm_source=back-office&amp;utm_medium=footer&amp;utm_campaign=back-office-<?php echo strtoupper($_smarty_tpl->tpl_vars['lang_iso']->value);?>
+			<a href="http://forge.prestashop.com/?utm_source=back-office&amp;utm_medium=footer&amp;utm_campaign=back-office-<?php echo mb_strtoupper($_smarty_tpl->tpl_vars['lang_iso']->value, 'UTF-8');?>
 &amp;utm_content=<?php if ($_smarty_tpl->tpl_vars['host_mode']->value) {?>cloud<?php } else { ?>download<?php }?>" class="footer_link _blank">
 				<i class="icon-bug"></i>
 				<?php echo smartyTranslate(array('s'=>'Bug Tracker','d'=>'Admin.Navigation.Footer'),$_smarty_tpl);?>
 
 			</a>
 			/&nbsp;
-			<a href="http://www.prestashop.com/forums/?utm_source=back-office&amp;utm_medium=footer&amp;utm_campaign=back-office-<?php echo strtoupper($_smarty_tpl->tpl_vars['lang_iso']->value);?>
+			<a href="http://www.prestashop.com/forums/?utm_source=back-office&amp;utm_medium=footer&amp;utm_campaign=back-office-<?php echo mb_strtoupper($_smarty_tpl->tpl_vars['lang_iso']->value, 'UTF-8');?>
 &amp;utm_content=<?php if ($_smarty_tpl->tpl_vars['host_mode']->value) {?>cloud<?php } else { ?>download<?php }?>" class="footer_link _blank">
 				<i class="icon-comments"></i>
 				<?php echo smartyTranslate(array('s'=>'Forum','d'=>'Admin.Navigation.Footer'),$_smarty_tpl);?>
 
 			</a>
 			/&nbsp;
-			<a href="http://addons.prestashop.com/?utm_source=back-office&amp;utm_medium=footer&amp;utm_campaign=back-office-<?php echo strtoupper($_smarty_tpl->tpl_vars['lang_iso']->value);?>
+			<a href="http://addons.prestashop.com/?utm_source=back-office&amp;utm_medium=footer&amp;utm_campaign=back-office-<?php echo mb_strtoupper($_smarty_tpl->tpl_vars['lang_iso']->value, 'UTF-8');?>
 &amp;utm_content=<?php if ($_smarty_tpl->tpl_vars['host_mode']->value) {?>cloud<?php } else { ?>download<?php }?>" class="footer_link _blank">
 				<i class="icon-puzzle-piece"></i>
 				<?php echo smartyTranslate(array('s'=>'Addons','d'=>'Admin.Navigation.Footer'),$_smarty_tpl);?>
 
 			</a>
 			/&nbsp;
-			<a href="http://www.prestashop.com/en/training-prestashop?utm_source=back-office&amp;utm_medium=footer&amp;utm_campaign=back-office-<?php echo strtoupper($_smarty_tpl->tpl_vars['lang_iso']->value);?>
+			<a href="http://www.prestashop.com/en/training-prestashop?utm_source=back-office&amp;utm_medium=footer&amp;utm_campaign=back-office-<?php echo mb_strtoupper($_smarty_tpl->tpl_vars['lang_iso']->value, 'UTF-8');?>
 &amp;utm_content=<?php if ($_smarty_tpl->tpl_vars['host_mode']->value) {?>cloud<?php } else { ?>download<?php }?>" class="footer_link _blank">
 				<i class="icon-book"></i>
 				<?php echo smartyTranslate(array('s'=>'Training','d'=>'Admin.Navigation.Footer'),$_smarty_tpl);?>
