@@ -108,3 +108,5 @@ Disallow: /*th/order-follow
 Disallow: /*th/credit-slip
 Disallow: /*th/password-recovery
 Disallow: /*th/search
+
+SITEMAP: https://taorai.asia/sitemap.xml

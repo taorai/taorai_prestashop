@@ -37,7 +37,7 @@
         <li> -->
           <div style="margin-left:1rem;">
             <a target="_blank" href="{$social_share_links['facebook'].url}">
-              <img src="/taorai/img/facebook_40_40.png" />
+              <img src="/img/facebook_40_40.png" />
             </a></div>
         <!-- </li> -->
       <!-- </ul> -->
