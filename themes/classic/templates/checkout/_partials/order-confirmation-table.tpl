@@ -97,7 +97,12 @@
 
       <table>
         {foreach $subtotals as $subtotal}
-          {if $subtotal.type !== 'tax'}
+          {if $subtotal.type == 'discount'}
+            <tr>
+              <td>{$subtotal.label}</td>
+              <td>-{$subtotal.value}</td>
+            </tr>
+          {else if $subtotal.type !== 'tax'}
             <tr>
               <td>{$subtotal.label}</td>
               <td>{$subtotal.value}</td>

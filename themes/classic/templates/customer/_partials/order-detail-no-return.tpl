@@ -132,7 +132,7 @@
             {if $line.value}
               <tr class="text-xs-right line-{$line.type}">
                 <td colspan="3">{$line.label}</td>
-                <td>{$line.value}</td>
+                <td>{if $line.type == 'discount'}-{/if}{$line.value}</td>
               </tr>
             {/if}
           {/foreach}
