@@ -73,14 +73,14 @@
         </a>
       {/if}
 
-      {if $configuration.voucher_enabled && !$configuration.is_catalog}
+<!--       {if $configuration.voucher_enabled && !$configuration.is_catalog}
         <a class="col-lg-4 col-md-6 col-sm-6 col-xs-12" id="discounts-link" href="{$urls.pages.discount}">
           <span class="link-item">
             <i class="material-icons">&#xE54E;</i>
             {l s='Vouchers' d='Shop.Theme.Customeraccount'}
           </span>
         </a>
-      {/if}
+      {/if} -->
 
       {if $configuration.return_enabled && !$configuration.is_catalog}
         <a class="col-lg-4 col-md-6 col-sm-6 col-xs-12" id="returns-link" href="{$urls.pages.order_follow}">
