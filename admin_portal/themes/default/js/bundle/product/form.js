@@ -185,7 +185,7 @@ var displayFieldsManager = (function() {
 
         $('#specific-price-combination-selector').removeClass('hide').show();
         $('#form-nav a[href="#step3"]').text(translate_javascripts['Combinations']);
-        $('#product_qty_0_shortcut_div, #quantities').hide();
+//        $('#product_qty_0_shortcut_div, #quantities').hide();
       } else {
         combinationsBlock.hide();
         $('#specific-price-combination-selector').hide();
