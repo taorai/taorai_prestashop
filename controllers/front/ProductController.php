@@ -929,6 +929,7 @@ class ProductControllerCore extends ProductPresentingFrontControllerCore
         $product['new'] = (int) $this->product->new;
         $product['id_product_attribute'] = $this->getIdProductAttribute();
         $product['minimal_quantity'] = $this->getProductMinimalQuantity($product);
+        $product['product_level_minimal_quantity'] = $this->getProductLevelMinimalQuantity($product);
         $product['quantity_wanted'] = $this->getRequiredQuantity($product);
         $product['extraContent'] = $extraContentFinder->addParams(array('product' => $this->product))->present();
 
@@ -984,6 +985,15 @@ class ProductControllerCore extends ProductPresentingFrontControllerCore
         }
 
         return $minimal_quantity;
+    }
+
+    /**
+     * @param $product
+     * @return int
+     */
+    protected function getProductLevelMinimalQuantity($product)
+    {
+        return $this->product->minimal_quantity;
     }
 
     /**
