@@ -423,7 +423,35 @@ class CartPresenter implements PresenterInterface
                     )
                 ) :
                 '',
+            'minimalPurchaseQuantityRequired' => $this->hasReachedMinimalQuantity($products) ? '' : 
+                sprintf(
+                    $this->translator->trans('One or more products have not reached the minimal purchase quantity, please kindly add the product quantity and try again.', array(), 'Shop.Theme.Checkout')
+                ),
         );
+    }
+
+    private function hasReachedMinimalQuantity(Array $products)
+    {
+        $hasReached = true;
+        $quantity_of_product = array();
+
+        foreach ($products as $product) {
+            if (isset($quantity_of_product[$product['id_product']])) {
+                $quantity_of_product[$product['id_product']] += (int)$product['quantity'];
+            } else {
+                $quantity_of_product[$product['id_product']] = (int)$product['quantity'];
+            }
+        }
+
+        foreach ($quantity_of_product as $id_product => $quantity) {
+            $product_presenter = new Product($id_product);
+            if ($quantity < $product_presenter->minimal_quantity) {
+                $hasReached = false;
+                break;
+            }
+        }
+
+        return $hasReached;
     }
 
     private function getTemplateVarVouchers(Cart $cart)

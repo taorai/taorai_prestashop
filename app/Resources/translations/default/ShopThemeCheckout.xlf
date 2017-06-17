@@ -326,6 +326,12 @@ File: themes/classic/modules/ps_shoppingcart/ps_shoppingcart.tpl:8</note>
         <note>Context:
 File: themes/starterTheme/templates/catalog/_partials/product-add-to-cart.tpl:21</note>
       </trans-unit>
+      <trans-unit id="144360cac07bc8f7227748407d12711d">
+        <source>One or more products have not reached the minimal purchase quantity, please kindly add the product quantity and try again.</source>
+        <target>One or more products have not reached the minimal purchase quantity, please kindly add the product quantity and try again.</target>
+        <note>Context:
+File: themes/starterTheme/templates/catalog/_partials/product-add-to-cart.tpl:21</note>
+      </trans-unit>
     </body>
   </file>
   <file original="themes/starterTheme/templates/checkout/_partials/address-form.tpl" source-language="en-US" target-language="en" datatype="plaintext">

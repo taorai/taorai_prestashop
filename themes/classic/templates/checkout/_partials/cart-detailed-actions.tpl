@@ -31,6 +31,13 @@
       <div class="text-xs-center">
         <button type="button" class="btn btn-primary disabled" disabled>{l s='Checkout' d='Shop.Theme.Actions'}</button>
       </div>
+    {elseif $cart.minimalPurchaseQuantityRequired}
+      <div class="alert alert-warning" role="alert">
+        {$cart.minimalPurchaseQuantityRequired}
+      </div>
+      <div class="text-xs-center">
+        <button type="button" class="btn btn-primary disabled" disabled>{l s='Checkout' d='Shop.Theme.Actions'}</button>
+      </div>
     {elseif empty($cart.products) }
       <div class="text-xs-center">
         <button type="button" class="btn btn-primary disabled" disabled>{l s='Checkout' d='Shop.Theme.Actions'}</button>
