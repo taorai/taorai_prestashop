@@ -3220,7 +3220,7 @@ class CartCore extends ObjectModel
      *
      * @return float|bool Shipping total, false if not possible to ship with the given carrier
      */
-    public function getPackageShippingCost($id_carrier = null, $use_tax = true, Country $default_country = null, $product_list = null, $id_zone = null)
+    public function getPackageShippingCost($id_carrier = null, $use_tax = true, Country $default_country = null, $product_list = null, $id_zone = null, $isFromAdmin = false)
     {
         if ($this->isVirtualCart()) {
             return 0;
@@ -3455,14 +3455,14 @@ class CartCore extends ObjectModel
                 $shipping_cost += 0;
             } else {
                 if ($shipping_method == Carrier::SHIPPING_METHOD_WEIGHT) {
-                    $shipping_cost += $carrier->getDeliveryPriceByWeight($this->getTotalWeight($products), $id_zone);
+                    $shipping_cost += $carrier->getDeliveryPriceByWeight($this->getTotalWeight($products, $isFromAdmin), $id_zone);
                 } else { // by price
                     $shipping_cost += $carrier->getDeliveryPriceByPrice($order_total, $id_zone, (int)$this->id_currency);
                 }
             }
         } else {
             if ($shipping_method == Carrier::SHIPPING_METHOD_WEIGHT) {
-                $shipping_cost += $carrier->getDeliveryPriceByWeight($this->getTotalWeight($products), $id_zone);
+                $shipping_cost += $carrier->getDeliveryPriceByWeight($this->getTotalWeight($products, $isFromAdmin), $id_zone);
             } else {
                 $shipping_cost += $carrier->getDeliveryPriceByPrice($order_total, $id_zone, (int)$this->id_currency);
             }
@@ -3475,8 +3475,9 @@ class CartCore extends ObjectModel
         // Additional Shipping Cost per product
         foreach ($products as $product) {
             if (!$product['is_virtual']) {
-                $shipping_cost += $product['additional_shipping_cost'] * $product['cart_quantity'];
+                $shipping_cost += (int) $product['additional_shipping_cost'] * (int) $product[$isFromAdmin ? 'product_quantity' : 'cart_quantity'];
             }
+            // PrestaShopLogger::addLog('product_quantity : product_id : product_attribute_id : additional_shipping_cost : shipping_cost => '.$product['product_quantity'].':'.(int) $product['product_id'].':'.(int) $product['product_attribute_id'].':'.(int) $product['additional_shipping_cost'].':'.(int) $shipping_cost.' '.time(), 1);
         }
 
         $shipping_cost = Tools::convertPrice($shipping_cost, Currency::getCurrencyInstance((int)$this->id_currency));
@@ -3537,15 +3538,15 @@ class CartCore extends ObjectModel
      *
     * @return float Total Cart weight
     */
-    public function getTotalWeight($products = null)
+    public function getTotalWeight($products = null, $isFromAdmin = false)
     {
         if (!is_null($products)) {
             $total_weight = 0;
             foreach ($products as $product) {
                 if (!isset($product['weight_attribute']) || is_null($product['weight_attribute'])) {
-                    $total_weight += $product['weight'] * $product['cart_quantity'];
+                    $total_weight += $product['weight'] * $product[$isFromAdmin ? 'product_quantity' : 'cart_quantity'];
                 } else {
-                    $total_weight += $product['weight_attribute'] * $product['cart_quantity'];
+                    $total_weight += $product['weight_attribute'] * $product[$isFromAdmin ? 'product_quantity' : 'cart_quantity'];
                 }
             }
             return $total_weight;
