@@ -2541,8 +2541,10 @@ class OrderCore extends ObjectModel
         $this->total_shipping_tax_excl = $this->total_shipping_tax_excl - $diff_shipping_tax_excl;
         $this->total_shipping_tax_incl = $this->total_shipping_tax_incl - $diff_shipping_tax_incl;
         $this->total_shipping = $this->total_shipping_tax_incl;
-        $this->total_paid_tax_excl = $this->total_paid_tax_excl - $diff_shipping_tax_excl;
-        $this->total_paid_tax_incl = $this->total_paid_tax_incl - $diff_shipping_tax_incl;
+        // $this->total_paid_tax_excl = $this->total_paid_tax_excl - $diff_shipping_tax_excl;
+        // $this->total_paid_tax_incl = $this->total_paid_tax_incl - $diff_shipping_tax_incl;
+        $this->total_paid_tax_excl = 0 - $diff_shipping_tax_excl;
+        $this->total_paid_tax_incl = 0 - $diff_shipping_tax_incl;
         $this->total_paid = $this->total_paid_tax_incl;
         $this->update();
 
