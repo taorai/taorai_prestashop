@@ -2531,8 +2531,8 @@ class OrderCore extends ObjectModel
         }
 
         // get new shipping cost
-        $base_total_shipping_tax_incl = (float) $new_cart->getPackageShippingCost((int) $new_cart->id_carrier, true, null);
-        $base_total_shipping_tax_excl = (float) $new_cart->getPackageShippingCost((int) $new_cart->id_carrier, false, null);
+        $base_total_shipping_tax_incl = (float) $new_cart->getPackageShippingCost((int) $new_cart->id_carrier, true, null, $this->getProducts(), null, true);
+        $base_total_shipping_tax_excl = (float) $new_cart->getPackageShippingCost((int) $new_cart->id_carrier, false, null, $this->getProducts(), null, true);
 
         // calculate diff price, then apply new order totals
         $diff_shipping_tax_incl = $this->total_shipping_tax_incl - $base_total_shipping_tax_incl;
@@ -2541,7 +2541,7 @@ class OrderCore extends ObjectModel
         $this->total_shipping_tax_excl = $this->total_shipping_tax_excl - $diff_shipping_tax_excl;
         $this->total_shipping_tax_incl = $this->total_shipping_tax_incl - $diff_shipping_tax_incl;
         $this->total_shipping = $this->total_shipping_tax_incl;
-        
+
         $this->total_paid_tax_excl = $this->total_paid_tax_excl - $diff_shipping_tax_excl;
         $this->total_paid_tax_incl = $this->total_paid_tax_incl - $diff_shipping_tax_incl;
         $this->total_paid = $this->total_paid_tax_incl;
