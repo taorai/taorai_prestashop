@@ -3246,8 +3246,8 @@ class CartCore extends ObjectModel
 
         if (Configuration::get('PS_TAX_ADDRESS_TYPE') == 'id_address_invoice') {
             $address_id = (int)$this->id_address_invoice;
-        } elseif (count($product_list)) {
-            $prod = current($product_list);
+        } elseif (count($products)) {
+            $prod = current($products);
             $address_id = (int)$prod['id_address_delivery'];
         } else {
             $address_id = null;
@@ -3272,7 +3272,7 @@ class CartCore extends ObjectModel
         }
 
         // Order total in default currency without fees
-        $order_total = $this->getOrderTotal(true, Cart::BOTH_WITHOUT_SHIPPING, $product_list);
+        $order_total = $this->getOrderTotal(true, Cart::BOTH_WITHOUT_SHIPPING, $products);
 
         // Start with shipping cost at 0
         $shipping_cost = 0;
@@ -3307,7 +3307,7 @@ class CartCore extends ObjectModel
             $id_carrier = (int)Configuration::get('PS_CARRIER_DEFAULT');
         }
 
-        $total_package_without_shipping_tax_inc = $this->getOrderTotal(true, Cart::BOTH_WITHOUT_SHIPPING, $product_list);
+        $total_package_without_shipping_tax_inc = $this->getOrderTotal(true, Cart::BOTH_WITHOUT_SHIPPING, $products);
         if (empty($id_carrier)) {
             if ((int)$this->id_customer) {
                 $customer = new Customer((int)$this->id_customer);
@@ -3353,7 +3353,7 @@ class CartCore extends ObjectModel
                 }
 
                 if ($shipping_method == Carrier::SHIPPING_METHOD_WEIGHT) {
-                    $shipping = $carrier->getDeliveryPriceByWeight($this->getTotalWeight($product_list), (int)$id_zone);
+                    $shipping = $carrier->getDeliveryPriceByWeight($this->getTotalWeight($products), (int)$id_zone);
                 } else {
                     $shipping = $carrier->getDeliveryPriceByPrice($order_total, (int)$id_zone, (int)$this->id_currency);
                 }
@@ -3455,14 +3455,14 @@ class CartCore extends ObjectModel
                 $shipping_cost += 0;
             } else {
                 if ($shipping_method == Carrier::SHIPPING_METHOD_WEIGHT) {
-                    $shipping_cost += $carrier->getDeliveryPriceByWeight($this->getTotalWeight($product_list), $id_zone);
+                    $shipping_cost += $carrier->getDeliveryPriceByWeight($this->getTotalWeight($products), $id_zone);
                 } else { // by price
                     $shipping_cost += $carrier->getDeliveryPriceByPrice($order_total, $id_zone, (int)$this->id_currency);
                 }
             }
         } else {
             if ($shipping_method == Carrier::SHIPPING_METHOD_WEIGHT) {
-                $shipping_cost += $carrier->getDeliveryPriceByWeight($this->getTotalWeight($product_list), $id_zone);
+                $shipping_cost += $carrier->getDeliveryPriceByWeight($this->getTotalWeight($products), $id_zone);
             } else {
                 $shipping_cost += $carrier->getDeliveryPriceByPrice($order_total, $id_zone, (int)$this->id_currency);
             }
