@@ -35,6 +35,8 @@
 	<td>{if isset($product.image) && $product.image->id}{$product.image_tag}{/if}</td>
 	<td>
 		<a href="{$link->getAdminLink('AdminProducts', true, ['id_product' => $product['product_id']|intval, 'updateproduct' => '1'])|escape:'html':'UTF-8'}">
+			<span class="productName">{$product.name}</span>
+			<br/>
 			<span class="productName">{$product['product_name']}</span>
 		</a>
 		<br />
