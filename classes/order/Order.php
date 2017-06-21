@@ -549,7 +549,8 @@ class OrderCore extends ObjectModel
         FROM `'._DB_PREFIX_.'order_detail` od
         LEFT JOIN `'._DB_PREFIX_.'product` p ON (p.id_product = od.product_id)
         LEFT JOIN `'._DB_PREFIX_.'product_shop` ps ON (ps.id_product = p.id_product AND ps.id_shop = od.id_shop)
-        WHERE od.`id_order` = '.(int)$this->id);
+        LEFT JOIN `'._DB_PREFIX_.'product_lang` pl ON (pl.id_product = p.id_product AND pl.id_shop = od.id_shop)
+        WHERE pl.id_lang=1 and od.`id_order` = '.(int)$this->id);
     }
 
     public function getFirstMessage()
