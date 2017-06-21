@@ -42,9 +42,9 @@
                   {$product.name}
                 </a>
               </strong><br/>
-              {if $product.reference}
-                {l s='Reference' d='Shop.Theme.Catalog'}: {$product.reference}<br/>
-              {/if}
+              <!-- {if $product.reference} -->
+<!--                 {l s='Reference' d='Shop.Theme.Catalog'}: {$product.reference}<br/> -->
+<!--               {/if} -->
               {if $product.customizations}
                 {foreach from=$product.customizations item="customization"}
                   <div class="customization">
