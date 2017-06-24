@@ -3472,12 +3472,37 @@ class CartCore extends ObjectModel
             $shipping_cost += (float)$configuration['PS_SHIPPING_HANDLING'];
         }
 
+        $subtotal_weight_of_product = array();
         // Additional Shipping Cost per product
         foreach ($products as $product) {
             if (!$product['is_virtual']) {
                 $shipping_cost += (int) $product['additional_shipping_cost'] * (int) $product[$isFromAdmin ? 'product_quantity' : 'cart_quantity'];
             }
+            
+            if (isset($subtotal_weight_of_product[$product['id_product']])) {
+                $subtotal_weight_of_product[$product['id_product']] += (int)$product['weight'];
+            } else {
+                $subtotal_weight_of_product[$product['id_product']] = (int)$product['weight'];
+            }
             // PrestaShopLogger::addLog('product_quantity : product_id : product_attribute_id : additional_shipping_cost : shipping_cost => '.$product['product_quantity'].':'.(int) $product['product_id'].':'.(int) $product['product_attribute_id'].':'.(int) $product['additional_shipping_cost'].':'.(int) $shipping_cost.' '.time(), 1);
+        }
+        // only start to calcuate the volumetric price if product sku >= 2 & subtotal of each sku is less than 2.5 kg
+        if (count($subtotal_weight_of_product) >= 2) {
+            $hasSkippedMax = max($subtotal_weight_of_product) >= 2.5 ? false : true;
+            foreach ($subtotal_weight_of_product as $subtotal_weight) {
+                if ($subtotal_weight == max($subtotal_weight_of_product) && !$hasSkippedMax) {
+                    $hasSkippedMax = true;
+                    continue;
+                }
+
+                if ($subtotal_weight < 1) {
+                    $shipping_cost += 115;
+                } else if ($subtotal_weight < 2) {
+                    $shipping_cost += 65;
+                } else if ($subtotal_weight < 2.5) {
+                    $shipping_cost += 25;
+                }
+            }
         }
 
         $shipping_cost = Tools::convertPrice($shipping_cost, Currency::getCurrencyInstance((int)$this->id_currency));
