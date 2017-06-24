@@ -3488,7 +3488,7 @@ class CartCore extends ObjectModel
         }
         // only start to calcuate the volumetric price if product sku >= 2 & subtotal of each sku is less than 2.5 kg
         if (count($subtotal_weight_of_product) >= 2) {
-            $hasSkippedMax = max($subtotal_weight_of_product) >= 2.5 ? false : true;
+            $hasSkippedMax = false;
             foreach ($subtotal_weight_of_product as $subtotal_weight) {
                 if ($subtotal_weight == max($subtotal_weight_of_product) && !$hasSkippedMax) {
                     $hasSkippedMax = true;
