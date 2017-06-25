@@ -3480,9 +3480,9 @@ class CartCore extends ObjectModel
             }
             
             if (isset($subtotal_weight_of_product[$product['id_product']])) {
-                $subtotal_weight_of_product[$product['id_product']] += (int)$product['weight'];
+                $subtotal_weight_of_product[$product['id_product']] += $product['weight'];
             } else {
-                $subtotal_weight_of_product[$product['id_product']] = (int)$product['weight'];
+                $subtotal_weight_of_product[$product['id_product']] = $product['weight'];
             }
             // PrestaShopLogger::addLog('product_quantity : product_id : product_attribute_id : additional_shipping_cost : shipping_cost => '.$product['product_quantity'].':'.(int) $product['product_id'].':'.(int) $product['product_attribute_id'].':'.(int) $product['additional_shipping_cost'].':'.(int) $shipping_cost.' '.time(), 1);
         }
@@ -3496,8 +3496,8 @@ class CartCore extends ObjectModel
             }
 
             // compare which one is more expensive, weight or size
-            if (90 * $total_prdouct_size > $total_prdouct_weight * 50) {
-                $shipping_cost += 90 * $total_prdouct_size - $total_prdouct_weight * 50;
+            if (90 * $total_prdouct_size > max(ceil($total_prdouct_weight) * 50, 150)) {
+                $shipping_cost += ceil(90 * $total_prdouct_size - max(ceil($total_prdouct_weight) * 50, 150));
             }
             $th_shipping_fee = 0;
             if ($total_prdouct_weight <= 2.5) {
@@ -3526,8 +3526,9 @@ class CartCore extends ObjectModel
                 $th_shipping_fee = 1300;
             }
             if (33 * $total_prdouct_size > $th_shipping_fee) {
-                $shipping_cost += 33 * $total_prdouct_size - $th_shipping_fee;
+                $shipping_cost += ceil(33 * $total_prdouct_size - $th_shipping_fee);
             }
+            // PrestaShopLogger::addLog('product number : product weight : product size : ceil(90 * $total_prdouct_size - max(ceil($total_prdouct_weight) * 50, 150)) : th_shipping_fee : 33 * $total_prdouct_size - $th_shipping_fee => '.count($subtotal_weight_of_product).':'.$total_prdouct_weight.':'.$total_prdouct_size.':'.(ceil(90 * $total_prdouct_size - max(ceil($total_prdouct_weight) * 50, 150))).':'.$th_shipping_fee.':'.(33 * $total_prdouct_size - $th_shipping_fee).' '.time(), 1);
         }
 
         $shipping_cost = Tools::convertPrice($shipping_cost, Currency::getCurrencyInstance((int)$this->id_currency));
