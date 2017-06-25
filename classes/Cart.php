@@ -3479,10 +3479,10 @@ class CartCore extends ObjectModel
                 $shipping_cost += (int) $product['additional_shipping_cost'] * (int) $product[$isFromAdmin ? 'product_quantity' : 'cart_quantity'];
             }
             
-            if (isset($subtotal_weight_of_product[$product['id_product']])) {
-                $subtotal_weight_of_product[$product['id_product']] += $product['weight'];
+            if (isset($subtotal_weight_of_product[$product['reference']])) {
+                $subtotal_weight_of_product[$product['reference']] += $product['weight'];
             } else {
-                $subtotal_weight_of_product[$product['id_product']] = $product['weight'];
+                $subtotal_weight_of_product[$product['reference']] = $product['weight'];
             }
             // PrestaShopLogger::addLog('product_quantity : product_id : product_attribute_id : additional_shipping_cost : shipping_cost => '.$product['product_quantity'].':'.(int) $product['product_id'].':'.(int) $product['product_attribute_id'].':'.(int) $product['additional_shipping_cost'].':'.(int) $shipping_cost.' '.time(), 1);
         }
