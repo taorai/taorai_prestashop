@@ -3486,22 +3486,47 @@ class CartCore extends ObjectModel
             }
             // PrestaShopLogger::addLog('product_quantity : product_id : product_attribute_id : additional_shipping_cost : shipping_cost => '.$product['product_quantity'].':'.(int) $product['product_id'].':'.(int) $product['product_attribute_id'].':'.(int) $product['additional_shipping_cost'].':'.(int) $shipping_cost.' '.time(), 1);
         }
-        // only start to calcuate the volumetric price if product sku >= 2 & subtotal of each sku is less than 2.5 kg
+        // only start to calcuate the volumetric price if product sku >= 2, assume 2.5kg == 0.01 cbm
         if (count($subtotal_weight_of_product) >= 2) {
-            $hasSkippedMax = false;
+            $total_prdouct_size = 0;
+            $total_prdouct_weight = 0;
             foreach ($subtotal_weight_of_product as $subtotal_weight) {
-                if ($subtotal_weight == max($subtotal_weight_of_product) && !$hasSkippedMax) {
-                    $hasSkippedMax = true;
-                    continue;
-                }
+                $total_prdouct_weight += $subtotal_weight;
+                $total_prdouct_size += ceil($subtotal_weight / 2.5);
+            }
 
-                if ($subtotal_weight < 1) {
-                    $shipping_cost += 115;
-                } else if ($subtotal_weight < 2) {
-                    $shipping_cost += 65;
-                } else if ($subtotal_weight < 2.5) {
-                    $shipping_cost += 25;
-                }
+            // compare which one is more expensive, weight or size
+            if (90 * $total_prdouct_size > $total_prdouct_weight * 50) {
+                $shipping_cost += 90 * $total_prdouct_size - $total_prdouct_weight * 50;
+            }
+            $th_shipping_fee = 0;
+            if ($total_prdouct_weight <= 2.5) {
+                $th_shipping_fee = 80;
+            } else if ($total_prdouct_weight <= 5) {
+                $th_shipping_fee = 120;
+            } else if ($total_prdouct_weight <= 10) {
+                $th_shipping_fee = 160;
+            } else if ($total_prdouct_weight <= 20) {
+                $th_shipping_fee = 320;
+            } else if ($total_prdouct_weight <= 30) {
+                $th_shipping_fee = 390;
+            } else if ($total_prdouct_weight <= 40) {
+                $th_shipping_fee = 520;
+            } else if ($total_prdouct_weight <= 50) {
+                $th_shipping_fee = 650;
+            } else if ($total_prdouct_weight <= 60) {
+                $th_shipping_fee = 780;
+            } else if ($total_prdouct_weight <= 70) {
+                $th_shipping_fee = 910;
+            } else if ($total_prdouct_weight <= 80) {
+                $th_shipping_fee = 1040;
+            } else if ($total_prdouct_weight <= 90) {
+                $th_shipping_fee = 1170;
+            } else {
+                $th_shipping_fee = 1300;
+            }
+            if (33 * $total_prdouct_size > $th_shipping_fee) {
+                $shipping_cost += 33 * $total_prdouct_size - $th_shipping_fee;
             }
         }
 
