@@ -436,16 +436,16 @@ class CartPresenter implements PresenterInterface
         $quantity_of_product = array();
 
         foreach ($products as $product) {
-            if (isset($quantity_of_product[$product['id_product']])) {
-                $quantity_of_product[$product['id_product']] += (int)$product['quantity'];
+            if (isset($quantity_of_product[$product['reference']])) {
+                $quantity_of_product[$product['reference']] += (int)$product['quantity'];
             } else {
-                $quantity_of_product[$product['id_product']] = (int)$product['quantity'];
+                $quantity_of_product[$product['reference']] = (int)$product['quantity'];
             }
         }
 
-        foreach ($quantity_of_product as $id_product => $quantity) {
-            $product_presenter = new Product($id_product);
-            if ($quantity < $product_presenter->minimal_quantity) {
+        foreach ($products as $product) {
+            $product_presenter = new Product($product['id_product']);
+            if ($quantity_of_product[$product['reference']] < $product_presenter->minimal_quantity) {
                 $hasReached = false;
                 break;
             }
