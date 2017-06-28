@@ -3480,11 +3480,11 @@ class CartCore extends ObjectModel
             }
             
             if (isset($subtotal_weight_of_product[$product['reference']])) {
-                $subtotal_weight_of_product[$product['reference']] += $product['weight'];
+                $subtotal_weight_of_product[$product['reference']] += $product['weight'] * (int) $product[$isFromAdmin ? 'product_quantity' : 'cart_quantity'];
             } else {
-                $subtotal_weight_of_product[$product['reference']] = $product['weight'];
+                $subtotal_weight_of_product[$product['reference']] = $product['weight'] * (int) $product[$isFromAdmin ? 'product_quantity' : 'cart_quantity'];
             }
-            // PrestaShopLogger::addLog('product_quantity : product_id : product_attribute_id : additional_shipping_cost : shipping_cost => '.$product['product_quantity'].':'.(int) $product['product_id'].':'.(int) $product['product_attribute_id'].':'.(int) $product['additional_shipping_cost'].':'.(int) $shipping_cost.' '.time(), 1);
+            //PrestaShopLogger::addLog('product_quantity : product_id : product_attribute_id : additional_shipping_cost : shipping_cost => '.$product['product_quantity'].':'.(int) $product['product_id'].':'.(int) $product['product_attribute_id'].':'.(int) $product['additional_shipping_cost'].':'.(int) $shipping_cost.' '.time(), 1);
         }
 
         // add 30 baht for each sku for the initial shipping fee
