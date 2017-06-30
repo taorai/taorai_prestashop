@@ -1468,7 +1468,7 @@ class FrontControllerCore extends Controller
             'discount', 'guest-tracking', 'history', 'identity', 'index', 'my-account',
             'order-confirmation', 'order-detail', 'order-follow', 'order', 'order-return',
             'order-slip', 'pagenotfound', 'password', 'pdf-invoice', 'pdf-order-return', 'pdf-order-slip',
-            'prices-drop', 'product', 'search', 'sitemap', 'stores', 'supplier',
+            'prices-drop', 'product', 'search', 'sitemap', 'stores', 'supplier', 'statistics',
         );
         foreach ($p as $page_name) {
             $index = str_replace('-', '_', $page_name);

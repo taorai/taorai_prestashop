@@ -26,6 +26,7 @@
 
 class StatisticsControllerCore extends FrontController
 {
+    public $php_self = 'statistics';
     public $display_header = false;
     public $display_footer = false;
 

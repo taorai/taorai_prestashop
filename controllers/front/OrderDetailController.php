@@ -152,9 +152,17 @@ class OrderDetailControllerCore extends FrontController
             $commentValues = Tools::getValue('textarea_comment_product');
             $idProducts = Tools::getValue('id_product');
             $idAttributes = Tools::getValue('id_product_attribute');
+            $channel = Tools::getValue('channel');
+            $img_cnt = 3;
             $errorCnt = 0;
+            $path_imgs;
 
             foreach ($idProducts as $key => $id_product) {
+                $imgs = array();
+                for ($i = 1; $i <= $img_cnt; $i++) {
+                    $imgs[$i - 1] = $_FILES['file_UploadImgInProductComment'.(strcmp($channel, 'pc') == 0 ? '' : '_mobile').'-'.$i.'-'.$id_product.'-'.$idAttributes[$key]];
+                }                
+
                 // check if it already has a comment in this order regarding this product
                 $cntOrderComment = ProductComment::nbCommentsInOrder($id_product, $idAttributes[$key], $idOrder);
 
@@ -166,6 +174,8 @@ class OrderDetailControllerCore extends FrontController
                     $this->errors[] = $this->trans('This message is invalid (HTML is not allowed).', array(), 'Shop.Notifications.Error');
                 } elseif ($cntOrderComment > 0) {
                     $this->errors[] = $this->trans('You have already given a comment on this product in this order.', array(), 'Shop.Notifications.Error');
+                } elseif (!($path_imgs = Validate::isValidProductCommentImage($imgs, $id_product))) {
+                    $this->errors[] = $this->trans('Upload image failed.', array(), 'Shop.Notifications.Error');
                 }
 
                 $errorCnt = count($this->errors);
@@ -180,6 +190,9 @@ class OrderDetailControllerCore extends FrontController
                         $pc->content = $commentValues[$key];
                         $pc->id_attribute = $idAttributes[$key];
                         $pc->ip_address = (int)ip2long($_SERVER['REMOTE_ADDR']);
+                        $pc->path_img1 = $path_imgs[0];
+                        $pc->path_img2 = $path_imgs[1];
+                        $pc->path_img3 = $path_imgs[2];
                         $pc->add();
                     } else {
                         break;

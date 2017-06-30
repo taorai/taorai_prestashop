@@ -120,7 +120,8 @@ class statsdata extends Module
             Page::setPageViewed($token_array['id_page']);
         }
 
-        if (Configuration::get('PS_STATSDATA_CUSTOMER_PAGESVIEWS')) {
+        // disable as it always shows canceled xhr
+        if (0 && Configuration::get('PS_STATSDATA_CUSTOMER_PAGESVIEWS')) {
             // Ajax request sending the time spend on the page
             $token = sha1($token_array['id_connections'].$token_array['id_page'].$token_array['time_start']._COOKIE_KEY_);
             return '<script type="text/javascript">
