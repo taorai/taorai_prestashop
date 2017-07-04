@@ -34,6 +34,15 @@ class ProductCommentCore extends ObjectModel
     /** @var varchar $ip_address */
     public $ip_address;
 
+    /** @var varchar $path_img1 */
+    public $path_img1;
+
+    /** @var varchar $path_img2 */
+    public $path_img2;
+
+    /** @var varchar $path_img3 */
+    public $path_img3;
+
     /**
      * @see ObjectModel::$definition
      */
@@ -49,6 +58,9 @@ class ProductCommentCore extends ObjectModel
             'date_add' => array('type' => self::TYPE_DATE, 'validate' => 'isDate'),
             'content' => array('type' => self::TYPE_STRING, 'validate' => 'isGenericName'),
             'ip_address' => array('type' => self::TYPE_STRING, 'validate' => 'isIp2Long', 'size' => 15),
+            'path_img1' => array('type' => self::TYPE_STRING),
+            'path_img2' => array('type' => self::TYPE_STRING),
+            'path_img3' => array('type' => self::TYPE_STRING),
         ),
     );
 
@@ -85,7 +97,7 @@ class ProductCommentCore extends ObjectModel
     public static function getComments($idProduct)
     {
         return Db::getInstance()->executeS('
-        SELECT pc.`id_product_comments`, pc.`content`, pc.`date_add`, pc.`id_attribute`, c.`firstname`, c.`lastname`
+        SELECT pc.`id_product_comments`, pc.`content`, pc.`date_add`, pc.`id_attribute`, pc.`path_img1`, pc.`path_img2`, pc.`path_img3`, c.`firstname`, c.`lastname`
         FROM `'._DB_PREFIX_.'product_comments` pc
         LEFT JOIN `'._DB_PREFIX_.'customer` c ON pc.`id_customer`=c.`id_customer`
         WHERE pc.`id_product` = '.(int)$idProduct.'
@@ -103,7 +115,7 @@ class ProductCommentCore extends ObjectModel
     public static function getCommentInOrder($idProduct, $idAttribute, $idOrder)
     {
         return Db::getInstance()->executeS('
-        SELECT pc.`id_product_comments`, pc.`content`, pc.`date_add`, pc.`id_attribute`, pc.`ip_address`
+        SELECT pc.`id_product_comments`, pc.`content`, pc.`date_add`, pc.`id_attribute`, pc.`ip_address`, pc.`path_img1`, pc.`path_img2`, pc.`path_img3`
         FROM `'._DB_PREFIX_.'product_comments` pc
         WHERE pc.`id_product` = '.(int)$idProduct.' AND pc.`id_order` = '.(int)$idOrder.
         ((int)$idAttribute > 0 ? ' AND pc.`id_attribute` = '.(int)$idAttribute : '').'
@@ -118,7 +130,7 @@ class ProductCommentCore extends ObjectModel
     public static function getAllComments()
     {
         return Db::getInstance()->executeS('
-        SELECT pc.`id_product_comments`, pc.`content`, pc.`date_add`, pc.`id_attribute`, c.`firstname`, c.`lastname`, pc.`ip_address`
+        SELECT pc.`id_product_comments`, pc.`content`, pc.`date_add`, pc.`id_attribute`, c.`firstname`, c.`lastname`, pc.`ip_address`, pc.`path_img1`, pc.`path_img2`, pc.`path_img3`
         FROM `'._DB_PREFIX_.'product_comments` pc
         LEFT JOIN `'._DB_PREFIX_.'customer` c ON pc.`id_customer`=c.`id_customer`
         ORDER BY pc.`id_product_comments` DESC');

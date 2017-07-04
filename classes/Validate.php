@@ -1135,4 +1135,57 @@ class ValidateCore
     {
         return (bool)preg_match('/^[\w-]{3,255}$/u', $theme_name);
     }
+
+    public static function isValidProductCommentImage($imgs, $id_product)
+    {
+        $isValid = true;
+        $uptypes = array(  
+            'image/jpg',  
+            'image/jpeg',  
+            'image/png',  
+            'image/pjpeg',  
+            'image/gif',  
+            'image/bmp',  
+            'image/x-png'  
+        );
+        $max_file_size = 1024 * 1024;
+        $destination_folder = _PS_COMMENT_IMG_DIR_.$id_product."/";
+
+        for ($i = 0; $i < count($imgs); $i++) {
+            if ($imgs[$i]['size'] > 2 * 1024 * 1024) {
+                $isValid = false;
+                break;
+            }
+            if ($imgs[$i]['size'] > 0 && !in_array($imgs[$i]['type'], $uptypes)) {
+                $isValid = false;
+                break;
+            }
+            if ($imgs[$i]['size'] > 0 && !is_uploaded_file($imgs[$i]['tmp_name'])) {
+                $isValid = false;
+                break;
+            }
+        }
+
+        $isValid = $isValid && (is_dir($destination_folder) ? true : mkdir($destination_folder, 0777, true));
+
+        if ($isValid) {
+            $path_imgs = array();
+            for ($i = 0; $i < count($imgs); $i++) {
+                if ($imgs[$i]["size"] > 0) {
+                    $ftype = pathinfo($imgs[$i]["name"], PATHINFO_EXTENSION);
+                    $path_imgs[$i] = $destination_folder.Tools::passwdGen(12, 'ALPHANUMERIC').".".$ftype;
+                    if (!move_uploaded_file($imgs[$i]['tmp_name'], $path_imgs[$i])) {
+                        $isValid = false;
+                        break;
+                    }
+                    $path_imgs[$i] = (Context::getContext()->shop->physical_uri).str_replace(_PS_ROOT_DIR_, "", $path_imgs[$i]);
+                } else {
+                    $path_imgs[$i] = "";
+                }
+            }
+        }
+
+        return $isValid ? $path_imgs : $isValid;
+    }
+
 }

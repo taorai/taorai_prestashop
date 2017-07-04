@@ -434,6 +434,12 @@ File: controllers/front/OrderDetailController.php:58</note>
         <note>Context:
 File: controllers/front/OrderDetailController.php:62</note>
       </trans-unit>
+      <trans-unit id="ec9f9348745ce470352350e487112979">
+        <source>Upload image failed.</source>
+        <target>Upload image failed.</target>
+        <note>Context:
+File: controllers/front/OrderDetailController.php:62</note>
+      </trans-unit>
       <trans-unit id="8a6034d3379499b66d730aa17e007683">
         <source>You do not have enough products to request an additional merchandise return.</source>
         <target>You do not have enough products to request an additional merchandise return.</target>
