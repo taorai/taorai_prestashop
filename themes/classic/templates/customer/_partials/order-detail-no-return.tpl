@@ -24,7 +24,7 @@
  *}
 {block name='order_products_table'}
   <div class="box hidden-sm-down">
-    <form action="{$urls.pages.order_detail}" method="post">
+    <form action="{$urls.pages.order_detail}" method="POST" enctype="multipart/form-data">
       <table id="order-products" class="table table-bordered">
         <thead class="thead-default">
           <tr>
@@ -107,8 +107,18 @@
                   {l s='Leave a comment or any suggestion regarding this product.' d='Shop.Theme.Catalog'}
                 </strong>
               </div>
-              <div class="col-md-12">
+              <div class="col-md-8">
                 <textarea rows="3" name="textarea_comment_product[]" class="form-control" id="textarea_comment_product-{$product.id_product}-{$product.id_product_attribute}"></textarea>
+              </div>
+              <div class="col-md-4">
+                {for $img = 1 to 3}
+                  <a>
+                    <div style="border: solid 2px; max-width: 80px;border-radius: 20px;float: right;margin-left: 1rem;padding:5px;">
+                      <img src="../img/add_image.png" style="width: 48px;height:48px;cursor:pointer" id="img_UploadImgInProductComment-{$img}-{$product.id_product}-{$product.id_product_attribute}" onclick="uploadImg(event);">
+                      <input type="file" style="display:none" name="file_UploadImgInProductComment-{$img}-{$product.id_product}-{$product.id_product_attribute}" id="file_UploadImgInProductComment-{$img}-{$product.id_product}-{$product.id_product_attribute}"  onchange="showImgPreview(event);"/>
+                    </div>
+                  </a>
+                {/for}
               </div>
               <div class="col-md-12" style="margin-top: 1rem;width: 100%;">
                 {if count($order.products) > 1}
@@ -116,6 +126,7 @@
                     {l s='Apply to all products' d='Shop.Theme.Catalog'}
                   </button>
                 {/if}
+                <input type="hidden" name="channel" value="pc">
                 <input type="hidden" name="id_order" value="{$order.details.id}">
                 <input type="hidden" name="id_product[]" value="{$product.id_product}">
                 <input type="hidden" name="id_product_attribute[]" value="{$product.id_product_attribute}">
@@ -146,15 +157,15 @@
   </div>
 
   <div class="order-items hidden-md-up box">
-    <form action="{$urls.pages.order_detail}" method="post">
+    <form action="{$urls.pages.order_detail}" method="POST" enctype="multipart/form-data">
       {foreach from=$order.products item=product}
         <div class="order-item">
           <div class="row">
             <div class="col-sm-5 desc">
               <div class="name">{$product.name}</div>
-              {if $product.reference}
+              <!-- {if $product.reference}
                 <div class="ref">{l s='Reference' d='Shop.Theme.Catalog'}: {$product.reference}</div>
-              {/if}
+              {/if} -->
               {if $product.customizations}
                 {foreach $product.customizations as $customization}
                   <div class="customization">
@@ -195,12 +206,23 @@
               <div class="col-md-12">
                 <textarea rows="3" name="textarea_comment_product[]" class="form-control" id="textarea_comment_product_mobile-{$product.id_product}-{$product.id_product_attribute}"></textarea>
               </div>
+              <div class="col-md-12" style="height:60px;margin-top:1rem;">
+                {for $img = 1 to 3}
+                  <a>
+                    <div style="border: solid 2px; max-width: 80px;border-radius: 20px;float: right;margin-left: 1rem;padding:5px;">
+                      <img src="../img/add_image.png" style="width: 48px;height:48px;cursor:pointer" id="img_UploadImgInProductComment_mobile-{$img}-{$product.id_product}-{$product.id_product_attribute}" onclick="uploadImg_mobile(event);">
+                      <input type="file" style="display:none" name="file_UploadImgInProductComment_mobile-{$img}-{$product.id_product}-{$product.id_product_attribute}" id="file_UploadImgInProductComment_mobile-{$img}-{$product.id_product}-{$product.id_product_attribute}"  onchange="showImgPreview(event);"/>
+                    </div>
+                  </a>
+                {/for}
+              </div>
               <div class="col-md-12" style="margin-top: 1rem;width: 100%;padding: 0px">
                 {if count($order.products) > 1}
                   <button type="button"  name="button_apply_comment_to_all_product" id="button_apply_comment_to_all_product_mobile-{$product.id_product}-{$product.id_product_attribute}" class="btn btn-primary form-control-submit" style="font-size: xx-small;padding-left: 1rem;padding-right: 1rem;" onclick="apply_comment_to_all_mobile(event);">
                     {l s='Apply to all products' d='Shop.Theme.Catalog'}
                   </button>
                 {/if}
+                <input type="hidden" name="channel" value="mobile">
                 <input type="hidden" name="id_order" value="{$order.details.id}">
                 <input type="hidden" name="id_product[]" value="{$product.id_product}">
                 <input type="hidden" name="id_product_attribute[]" value="{$product.id_product_attribute}">
