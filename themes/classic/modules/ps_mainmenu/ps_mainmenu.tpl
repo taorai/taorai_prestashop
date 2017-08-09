@@ -3,13 +3,12 @@
     {if $nodes|count}
       <ul class="top-menu" {if $depth == 0}id="top-menu"{/if} data-depth="{$depth}">
         {foreach from=$nodes item=node}
-            <li class="{$node.type}{if $node.current} current {/if}" id="{$node.page_identifier}"  style="float:left;display:inline;height:auto;word-break:break-all;word-wrap:break-word;list-style-type:none;{if $depth == 0}width:100%;{else}width:50%;{/if}">
+            <li class="{$node.type}{if $node.current} current {/if}" id="{$node.page_identifier}">
             {assign var=_counter value=$_counter+1}
               <a
                 class="{if $depth >= 0}dropdown-item{/if}{if $depth === 1} dropdown-submenu{/if}"
                 href="{$node.url}" data-depth="{$depth}"
                 {if $node.open_in_new_window} target="_blank" {/if}
-                style="width:100%;"
               >
                 {if $node.children|count}
                   {* Cannot use page identifier as we can have the same page several times *}
@@ -26,7 +25,7 @@
                 </div>
                 {if isset($node.menu_thumbnail_image) && $node.menu_thumbnail_image}
                   <div style="width:100%;text-align:center;">
-                    <img style="{if $depth == 0}width:100%;{/if}text-align:center;" src="{$node.menu_thumbnail_image}" />
+                    <img src="{$node.menu_thumbnail_image}" /> 
                   </div>
                 {/if}
               </a>
@@ -41,7 +40,7 @@
     {/if}
 {/function}
 
-<div class="menu col-lg-8 col-md-7 js-top-menu position-static hidden-sm-down" id="_desktop_top_menu" style="display:none">
+<div class="menu col-lg-8 col-md-7 js-top-menu position-static hidden-sm-down" id="_desktop_top_menu">
     {menu nodes=$menu.children}
     <div class="clearfix"></div>
 </div>
