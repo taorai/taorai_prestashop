@@ -25,7 +25,8 @@
 {extends file='page.tpl'}
 
     {block name='page_content_container'}
-      <section id="content" class="page-home">
+      <section id="content" class="page-home" style="filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+-webkit-filter: grayscale(100%);">
         {block name='page_content_top'}{/block}
 
         {block name='page_content'}

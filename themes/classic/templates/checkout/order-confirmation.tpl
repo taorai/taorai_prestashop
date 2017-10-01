@@ -13,7 +13,8 @@
       {hook h='displayAfterBodyOpeningTag'}
     {/block}
 
-    <header id="header">
+    <header id="header" style="filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+-webkit-filter: grayscale(100%);">
       {block name='header'}
         {include file='checkout/_partials/header.tpl'}
       {/block}
