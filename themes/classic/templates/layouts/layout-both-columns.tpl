@@ -31,7 +31,8 @@
     {/block}
   </head>
 
-  <body id="{$page.page_name}" class="{$page.body_classes|classnames}">
+  <body id="{$page.page_name}" class="{$page.body_classes|classnames}" {if $page.page_name == 'index'} style="filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+-webkit-filter: grayscale(100%); {/if}">
 
     {block name='hook_after_body_opening_tag'}
       {hook h='displayAfterBodyOpeningTag'}
@@ -42,8 +43,7 @@
         {include file='catalog/_partials/product-activation.tpl'}
       {/block}
 
-      <header id="header"  style="filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
--webkit-filter: grayscale(100%);">
+      <header id="header">
         {block name='header'}
           {include file='_partials/header.tpl'}
         {/block}
