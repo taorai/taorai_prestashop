@@ -31,8 +31,7 @@
     {/block}
   </head>
 
-  <body id="{$page.page_name}" class="{$page.body_classes|classnames}" {if $page.page_name == 'index'} style="filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
--webkit-filter: grayscale(100%); {/if}">
+  <body id="{$page.page_name}" class="{$page.body_classes|classnames}">
 
     {block name='hook_after_body_opening_tag'}
       {hook h='displayAfterBodyOpeningTag'}
