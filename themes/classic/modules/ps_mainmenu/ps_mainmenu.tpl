@@ -5,13 +5,11 @@
         {foreach from=$nodes item=node}
              <li class="{$node.type}{if $node.current} current {/if} menu_bar_display" id="{$node.page_identifier}"> 
             {assign var=_counter value=$_counter+1}
-			  {if $node.url != "http://"}
-				  <a
+			    <a
 					class="{if $depth >= 0}dropdown-item{/if}{if $depth === 1} dropdown-submenu{/if}"
 					href="{$node.url}" data-depth="{$depth}"
 					{if $node.open_in_new_window} target="_blank" {/if}
 				  >
-			  {/if}
                 {if $node.children|count}
                   {* Cannot use page identifier as we can have the same page several times *}
                   {assign var=_expand_id value=10|mt_rand:100000}
