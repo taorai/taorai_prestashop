@@ -1,2 +1,0 @@
-1. run the sql to create product comment table
-2. add row manually in tabs & tabs lang tables
