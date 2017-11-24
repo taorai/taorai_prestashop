@@ -143,9 +143,9 @@ class AdminProductDataUpdater implements ProductInterface
     /* (non-PHPdoc)
      * @see \PrestaShopBundle\Service\DataUpdater\Admin\ProductInterface::duplicateProduct()
      */
-    public function duplicateProduct($productId, $namePattern = 'copy of %s')
+    public function duplicateProduct($productId, $namePattern = '%s')
     {
-        //TODO : use the $namePattern var to input translated version of 'copy of %s', if translation requested.
+        //TODO : use the $namePattern var to input translated version of 'copy of %s', if translation requested. -> removed by steven
         $product = new \ProductCore($productId);
         if (!\ValidateCore::isLoadedObject($product)) {
             throw new \Exception('AdminProductDataUpdater->duplicateProduct() received an unknown ID.', 5005);
