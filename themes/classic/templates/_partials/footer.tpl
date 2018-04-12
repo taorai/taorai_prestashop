@@ -52,3 +52,9 @@
     </div>
   </div>
 </div>
+
+
+<script language="JavaScript" type="text/javascript">
+TrustLogo("https://taorai.asia/comodo_secure_seal.png", "CL1", "none");
+</script>
+<a  href="https://secure.comodo.com" id="comodoTL">Comodo SSL</a>
