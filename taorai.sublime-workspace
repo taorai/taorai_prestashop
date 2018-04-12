@@ -1,0 +1,215 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/D/taorai.asia/Code/taorai_prestashop/themes/classic/modules/ps_mainmenu/ps_mainmenu.tpl",
+		"/D/taorai.asia/Code/taorai_prestashop/themes/classic/templates/checkout/_partials/header.tpl",
+		"/D/taorai.asia/Code/taorai_prestashop/themes/classic/templates/layouts/layout-both-columns.tpl",
+		"/D/taorai.asia/Code/taorai_prestashop/themes/classic/templates/checkout/order-confirmation.tpl",
+		"/D/taorai.asia/Code/taorai_prestashop/themes/classic/templates/checkout/checkout.tpl",
+		"/D/taorai.asia/Code/taorai_prestashop/themes/classic/templates/_partials/head.tpl",
+		"/D/taorai.asia/Code/taorai_prestashop/themes/classic/templates/_partials/javascript.tpl",
+		"/D/taorai.asia/Code/taorai_prestashop/themes/classic/templates/_partials/header.tpl",
+		"/D/taorai.asia/Code/taorai_prestashop/admin_portal/themes/default/template/header.tpl",
+		"/D/taorai.asia/Code/taorai_prestashop/classes/Product.php",
+		"/D/taorai.asia/Code/taorai_prestashop/controllers/admin/AdminProductsController.php",
+		"/D/taorai.asia/Code/taorai_prestashop/src/Adapter/Product/AdminProductDataUpdater.php",
+		"/D/taorai.asia/Code/taorai_prestashop/app/cache/dev/smarty/compile/35/65/5e/wrt5a1783ab709be7_27818991",
+		"/D/taorai.asia/Code/taorai_prestashop/app/Resources/all_languages.json",
+		"/D/taorai.asia/Code/taorai_prestashop/app/cache/dev/smarty/compile/1c/00/f7/1c00f78dace25d509ec3a1f54176b7ae2000accf.module.ps_languageselector.tpl.php",
+		"/D/taorai.asia/Code/taorai_prestashop/modules/ps_languageselector/ps_languageselector.php",
+		"/D/taorai.asia/Code/taorai_prestashop/themes/classic/assets/js/theme.js",
+		"/D/taorai.asia/Code/taorai_prestashop/app/cache/dev/appDevDebugProjectContainer.php"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 134.0,
+		"where_history":
+		[
+			"*.tpl",
+			"*.php",
+			"",
+			"D:\\taorai.asia\\Code\\taorai_prestashop\\admin_portal\\*",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"col-lg-8 col-md-7 js-top-menu",
+			"displayTop",
+			"col-md-12 col-sm-12 position-static",
+			"<head",
+			"duplicateAttributes",
+			"duplicate",
+			"Copy of",
+			"copy of",
+			"name_simple",
+			"_desktop_language_selector",
+			"ภาษาไทย",
+			"current_language",
+			"language-selector",
+			"sub-menu",
+			"sub_menu",
+			"top_menu",
+			"taorai_admin"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "taorai.sublime-project",
+	"replace":
+	{
+		"height": 59.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"theme.js",
+				"themes\\classic\\assets\\js\\theme.js"
+			],
+			[
+				"ps_main",
+				"themes\\classic\\modules\\ps_mainmenu\\ps_mainmenu.tpl"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 291.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
