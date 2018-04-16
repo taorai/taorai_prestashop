@@ -28,7 +28,7 @@
       {block name='product_thumbnail'}
         <a href="{$product.url}" class="thumbnail product-thumbnail">
           <img
-            src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            src = "/img/loading.gif"
             data-echo = "{$product.cover.bySize.home_default.url}"
             alt = "{$product.cover.legend}"
             data-full-size-image-url = "{$product.cover.large.url}"
