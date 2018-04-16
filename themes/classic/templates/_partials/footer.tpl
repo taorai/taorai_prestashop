@@ -53,7 +53,7 @@
   </div>
 </div>
 
-<script src="/taorai/themes/classic/assets/js/echo.min.js"></script>
+<script src="/themes/classic/assets/js/echo.min.js"></script>
 <script language="JavaScript" type="text/javascript">
 echo.init({
     offset: 0,
