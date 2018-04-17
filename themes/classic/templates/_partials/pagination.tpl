@@ -41,6 +41,7 @@
                 rel="{if $page.type === 'previous'}prev{elseif $page.type === 'next'}next{else}nofollow{/if}"
                 href="{$page.url}"
                 class="{if $page.type === 'previous'}previous {elseif $page.type === 'next'}next {/if}{['disabled' => !$page.clickable, 'js-search-link' => true]|classnames}"
+                onclick="javascript:window.location='#header'"
               >
                 {if $page.type === 'previous'}
                   <i class="material-icons">&#xE314;</i>{l s='Previous' d='Shop.Theme.Actions'}
