@@ -160,11 +160,13 @@
             </a>
           </li>
           {/if}
+          {if $product.features|@count > 0}
           <li class="nav-item">
             <a class="nav-link{if !$product.description} active{/if}" data-toggle="tab" href="#product-details">
               {l s='Product Details' d='Shop.Theme.Catalog'}
             </a>
           </li>
+          {/if}
           {if $product.comments|@count > 0}
           <li class="nav-item">
             <a class="nav-link{if !$product.description} active{/if}" data-toggle="tab" href="#product-comments">
