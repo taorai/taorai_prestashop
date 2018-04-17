@@ -56,9 +56,10 @@
 <script src="/themes/classic/assets/js/echo.min.js"></script>
 <script language="JavaScript" type="text/javascript">
 echo.init({
-    offset: 0,
-    throttle: 0
-});
+    offset: 1000,
+    throttle: 250,
+    unload: false
+  });
 </script>
 <script language="JavaScript" type="text/javascript">
 TrustLogo("https://taorai.asia/comodo_secure_seal.png", "CL1", "none");
